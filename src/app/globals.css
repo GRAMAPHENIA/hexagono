@@ -3,25 +3,65 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --dark: #161b22;
+  --light: #1d2434;
+  --font-light: #d3ddf4;
+  --font-semi-light: #85b6cb;
+  --button-dark: #2b3136;
+  --button-pres: #719aa6;
+  --button-light: #dee8f1;
+  --hover: #1d2434;
+  --border: #324550;
+  --estado: #1b2430;
+  --card-dark: #1f252d;
+  --card-light: #36393b;
+  --border-card-dark: #32667d;
+  --gradient-start: #b9c0ce;
+  --gradient-via: #1c222d;
+  --gradient-end: #21262F;
+}
+html {
+  overflow-y: scroll;
+  background: var(--dark);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  user-select: none;
+  margin: 0 auto;
+  box-sizing: border-box;
+  align-content: center;
+  line-height: 1.6;
+  color: white;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+/* 🔴 🧩 SCROLL 🧩 */
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  background-color: var(--dark);
+  border: 1px solid var(--light);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--card-dark);
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.fondo {
+  margin: 0; 
+  padding: 0; 
+  background-image: url("../../public/fondo/fondo-completo.svg");
+  background-size: cover; 
+  background-position: top; 
+  background-repeat: no-repeat; 
+  height: fit-content; 
 }
+
+.sombra {
+  box-shadow: 0px 5px 0px var(--border);
+}
+
+.sombra:hover {
+  box-shadow: 0px 0px 0px var(--border);
+  transform: translateY(5px);
+}
+
