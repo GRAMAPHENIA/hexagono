@@ -7,6 +7,7 @@
   --light: #1d2434;
   --font-light: #d3ddf4;
   --font-semi-light: #85b6cb;
+  --font-semi-light-dark: #507381;
   --button-dark: #2b3136;
   --button-pres: #719aa6;
   --button-light: #dee8f1; 
@@ -75,6 +76,16 @@ html {
 .sombra-card {
   box-shadow: 0px 4px 0px var(--font-semi-light);
 }
+
+.sombra-card-dark {
+  box-shadow: 0px 4px 0px var(--font-semi-light-dark);
+}
+
+.sombra-card-dark:hover {
+  box-shadow: 0px 0px 0px var(--font-semi-light);
+  transform: translateY(4px);
+}
+
 
 .sombra-card:hover {
   box-shadow: 0px 0px 0px var(--font-semi-light);
