@@ -12,10 +12,6 @@ const Home = () => {
         <Header />
       </section>
       <Cards />
-      <Cards />
-      <Cards />
-      <Cards />
-      <Cards />
     </main>
   );
 };
