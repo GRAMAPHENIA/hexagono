@@ -72,3 +72,15 @@ html {
   transform: translateY(5px);
 }
 
+.sombra-card {
+  box-shadow: 0px 4px 0px var(--font-semi-light);
+}
+
+.sombra-card:hover {
+  box-shadow: 0px 0px 0px var(--font-semi-light);
+  transform: translateY(4px);
+}
+
+.sombra-completa {
+  box-shadow: 4px 4px 0px var(--hover);
+}
