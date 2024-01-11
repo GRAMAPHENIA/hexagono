@@ -10,8 +10,8 @@
   --font-semi-light-dark: #507381;
   --button-dark: #2b3136;
   --button-pres: #719aa6;
-  --button-light: #dee8f1; 
-  --hover: #1d2434;
+  --button-light: #dee8f1;
+  --hover: #232b3e;
   --border: #324550;
   --estado: #1b2430;
   --card-dark: #1f252d;
@@ -19,8 +19,8 @@
   --border-card-dark: #32667d;
   --gradient-start: #b9c0ce;
   --gradient-via: #1c222d;
-  --gradient-end: #21262F;
-  --hexagonos:#252E39;
+  --gradient-end: #21262f;
+  --hexagonos: #252e39;
 }
 html {
   overflow-y: scroll;
@@ -49,49 +49,48 @@ html {
 }
 
 .fondo {
-  margin: 0; 
-  padding: 0; 
+  margin: 0;
+  padding: 0;
   background-image: url("../../public/fondo/fondo-completo.svg");
-  background-size: cover; 
-  background-position: top; 
-  background-repeat: no-repeat; 
-  height: fit-content; 
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  height: fit-content;
 }
 
 @media only screen and (max-width: 767px) {
   .fondo {
-    background-image: url("../../public/fondo/fondo-completo-mobile.svg")
+    background-image: url("../../public/fondo/fondo-completo-mobile.svg");
   }
 }
 
 .sombra {
-  box-shadow: 0px 5px 0px var(--border);
+  box-shadow: 2px 5px 0px var(--border);
+}
+
+.sombra-completa {
+  box-shadow: 6px 8px 0px var(--hover);
 }
 
 .sombra:hover {
   box-shadow: 0px 0px 0px var(--border);
-  transform: translateY(5px);
+  transform: translate(2px, 5px);
 }
 
 .sombra-card {
-  box-shadow: 0px 4px 0px var(--font-semi-light);
+  box-shadow: 2px 5px 0px var(--font-semi-light);
+}
+
+.sombra-card:hover {
+  box-shadow: 0px 0px 0px var(--font-semi-light);
+  transform: translate(2px, 5px);
 }
 
 .sombra-card-dark {
-  box-shadow: 0px 4px 0px var(--font-semi-light-dark);
+  box-shadow: 2px 5px 0px var(--font-semi-light-dark);
 }
 
 .sombra-card-dark:hover {
   box-shadow: 0px 0px 0px var(--font-semi-light);
-  transform: translateY(4px);
-}
-
-
-.sombra-card:hover {
-  box-shadow: 0px 0px 0px var(--font-semi-light);
-  transform: translateY(4px);
-}
-
-.sombra-completa {
-  box-shadow: 4px 4px 0px var(--hover);
+  transform: translate(2px, 5px);
 }

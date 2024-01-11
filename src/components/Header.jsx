@@ -9,9 +9,8 @@ const Header = () => {
         ilustraciones, <br />
         modelado 3D
       </h1>
-      <p className="col-span-5 mt-6 ml-10 sm:ml-48 sm:w-80 text-[#93A0B4] mb-20">
-        Creamos marcas, elaboramos la identidad para tu empresa
-        <span className="text-amber-200">.</span>
+      <p className="font-extralight col-span-5 mt-6 ml-10 sm:ml-48 sm:w-80 text-[--font-light] mb-20">
+        Creamos marcas, elaboramos la identidad para tu empresa.
       </p>
     </>
   );

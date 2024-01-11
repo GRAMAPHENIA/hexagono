@@ -3,6 +3,7 @@ import Image from "next/image";
 import Navbar from "@/components/Navbar.jsx";
 import Header from "@/components/Header.jsx";
 import Cards from "@/components/Cards.jsx";
+import Web from "@/components/Web.jsx";
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
         <Header />
       </section>
       <Cards />
+      <Web/>
     </main>
   );
 };
