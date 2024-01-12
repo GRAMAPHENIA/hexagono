@@ -45,17 +45,17 @@ const DesarrolloWeb = () => {
         <section className="grid lg:grid-cols-5 justify-center gap-8 pt-10">
           {caracteristicas.map(({ titulo }, index) => (
             <div
-              className="col-span-1 flex justify-center items-center bg-[var(--font-semi-light)] p-2 py-2 rounded-sm sombra-inactiva"
+              className="col-span-1 flex justify-center items-center bg-[var(--font-semi-light)] p-2 py-2 rounded-sm sombra-inactiva border border-[var(--border-card-dark)]"
               key={index}
             >
-              <h1 className="text-sm text-[var(--button-dark)] ml-2">
+              <h1 className="text-sm text-sm:ml-48 ml-2">
                 {titulo}
               </h1>
             </div>
           ))}
         </section>
         <div className="flex justify-center my-20">
-          <button className="col-span-5 flex justify-center items-center text-[var(--font-light)] bg-[var(--gradient-end)] px-8 py-4 rounded-full sombra-light">
+          <button className="col-span-5 flex justify-center items-center text-[var(--font-light)] bg-[var(--gradient-end)] px-8 py-4 rounded-full sombra-light border border-[var(--card-light)]">
             Saber Más
           </button>
         </div>

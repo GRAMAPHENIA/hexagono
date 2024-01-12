@@ -78,7 +78,7 @@ html {
 }
 
 .sombra-inactiva {
-  box-shadow: 2px 5px 0px var(--font-semi-light-dark);
+  box-shadow: 5px 6px 0px var(--font-semi-light-dark);
 }
 
 .sombra-completa {

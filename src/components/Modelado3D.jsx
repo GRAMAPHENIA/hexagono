@@ -25,7 +25,7 @@ const Modelado3D = () => {
           </p>
         </figure>
         <div className="flex justify-center my-20">
-          <button className="col-span-5 flex justify-center items-center text-[var(--font-light)] bg-[var(--gradient-end)] px-8 py-4 rounded-full sombra-light">
+          <button className="col-span-5 flex justify-center items-center text-[var(--font-light)] bg-[var(--gradient-end)] px-8 py-4 rounded-full sombra-light border border-[var(--card-light)]">
             Saber Más
           </button>
         </div>
