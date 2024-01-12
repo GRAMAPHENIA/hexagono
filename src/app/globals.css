@@ -67,6 +67,16 @@ html {
 .sombra {
   box-shadow: 2px 5px 0px var(--border);
 }
+
+.sombra-light {
+  box-shadow: 2px 5px 0px var(--font-semi-light);
+}
+
+.sombra-light:hover {
+  box-shadow: 0px 0px 0px var(--font-semi-light);
+  transform: translate(2px, 5px);
+}
+
 .sombra-inactiva {
   box-shadow: 2px 5px 0px var(--font-semi-light-dark);
 }
