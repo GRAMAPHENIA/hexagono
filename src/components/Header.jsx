@@ -14,7 +14,7 @@ const Header = () => {
         3D
       </h1>
       <p className="font-extralight col-span-5 ml-4 pl-2 sm:ml-48  text-[--font-light] mb-20 leading-[15px]">
-        Creando la identidad para tu empresa<span className="text-rose-400">.</span>
+        Creando tu identidad<span className="text-rose-300">.</span>
       </p>
     </>
   );
