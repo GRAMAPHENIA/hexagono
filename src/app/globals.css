@@ -51,7 +51,7 @@ html {
 .fondo {
   margin: 0;
   padding: 0;
-  background-image: url("../../public/fondo/fondo-completo.svg");
+  background-image: url("../../public/fondo/fondo-completo-mod.svg");
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -66,6 +66,9 @@ html {
 
 .sombra {
   box-shadow: 2px 5px 0px var(--border);
+}
+.sombra-inactiva {
+  box-shadow: 2px 5px 0px var(--font-semi-light-dark);
 }
 
 .sombra-completa {

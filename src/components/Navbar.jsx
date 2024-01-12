@@ -14,13 +14,13 @@ const Navbar = () => {
             />
           </li>
           <li className="space-x-4 flex flex-row align-middle">
-            <button className=" font-light hidden lg:block bg-[var(--button-pres)] px-4 py-2 rounded-full sombra">
+            <button className="text-[var(--button-dark)] font-semibold hidden lg:block bg-[var(--font-semi-light)] px-4 py-2 rounded-full sombra">
               presupuestar
             </button>
             <button className="font-light hidden lg:block bg-[var(--card-dark)] text-[var(--font-light)] px-4 py-2 rounded-full sombra">
               contacto
             </button>
-            <button className="bg-[var(--card-dark)] text-[var(--font-light)] text-3xl h-12 w-12 rounded-full sombra">
+            <button className="bg-[var(--card-dark)] text-[var(--font-semi-light)] text-3xl h-12 w-12 rounded-full sombra">
               ≋
             </button>
           </li>
