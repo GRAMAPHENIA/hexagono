@@ -45,12 +45,10 @@ const DesarrolloWeb = () => {
         <section className="grid lg:grid-cols-5 justify-center gap-8 pt-10">
           {caracteristicas.map(({ titulo }, index) => (
             <div
-              className="col-span-1 flex justify-center items-center bg-[var(--font-semi-light)] p-2 py-2 rounded-sm sombra-inactiva border border-[var(--border-card-dark)]"
+              className="text-[var(--dark)] col-span-1 flex justify-center items-center bg-[var(--font-semi-light)] p-2 py-2 rounded-sm sombra-inactiva border border-[var(--border-card-dark)] "
               key={index}
             >
-              <h1 className="text-sm text-sm:ml-48 ml-2">
-                {titulo}
-              </h1>
+              <h1 className="text-sm text-sm:ml-48 ml-2">{titulo}</h1>
             </div>
           ))}
         </section>
