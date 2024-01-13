@@ -8,7 +8,7 @@ const Modelado3D = () => {
           <Image
             src="/titulos/3d.svg"
             alt="Picture of the author"
-            width={300}
+            width={500}
             height={200}
             className="py-10"
           />
@@ -26,7 +26,7 @@ const Modelado3D = () => {
             marca a nuevas alturas.
           </p>
         </figure>
-        <div className="flex justify-center my-20">
+        <div className="flex justify-center lg:justify-start mb-20">
           <button className="col-span-5 flex justify-center items-center text-[var(--font-light)] bg-[var(--gradient-end)] px-8 py-4 rounded-full sombra-light border border-[var(--card-light)]">
             Saber Más
           </button>

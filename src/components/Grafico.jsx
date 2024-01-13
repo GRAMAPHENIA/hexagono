@@ -3,12 +3,12 @@ import Image from "next/image";
 const Grafico = () => {
   return (
     <>
-      <section className="my-20">
+      <section className="mt-40 mb-20">
         <figure className="flex flex-col items-end py-10">
           <Image
             src="/titulos/grafico.svg"
             alt="Imagen para la  sección que destaca el diseño gráfico"
-            width={300}
+            width={500}
             height={200}
             className="py-10"
           />
@@ -24,7 +24,7 @@ const Grafico = () => {
             crean la conexión visual duradera con tu audiencia.
           </p>
         </figure>
-        <div className="flex justify-center my-20">
+        <div className="flex justify-center lg:justify-end mb-20">
           <button className="col-span-5 flex justify-center items-center text-[var(--font-light)] bg-[var(--gradient-end)] px-8 py-4 rounded-full sombra-light border border-[var(--card-light)]">
             Saber Más
           </button>
