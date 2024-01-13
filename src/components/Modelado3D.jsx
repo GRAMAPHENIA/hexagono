@@ -12,11 +12,13 @@ const Modelado3D = () => {
             height={200}
             className="py-10"
           />
-          <p className="text-[var(--font-light)] text-xl font-extralight text-left max-w-[820px] pb-10 border border-[var(--button-dark)]  p-10 rounded-xl bg-[rgba(255, 255, 255, 0.1)] backdrop-blur-sm">
-            <span className="text-amber-50">
+          <p className="text-[var(--font-light)] text-xl font-extralight text-center max-w-[720px] pb-10 border border-[var(--button-dark)]  p-10 rounded-xl bg-[rgba(255, 255, 255, 0.1)] backdrop-blur-sm">
+            <span className="text-amber-50 text-4xl">
               ¡Eleva tu Presentación Visual con Nuestros Servicios de Modelado
               3D!
             </span>{" "}
+            <br />
+            <br />
             En el emocionante mundo visual de hoy, la incorporación de elementos
             tridimensionales puede marcar la diferencia entre destacar y pasar
             desapercibido. En Concepto Hexágono, nos especializamos en ofrecer

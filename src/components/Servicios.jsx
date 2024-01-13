@@ -3,6 +3,7 @@ import Image from "next/image";
 import Grafico from "@/components/Grafico.jsx";
 import DesarrolloWeb from "@/components/DesarrolloWeb.jsx";
 import Modelado3D from "@/components/Modelado3D.jsx";
+import Tecnologias from "@/components/Tecnologias.jsx";
 
 const Servicios = () => {
   return (
@@ -11,6 +12,7 @@ const Servicios = () => {
         <Grafico />
         <DesarrolloWeb />
         <Modelado3D />
+        <Tecnologias />
       </section>
     </>
   );

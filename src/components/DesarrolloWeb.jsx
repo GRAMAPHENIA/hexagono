@@ -30,16 +30,18 @@ const DesarrolloWeb = () => {
             height={100}
             className="py-10"
           />
-          <p className="text-[var(--font-light)] text-xl font-extralight text-center max-w-[820px] pb-10 border border-[var(--button-dark)] p-10 rounded-xl bg-[rgba(255, 255, 255, 0.1)] backdrop-blur-sm">
-            <span className="text-amber-50">
+          <p className="text-[var(--font-light)] text-xl font-extralight text-center max-w-[720px] pb-10 border border-[var(--button-dark)]  p-10 rounded-xl bg-[rgba(255, 255, 255, 0.1)] backdrop-blur-sm">
+            <span className="text-amber-50 text-4xl">
               ¡Destaca tu Presencia Digital con Nuestros Servicios de Desarrollo
               Web!
             </span>{" "}
+            <br />
+            <br />
             En el dinámico mundo actual, la presencia digital es clave para el
-            éxito de cualquier negocio. En Concepto Hexágono, entendemos la
-            importancia de tener una presencia en línea sólida y atractiva. Es
-            por eso que ofrecemos servicios de desarrollo web de alta calidad
-            para impulsar tu marca y destacar en el vasto universo digital.
+            éxito de cualquier negocio. Entendiendo la importancia de tener una
+            presencia en línea sólida y atractiva es que ofrecemos servicios de
+            desarrollo web de alta calidad para impulsar las marcas y que destaquen en
+            el vasto universo digital.
           </p>
         </figure>
         <section className="grid lg:grid-cols-5 justify-center gap-8 pt-10">
