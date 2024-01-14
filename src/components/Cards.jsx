@@ -1,7 +1,7 @@
 const Cards = () => {
   return (
     <>
-      <section className="grid grid-cols-1 lg:grid-cols-3 justify-center items-center gap-10 lg:gap-0 my-40">
+      <section className="grid grid-cols-1 lg:grid-cols-3 justify-center items-center gap-20 lg:gap-0 my-60">
         <figure className="flex flex-col justify-center items-center text-center bg-[#384559] w-[204px] h-[309px] rounded-lg mx-auto lg:mx-64 col-span-3 lg:col-span-1 sombra-completa">
           <div className="h-[96px] w-[96px] bg-[var(--gradient-end)] m-6 rounded-full"></div>
           <p className="font-light p-4 text-[#93A0B4]">
