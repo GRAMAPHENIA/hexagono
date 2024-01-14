@@ -21,7 +21,7 @@ const Footer = () => {
 
   return (
     <>
-      <footer className="grid grid-cols-6 grid-rows-3 justify-center align-middle pt-20 gap'4">
+      <footer className="flex flex-col lg:grid lg:grid-cols-6 lg:grid-rows-3 justify-center align-middle pt-20 gap'4">
         <figure className="col-span-2 row-span-3 flex flex-col justify-end items-center mb-10">
           <Image
             src="/logo.svg"
@@ -40,9 +40,11 @@ const Footer = () => {
             <span className="flex justify-center text-amber-50">2020-2024</span>
           </p>
         </figure>
-        <section className="col-span-1 row-span-4 flex flex-col justify-start items-startstart mb-10">
-          <ul className="text-[var(--button-pres)] text-sm font-extralight">
-            <h1 className="text-2xl text-amber-100 mb-5 mt-32">Navegación</h1>
+        <section className="col-span-1 row-span-4 flex flex-col lg:justify-start lg:items-start mb-10">
+          <ul className=" text-center text-[var(--button-pres)] text-sm font-extralight">
+            <h1 className="text-2xl text-amber-100 mb-5 lg:mt-32">
+              Navegación
+            </h1>
             <li className="hover:text-[var(--font-semi-light)]">
               Desarrollo Web
             </li>
@@ -55,9 +57,11 @@ const Footer = () => {
             </li>
           </ul>
         </section>
-        <section className="col-span-1 row-span-4 flex flex-col justify-start items-start mb-10">
-          <ul className="text-[var(--button-pres)] text-sm font-extralight">
-            <h1 className="text-2xl text-amber-100 mb-5 mt-32">Información</h1>
+        <section className="col-span-1 row-span-4 flex flex-col lg:justify-start lg:items-start mb-10">
+          <ul className=" text-center text-[var(--button-pres)] text-sm font-extralight">
+            <h1 className="text-2xl text-amber-100 mb-5 lg:mt-32">
+              Información
+            </h1>
             <li className="hover:text-[var(--font-semi-light)]">Dominios</li>
             <li className="hover:text-[var(--font-semi-light)]">Hosting</li>
             <li className="hover:text-[var(--font-semi-light)]">Precios</li>
@@ -66,9 +70,9 @@ const Footer = () => {
             </li>
           </ul>
         </section>
-        <section className="col-span-1 row-span-4 flex flex-col justify-start items-start mb-10">
-          <ul className="text-[var(--button-pres)] text-sm font-extralight">
-            <h1 className="text-2xl text-amber-100 mb-5 mt-32">Compañía</h1>
+        <section className="col-span-1 row-span-4 flex flex-col lg:justify-start lg:items-start mb-10">
+          <ul className=" text-center text-[var(--button-pres)] text-sm font-extralight">
+            <h1 className="text-2xl text-amber-100 mb-5 lg:mt-32">Compañía</h1>
             <li className="hover:text-[var(--font-semi-light)]">
               Sobre Hexágono
             </li>
@@ -81,9 +85,9 @@ const Footer = () => {
             <li className="hover:text-[var(--font-semi-light)]">Blog</li>
           </ul>
         </section>
-        <section className="col-span-1 row-span-4 flex flex-col justify-start items-start mb-10">
-          <ul className="text-[var(--button-pres)] text-sm font-extralight">
-            <h1 className="text-2xl text-amber-100 mb-5 mt-32">Redes</h1>
+        <section className="col-span-1 row-span-4 flex flex-col lg:justify-start lg:items-start mb-10">
+          <ul className=" text-center text-[var(--button-pres)] text-sm font-extralight">
+            <h1 className="text-2xl text-amber-100 mb-5 lg:mt-32">Redes</h1>
             <li className="hover:text-[var(--font-semi-light)]">Facebook</li>
             <li className="hover:text-[var(--font-semi-light)]">Instagram</li>
             <li className="hover:text-[var(--font-semi-light)]">WhatsApp</li>
