@@ -3,7 +3,7 @@ import Image from "next/image";
 const Modelado3D = () => {
   return (
     <>
-      <section className="my-20">
+      <section  className="my-20">
         <figure className="flex flex-col items-start py-10">
           <Image
             src="/titulos/3d.svg"
