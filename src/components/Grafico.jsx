@@ -91,7 +91,7 @@ const Grafico = () => {
             <h1 className="text-7xl text-amber-100 p-8 text-center font-black">
               Transformando ideas en realidad.
             </h1>
-            <p className="text-[var(--font-semi-light)] text-center font-light p-16 italic">
+            <p className="text-[var(--font-semi-light)] text-center font-extralight p-16 italic antialiased">
               "El diseño gráfico es una herramienta fundamental en el mundo
               visual de hoy, permitiendo la creación de contenido impactante y
               memorable. Al aprovechar herramientas avanzadas como Figma y otros
@@ -106,7 +106,7 @@ const Grafico = () => {
                   <h1 className="mb-4 underline underline-offset-2 decoration-[var(--font-semi-light)] text-amber-50 font-extrabold">
                     {titulo}
                   </h1>
-                  <p className="pb-10 text-lg font-thin">{descripcion}</p>
+                  <p className="pb-10 text-lg font-extralight antialiased">{descripcion}</p>
                 </li>
               ))}
             </ul>
