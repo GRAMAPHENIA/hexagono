@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 :root {
   --dark: #161b22;
   --light: #1d2434;
@@ -35,6 +37,7 @@ html {
   line-height: 1.6;
   color: white;
   scroll-behavior: smooth;
+  box-sizing: border-box;
 }
 
 /* 🔴 FONDO GENERAL 🔴 */

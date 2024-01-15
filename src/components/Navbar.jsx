@@ -3,6 +3,8 @@
 import React, { useState } from "react";
 import Image from "next/image";
 
+import ListaModalMenu from "@/components/ListaModalMenu.jsx";
+
 import ModalMenu from "@/components/ModalMenu.jsx";
 
 const Navbar = () => {
@@ -44,7 +46,7 @@ const Navbar = () => {
         </ul>
       </nav>
       <ModalMenu isOpen={isModalOpen} onClose={closeModal}>
-        <h1>MENU</h1>
+        <ListaModalMenu />
       </ModalMenu>
     </>
   );

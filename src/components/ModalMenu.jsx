@@ -12,7 +12,7 @@ const ModalMenu = ({ isOpen, onClose, children, className }) => {
           className="close-button mt-8 mr-40 bg-[var(--card-dark)] text-[var(--font-semi-light)] text-xl h-12 w-12 rounded-full sombra border border-[var(--card-light)]"
           onClick={onClose}
         >
-        X
+          X
         </button>
         {children}
       </div>

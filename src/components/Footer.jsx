@@ -40,11 +40,10 @@ const Footer = () => {
   ];
 
   const redes = [
-    { titulo: "Diseño Responsivo" },
-    { titulo: "Experiencia Usuario" },
-    { titulo: "Optimización y SEO" },
-    { titulo: "Redes Sociales" },
-    { titulo: "Estándares Web" },
+    { titulo: "Instagram" },
+    { titulo: "Facebook" },
+    { titulo: "Youtube" },
+    { titulo: "WhatsApp" },
   ];
 
   return (
