@@ -1,6 +1,20 @@
+"use client";
+
+import React, { useState } from "react";
 import Image from "next/image";
 
+import ModalMenu from "@/components/ModalMenu.jsx";
+
 const Navbar = () => {
+  const [isModalOpen, setModalOpen] = useState(false);
+
+  const openModal = () => {
+    setModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalOpen(false);
+  };
   return (
     <>
       <nav className="col-span-6 p-12">
@@ -20,12 +34,18 @@ const Navbar = () => {
             <button className="font-light hidden lg:block bg-[var(--card-dark)] text-[var(--font-light)] px-4 py-2 rounded-full sombra border border-[var(--card-light)]">
               contacto
             </button>
-            <button className="bg-[var(--card-dark)] text-[var(--font-semi-light)] text-3xl h-12 w-12 rounded-full sombra border border-[var(--card-light)]">
+            <button
+              onClick={openModal}
+              className="bg-[var(--card-dark)] text-[var(--font-semi-light)] text-3xl h-12 w-12 rounded-full sombra border border-[var(--card-light)]"
+            >
               ≋
             </button>
           </li>
         </ul>
       </nav>
+      <ModalMenu isOpen={isModalOpen} onClose={closeModal}>
+        <h1>MENU</h1>
+      </ModalMenu>
     </>
   );
 };

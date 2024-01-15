@@ -140,7 +140,7 @@ html {
   background: var(--dark);
   height: 90vh;
   width: 120vh;
-  padding: 1rem;
+  padding: 2rem;
   /* border-radius: 12px; */
   color: var(--font-light);
   border: 1px solid var(--button-dark);
@@ -154,3 +154,33 @@ html {
   cursor: pointer;
 }
 /* 🟡 MODAL 🟡 */
+
+/* 🔴 MODAL-MENU 🔴 */
+
+.modal-menu-overlay {
+  margin: auto;
+  background-image: url("../../public/fondo/modal-menu.svg");
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-menu {
+  background: var(--dark);
+  height: 90vh;
+  width: 120vh;
+  padding: 2rem;
+  border-radius: 12px;
+  color: var(--font-light);
+  border: 1px solid var(--button-dark);
+  overflow-y: auto;
+  box-shadow: 7px 6px 0px var(--button-pres);
+}
+
+/* 🔴 MODAL-MENU 🔴 */
