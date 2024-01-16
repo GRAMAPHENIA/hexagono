@@ -2,9 +2,9 @@ import Image from "next/image";
 
 import Navbar from "@/components/Navbar.jsx";
 import Header from "@/components/Header.jsx";
-import Cards from "@/components/Cards.jsx";
 import Servicios from "@/components/Servicios.jsx";
 import Footer from "@/components/Footer.jsx";
+import Consultas from "@/components/Consultas.jsx";
 
 const Home = () => {
   return (
@@ -12,7 +12,7 @@ const Home = () => {
       <Navbar />
       <Header />
       <Servicios />
-      <Cards />
+      <Consultas />
       <Footer />
     </main>
   );

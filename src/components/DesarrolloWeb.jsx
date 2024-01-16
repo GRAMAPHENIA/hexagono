@@ -40,8 +40,8 @@ const DesarrolloWeb = () => {
             En el dinámico mundo actual, la presencia digital es clave para el
             éxito de cualquier negocio. Entendiendo la importancia de tener una
             presencia en línea sólida y atractiva es que ofrecemos servicios de
-            desarrollo web de alta calidad para impulsar las marcas y que destaquen en
-            el vasto universo digital.
+            desarrollo web de alta calidad para impulsar las marcas y que
+            destaquen en el vasto universo digital.
           </p>
         </figure>
         <section className="grid lg:grid-cols-5 justify-center gap-8 pt-2">
