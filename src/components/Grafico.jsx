@@ -68,7 +68,7 @@ const Grafico = () => {
           <p className="text-[var(--font-light)] text-xl font-extralight text-center max-w-[720px] pb-10 border border-[var(--button-dark)] p-10 rounded-xl bg-[rgba(255, 255, 255, 0.1)] backdrop-blur-sm">
             <span className="text-amber-50 text-4xl">
               ¡Impulsa tu Marca con Nuestros Servicios de Diseño Gráfico!
-            </span>{" "}
+            </span>
             <br />
             <br />
             En el vibrante mundo visual de hoy, la identidad de tu marca es
@@ -89,7 +89,8 @@ const Grafico = () => {
             {/* Aca se escribe el contenido que se ve en el children */}
 
             <h1 className="text-7xl text-amber-100 p-8 text-center font-black">
-              Transformando ideas en realidad<span className="text-amber-200">.</span>
+              Transformando ideas en realidad
+              <span className="text-amber-200">.</span>
             </h1>
             <p className="text-[var(--font-semi-light)] text-center font-extralight p-16 italic antialiased">
               "El diseño gráfico es una herramienta fundamental en el mundo
@@ -106,7 +107,9 @@ const Grafico = () => {
                   <h1 className="mb-4 underline underline-offset-4 decoration-[var(--font-semi-light)] text-amber-50 font-extrabold">
                     {titulo}
                   </h1>
-                  <p className="pb-10 text-lg font-extralight antialiased">{descripcion}</p>
+                  <p className="pb-10 text-lg font-extralight antialiased">
+                    {descripcion}
+                  </p>
                 </li>
               ))}
             </ul>
