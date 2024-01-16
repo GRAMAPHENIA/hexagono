@@ -93,11 +93,12 @@ const Grafico = () => {
               <span className="text-amber-200">.</span>
             </h1>
             <p className="text-[var(--font-semi-light)] text-center font-extralight p-16 italic antialiased">
-              "El diseño gráfico es una herramienta fundamental en el mundo
+              &quot;El diseño gráfico es una herramienta fundamental en el mundo
               visual de hoy, permitiendo la creación de contenido impactante y
               memorable. Al aprovechar herramientas avanzadas como Figma y otros
               softwares de diseño, los diseñadores pueden llevar sus habilidades
-              al siguiente nivel y ofrecer soluciones visuales excepcionales."
+              al siguiente nivel y ofrecer soluciones visuales
+              excepcionales.&quot;
             </p>
 
             <ul className="text-center lg:text-left">
