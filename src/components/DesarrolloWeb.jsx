@@ -34,7 +34,7 @@ const DesarrolloWeb = () => {
             <span className="text-amber-50 text-4xl">
               ¡Destaca tu Presencia Digital con Nuestros Servicios de Desarrollo
               Web!
-            </span>{" "}
+            </span>
             <br />
             <br />
             En el dinámico mundo actual, la presencia digital es clave para el

@@ -36,7 +36,7 @@ const Tecnologias = () => {
           <p className="text-[var(--font-light)] text-xl font-extralight text-center max-w-[720px] border border-[var(--button-dark)] p-10 rounded-xl bg-[rgba(255, 255, 255, 0.1)] backdrop-blur-sm">
             <span className="text-amber-50 text-4xl">
               ¡Moderniza tu Espacio Virtual con Nuestro Estilo Tecnológico!
-            </span>{" "}
+            </span>
             <br />
             <br />
             Utilizando herramientas avanzadas de desarrollo, creamos

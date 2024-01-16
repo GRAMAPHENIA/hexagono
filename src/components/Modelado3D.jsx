@@ -16,7 +16,7 @@ const Modelado3D = () => {
             <span className="text-amber-50 text-4xl">
               ¡Eleva tu Presentación Visual con Nuestros Servicios de Modelado
               3D!
-            </span>{" "}
+            </span>
             <br />
             <br />
             En el emocionante mundo visual de hoy, la incorporación de elementos
