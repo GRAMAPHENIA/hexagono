@@ -13,7 +13,7 @@ const Consultas = () => {
         />
       </figure>
 
-      <section className="flex flex-col justify-center items-center border border-[var(--button-dark)] p-20 rounded-xl bg-[rgba(255, 255, 255, 0.1)] backdrop-blur-lg mx-auto w-[700px] mb-20 sombra-inactiva">
+      <section className="flex flex-col justify-center items-center border border-[var(--button-dark)] p-20 rounded-xl bg-[#1011121d] backdrop-blur-sm mx-auto w-[700px] mb-20 sombra-inactiva">
         <form action="/my-handling-form-page" method="post">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
             <div className="flex flex-col my-2">

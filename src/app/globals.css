@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 :root {
   --dark: #161b22;
   --light: #1d2434;
@@ -38,6 +36,10 @@ html {
   color: white;
   scroll-behavior: smooth;
   box-sizing: border-box;
+}
+
+p {
+  text-wrap: pretty;
 }
 
 /* 🔴 FONDO GENERAL 🔴 */
@@ -162,7 +164,7 @@ html {
 
 .modal-menu-overlay {
   margin: auto;
-  background-image: url("../../public/fondo/modal-menu.svg");
+  /* background-image: url("../../public/fondo/modal-menu.svg"); */
   position: fixed;
   top: 0;
   left: 0;

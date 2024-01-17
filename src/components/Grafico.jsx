@@ -65,7 +65,7 @@ const Grafico = () => {
             height={200}
             className="py-10"
           />
-          <p className="text-[var(--font-light)] text-xl font-extralight text-center max-w-[720px] pb-10 border border-[var(--button-dark)] p-10 rounded-xl bg-[rgba(255, 255, 255, 0.1)] backdrop-blur-sm">
+          <p className="text-[var(--font-light)] text-xl font-extralight text-center max-w-[720px] pb-10 border border-[var(--button-dark)] p-10 rounded-xl bg-[#1011121d] backdrop-blur-sm">
             <span className="text-amber-50 text-4xl">
               ¡Impulsa tu Marca con Nuestros Servicios de Diseño Gráfico!
             </span>
