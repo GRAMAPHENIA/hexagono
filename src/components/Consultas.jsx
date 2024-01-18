@@ -3,7 +3,7 @@ import Image from "next/image";
 const Consultas = () => {
   return (
     <>
-      <figure className="pt-10 flex justify-center items-center">
+      <figure className="pt-10 flex justify-center items-center m-4">
         <Image
           src="/titulos/consultas.svg"
           alt="Imagen para la sección que destaca el desarrollo web"
@@ -13,7 +13,7 @@ const Consultas = () => {
         />
       </figure>
 
-      <section className="flex flex-col justify-center items-center border border-[var(--button-dark)] p-20 rounded-xl bg-[#1011121d] backdrop-blur-sm mx-auto w-[700px] mb-20 sombra-inactiva">
+      <section className="flex flex-col justify-center items-center border border-[var(--button-dark)] py-20 lg:p-20 rounded-xl bg-[#1011121d] backdrop-blur-sm mx-auto w-[340px]  lg:w-[700px] mb-20 sombra-inactiva">
         <form action="/my-handling-form-page" method="post">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
             <div className="flex flex-col my-2">
