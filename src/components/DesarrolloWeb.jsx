@@ -1,4 +1,9 @@
+"use client";
+
+import React, { useState } from "react";
+
 import Image from "next/image";
+import Modal from "@/components/Modal.jsx";
 
 const DesarrolloWeb = () => {
   const caracteristicas = [
@@ -18,6 +23,42 @@ const DesarrolloWeb = () => {
       titulo: "Estándares Web",
     },
   ];
+
+  const modalweb = [
+    {
+      titulo: "Diseño Responsivo",
+      descripcion:
+        "Un diseño responsivo garantiza una experiencia fluida en diversos dispositivos, desde computadoras de escritorio hasta smartphones y tabletas. Esto es crucial ya que los usuarios acceden a la web desde una variedad de dispositivos, y un diseño adaptable mejora la accesibilidad y retención de visitantes.",
+    },
+    {
+      titulo: "Experiencia de Usuario (UX)",
+      descripcion:
+        "La UX se refiere a la satisfacción del usuario al interactuar con tu sitio. Un diseño intuitivo, navegación fácil y contenido relevante contribuyen a una experiencia positiva. La retención de usuarios y la probabilidad de conversión aumentan cuando la experiencia es placentera y sin complicaciones.",
+    },
+    {
+      titulo: "Optimización y SEO",
+      descripcion:
+        "La optimización del sitio para motores de búsqueda (SEO) es esencial para aumentar la visibilidad en los resultados de búsqueda. Un buen SEO mejora el ranking del sitio web, aumentando así la probabilidad de ser encontrado por potenciales clientes. Elementos como palabras clave, etiquetas y contenido de calidad son fundamentales.",
+    },
+    {
+      titulo: "Redes Sociales",
+      descripcion: "Las redes sociales son una poderosa herramienta de marketing. Integrar botones de compartir, mostrar feeds en el sitio y promover la participación en plataformas sociales aumenta la visibilidad. Además, permite la conexión directa con la audiencia y la promoción orgánica a través de la participación del usuario.",
+    },
+    {
+      titulo: "Estándares Web",
+      descripcion: "Cumplir con los estándares web garantiza la compatibilidad con diferentes navegadores y dispositivos. Esto no solo mejora la accesibilidad, sino que también facilita el mantenimiento y la actualización del sitio. Cumplir con las normas actuales es clave para la durabilidad y sostenibilidad de la presencia en línea.",
+    }
+  ];
+
+  const [isModalOpen, setModalOpen] = useState(false);
+
+  const openModal = () => {
+    setModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalOpen(false);
+  };
 
   return (
     <>
@@ -55,9 +96,37 @@ const DesarrolloWeb = () => {
           ))}
         </section>
         <div className="flex justify-center lg:justify-start my-20">
-          <button className="col-span-5 flex justify-center items-center text-[var(--font-light)] bg-[var(--gradient-end)] px-8 py-4 rounded-full sombra-light border border-[var(--card-light)]">
+          <button
+            onClick={openModal}
+            className="col-span-5 flex justify-center items-center text-[var(--font-light)] bg-[var(--gradient-end)] px-8 py-4 rounded-full sombra-light border border-[var(--card-light)]"
+          >
             Saber Más
           </button>
+          <Modal isOpen={isModalOpen} onClose={closeModal}>
+            {/* Aca se escribe el contenido que se ve en el children */}
+
+            <h1 className="text-7xl text-amber-100 p-8 text-center font-black">
+              <span className="text-amber-200">Desarrollo Web:</span> Elementos
+              Clave para una Página Exitosa
+              <span className="text-amber-200">.</span>
+            </h1>
+            <p className="text-[var(--font-semi-light)] text-center font-extralight p-16 italic antialiased">
+              &quot;Al incorporar estos elementos en el desarrollo de tu página web, no solo estás construyendo una plataforma visualmente atractiva, sino también una herramienta efectiva para atraer, retener y convertir visitantes en clientes potenciales.&quot;
+            </p>
+
+            <ul className="text-center lg:text-left">
+              {modalweb.map(({ titulo, descripcion }) => (
+                <li className="px-32 mb-10 text-2xl" key={titulo}>
+                  <h1 className="mb-4 underline underline-offset-4 decoration-[var(--font-semi-light)] text-amber-50 font-extrabold">
+                    {titulo}
+                  </h1>
+                  <p className="pb-10 text-lg font-extralight antialiased">
+                    {descripcion}
+                  </p>
+                </li>
+              ))}
+            </ul>
+          </Modal>
         </div>
       </section>
     </>

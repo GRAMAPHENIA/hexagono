@@ -89,7 +89,7 @@ const Grafico = () => {
             {/* Aca se escribe el contenido que se ve en el children */}
 
             <h1 className="text-7xl text-amber-100 p-8 text-center font-black">
-              Transformando ideas en realidad
+            <span className="text-amber-200">Diseño Gráfico: </span>Transformando ideas en realidad
               <span className="text-amber-200">.</span>
             </h1>
             <p className="text-[var(--font-semi-light)] text-center font-extralight p-16 italic antialiased">
@@ -102,7 +102,6 @@ const Grafico = () => {
             </p>
 
             <ul className="text-center lg:text-left">
-              <h1 className="text-4xl text-amber-100"></h1>
               {modalgrafica.map(({ titulo, descripcion }) => (
                 <li className="px-32 mb-10 text-2xl" key={titulo}>
                   <h1 className="mb-4 underline underline-offset-4 decoration-[var(--font-semi-light)] text-amber-50 font-extrabold">
