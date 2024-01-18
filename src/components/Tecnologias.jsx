@@ -1,4 +1,9 @@
+"use client";
+
+import React, { useState } from "react";
+
 import Image from "next/image";
+import Modal from "@/components/Modal.jsx";
 
 const Tecnologias = () => {
   const metodos = [
@@ -21,6 +26,49 @@ const Tecnologias = () => {
       titulo: "tailwind",
     },
   ];
+
+  const modaltecnologia = [
+    {
+      titulo: "HTML (Lenguaje de Marcado)",
+      descripcion:
+        "HTML es la columna vertebral de cualquier página web. Al proporcionar la estructura y organización del contenido, permite la creación de interfaces sólidas. Su uso correcto asegura una base semántica, accesible y bien estructurada para la información presentada en la web.",
+    },
+    {
+      titulo: "CSS (Hojas de Estilo en Cascada)",
+      descripcion:
+        "CSS aporta estilo y diseño a las páginas web. La capacidad de dar formato, controlar la presentación y adaptar la apariencia a diferentes dispositivos garantiza una experiencia visualmente agradable para los usuarios. CSS es esencial para la creación de interfaces atractivas y coherentes.",
+    },
+    {
+      titulo: "JavaScript",
+      descripcion:
+        "JavaScript proporciona dinamismo e interactividad a las páginas web. Como lenguaje de programación del lado del cliente, permite manipular el contenido en tiempo real, responder a eventos del usuario y mejorar significativamente la experiencia de navegación. Es la fuerza impulsora detrás de la web moderna.",
+    },
+    {
+      titulo: "React (Biblioteca de JavaScript)",
+      descripcion:
+        "React es una biblioteca de JavaScript que simplifica el desarrollo de interfaces de usuario interactivas. Su enfoque en componentes reutilizables facilita la construcción y mantenimiento de aplicaciones web complejas. La virtualización del DOM mejora la eficiencia y velocidad de la interfaz.",
+    },
+    {
+      titulo: "Next.js (Framework de React)",
+      descripcion:
+        "Next.js extiende las capacidades de React, facilitando la creación de aplicaciones web robustas y eficientes. Con funcionalidades como la representación del lado del servidor (SSR) y generación de páginas estáticas, optimiza el rendimiento y la carga inicial, mejorando la experiencia del usuario.",
+    },
+    {
+      titulo: "Tailwind CSS (Framework de Estilos Utilitarios)",
+      descripcion:
+        "Tailwind CSS adopta un enfoque único al proporcionar clases utilitarias para el diseño, lo que permite una personalización rápida y eficiente. Facilita la creación de interfaces consistentes y modernas, optimizando el flujo de trabajo del desarrollo y asegurando un estilo coherente en toda la aplicación.",
+    },
+  ];
+
+  const [isModalOpen, setModalOpen] = useState(false);
+
+  const openModal = () => {
+    setModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalOpen(false);
+  };
 
   return (
     <>
@@ -58,9 +106,42 @@ const Tecnologias = () => {
         ))}
       </section>
       <div className="flex justify-center lg:justify-end mt-10 mb-20">
-        <button className="col-span-6 flex justify-center items-center text-[var(--font-light)] bg-[var(--gradient-end)] px-8 py-4 rounded-full sombra-light border border-[var(--card-light)]">
+        <button
+          onClick={openModal}
+          className="col-span-6 flex justify-center items-center text-[var(--font-light)] bg-[var(--gradient-end)] px-8 py-4 rounded-full sombra-light border border-[var(--card-light)]"
+        >
           Saber Más
         </button>
+
+        <Modal isOpen={isModalOpen} onClose={closeModal}>
+          {/* Aca se escribe el contenido que se ve en el children */}
+
+          <h1 className="text-7xl text-amber-100 p-8 text-center font-black">
+            <span className="text-amber-200">Tecnologías Web: </span>
+            Cimientos para un Desarrollo Dinámico e Innovador
+            <span className="text-amber-200">.</span>
+          </h1>
+          <p className="text-[var(--font-semi-light)] text-center font-extralight p-16 italic antialiased">
+            &quot;La combinación de estas tecnologías web forma un conjunto
+            poderoso y versátil que impulsa el desarrollo de aplicaciones y
+            sitios web modernos. Desde la estructura y estilo hasta la dinámica
+            y la eficiencia, cada tecnología desempeña un papel crucial en la
+            creación de experiencias web ricas y atractivas.&quot;
+          </p>
+
+          <ul className="text-center lg:text-left">
+            {modaltecnologia.map(({ titulo, descripcion }) => (
+              <li className="px-32 mb-10 text-2xl" key={titulo}>
+                <h1 className="mb-4 underline underline-offset-4 decoration-[var(--font-semi-light)] text-amber-50 font-extrabold">
+                  {titulo}
+                </h1>
+                <p className="pb-10 text-lg font-extralight antialiased">
+                  {descripcion}
+                </p>
+              </li>
+            ))}
+          </ul>
+        </Modal>
       </div>
     </>
   );
