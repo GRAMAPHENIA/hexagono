@@ -13,7 +13,7 @@ const ModalList = ({ title, items }) => (
         <li key={titulo} className={listItemStyle}>
           {/* Verifica si hay un enlace antes de renderizar el componente Link */}
           {enlace ? (
-            <Link target="_blank" href={enlace}>{titulo}</Link>
+            <Link href={enlace}>{titulo}</Link>
           ) : (
             // Si no hay enlace, renderiza solo el título
             <span>{titulo}</span>
