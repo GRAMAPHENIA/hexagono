@@ -2,7 +2,7 @@ import Image from "next/image";
 
 // Constantes de estilos
 const listItemStyle =
-  "hover:text-[var(--font-light)] text-[var(--button-pres)] text-sm font-extralight text-left";
+  "hover:text-[var(--font-light)] text-[var(--button-pres)] text-sm font-extralight text-left cursor-pointer";
 
 const ModalList = ({ title, items }) => (
   <section className="col-span-1 row-span-4 flex flex-col lg:justify-start lg:items-center mb-10">
@@ -48,7 +48,7 @@ const ListaModalMenu = () => {
 
   return (
     <>
-      <section className="flex flex-col lg:grid lg:grid-cols-4 lg:grid-rows-3 justify-center align-middle gap-4 mt-5">
+      <section className="flex flex-col lg:grid lg:grid-cols-4 lg:grid-rows-3 justify-center align-middle gap-4 mt-5 ">
         {/* Sección de navegación */}
         <ModalList title="Navegación" items={navegacion} />
 
