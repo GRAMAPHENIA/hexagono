@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 
 import Image from "next/image";
-import Modal from "@/components/ModalGrafico.jsx";
+import Modal from "@/components/Modal.jsx";
 
 const Grafico = () => {
   const modalgrafica = [
