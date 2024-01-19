@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 
 import Image from "next/image";
-import Modal from "@/components/Modal.jsx";
+import Modal3D from "@/components/Modal3D.jsx";
 
 const Modelado3D = () => {
   const modal3d = [
@@ -76,7 +76,7 @@ const Modelado3D = () => {
           >
             Saber Más
           </button>
-          <Modal isOpen={isModalOpen} onClose={closeModal}>
+          <Modal3D isOpen={isModalOpen} onClose={closeModal}>
             {/* Aca se escribe el contenido que se ve en el children */}
 
             <h1 className="text-7xl text-amber-100 p-8 text-center font-black">
@@ -105,7 +105,7 @@ const Modelado3D = () => {
                 </li>
               ))}
             </ul>
-          </Modal>
+          </Modal3D>
         </div>
       </section>
     </>

@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 
 import Image from "next/image";
-import Modal from "@/components/Modal.jsx";
+import ModalTecnologia from "@/components/ModalTecnologia.jsx";
 
 const Tecnologias = () => {
   const metodos = [
@@ -113,7 +113,7 @@ const Tecnologias = () => {
           Saber Más
         </button>
 
-        <Modal isOpen={isModalOpen} onClose={closeModal}>
+        <ModalTecnologia isOpen={isModalOpen} onClose={closeModal}>
           {/* Aca se escribe el contenido que se ve en el children */}
 
           <h1 className="text-7xl text-amber-100 p-8 text-center font-black">
@@ -141,7 +141,7 @@ const Tecnologias = () => {
               </li>
             ))}
           </ul>
-        </Modal>
+        </ModalTecnologia>
       </div>
     </>
   );

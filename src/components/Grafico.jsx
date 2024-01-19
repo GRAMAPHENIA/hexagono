@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 
 import Image from "next/image";
-import Modal from "@/components/Modal.jsx";
+import ModalGrafico from "@/components/ModalGrafico.jsx";
 
 const Grafico = () => {
   const modalgrafica = [
@@ -85,7 +85,7 @@ const Grafico = () => {
             Saber Más
           </button>
 
-          <Modal isOpen={isModalOpen} onClose={closeModal}>
+          <ModalGrafico isOpen={isModalOpen} onClose={closeModal}>
             {/* Aca se escribe el contenido que se ve en el children */}
 
             <h1 className="text-7xl text-amber-100 p-8 text-center font-black">
@@ -113,7 +113,7 @@ const Grafico = () => {
                 </li>
               ))}
             </ul>
-          </Modal>
+          </ModalGrafico>
         </div>
       </section>
     </>

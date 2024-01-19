@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 
 import Image from "next/image";
-import Modal from "@/components/Modal.jsx";
+import ModalWeb from "@/components/ModalWeb.jsx";
 
 const DesarrolloWeb = () => {
   const caracteristicas = [
@@ -42,12 +42,14 @@ const DesarrolloWeb = () => {
     },
     {
       titulo: "Redes Sociales",
-      descripcion: "Las redes sociales son una poderosa herramienta de marketing. Integrar botones de compartir, mostrar feeds en el sitio y promover la participación en plataformas sociales aumenta la visibilidad. Además, permite la conexión directa con la audiencia y la promoción orgánica a través de la participación del usuario.",
+      descripcion:
+        "Las redes sociales son una poderosa herramienta de marketing. Integrar botones de compartir, mostrar feeds en el sitio y promover la participación en plataformas sociales aumenta la visibilidad. Además, permite la conexión directa con la audiencia y la promoción orgánica a través de la participación del usuario.",
     },
     {
       titulo: "Estándares Web",
-      descripcion: "Cumplir con los estándares web garantiza la compatibilidad con diferentes navegadores y dispositivos. Esto no solo mejora la accesibilidad, sino que también facilita el mantenimiento y la actualización del sitio. Cumplir con las normas actuales es clave para la durabilidad y sostenibilidad de la presencia en línea.",
-    }
+      descripcion:
+        "Cumplir con los estándares web garantiza la compatibilidad con diferentes navegadores y dispositivos. Esto no solo mejora la accesibilidad, sino que también facilita el mantenimiento y la actualización del sitio. Cumplir con las normas actuales es clave para la durabilidad y sostenibilidad de la presencia en línea.",
+    },
   ];
 
   const [isModalOpen, setModalOpen] = useState(false);
@@ -102,7 +104,7 @@ const DesarrolloWeb = () => {
           >
             Saber Más
           </button>
-          <Modal isOpen={isModalOpen} onClose={closeModal}>
+          <ModalWeb isOpen={isModalOpen} onClose={closeModal}>
             {/* Aca se escribe el contenido que se ve en el children */}
 
             <h1 className="text-7xl text-amber-100 p-8 text-center font-black">
@@ -111,7 +113,10 @@ const DesarrolloWeb = () => {
               <span className="text-amber-200">.</span>
             </h1>
             <p className="text-[var(--font-semi-light)] text-center font-extralight p-16 italic antialiased">
-              &quot;Al incorporar estos elementos en el desarrollo de tu página web, no solo estás construyendo una plataforma visualmente atractiva, sino también una herramienta efectiva para atraer, retener y convertir visitantes en clientes potenciales.&quot;
+              &quot;Al incorporar estos elementos en el desarrollo de tu página
+              web, no solo estás construyendo una plataforma visualmente
+              atractiva, sino también una herramienta efectiva para atraer,
+              retener y convertir visitantes en clientes potenciales.&quot;
             </p>
 
             <ul className="text-center lg:text-left">
@@ -126,7 +131,7 @@ const DesarrolloWeb = () => {
                 </li>
               ))}
             </ul>
-          </Modal>
+          </ModalWeb>
         </div>
       </section>
     </>
