@@ -121,4 +121,4 @@ const Grafico = () => {
   );
 };
 
-export default Grafico;
+export default ModalGrafico;
