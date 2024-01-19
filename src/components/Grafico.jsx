@@ -89,7 +89,8 @@ const Grafico = () => {
             {/* Aca se escribe el contenido que se ve en el children */}
 
             <h1 className="text-7xl text-amber-100 p-8 text-center font-black">
-            <span className="text-amber-200">Diseño Gráfico: </span>Transformando ideas en realidad
+              <span className="text-amber-200">Diseño Gráfico: </span>
+              Transformando ideas en realidad
               <span className="text-amber-200">.</span>
             </h1>
             <p className="text-[var(--font-semi-light)] text-center font-extralight p-16 italic antialiased">
