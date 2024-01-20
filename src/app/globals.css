@@ -168,7 +168,7 @@ p {
 }
 
 .modal-overlay-web {
-  background-image: url("../../public/fondo/modal.svg");
+  background-image: url("../../public/fondo/modal-web.svg");
   position: fixed;
   background-size: cover;
   top: 0;
