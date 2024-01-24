@@ -61,7 +61,7 @@ p {
     margin: 0;
     padding: 0;
     background-image: url("../../public/fondo/fondo-completo-mobile.svg");
-    background-size: cover;
+    background-size: contain;
     background-position: top;
     background-repeat: no-repeat;
     margin: auto;
@@ -244,6 +244,7 @@ p {
   height: 90vh;
   width: 120vh;
   padding: 2rem;
+  margin: 2rem;
   border-radius: 12px;
   color: var(--font-light);
   border: 1px solid var(--button-dark);

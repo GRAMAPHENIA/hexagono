@@ -6,7 +6,7 @@ const listItemStyle =
   "hover:text-[var(--font-light)] text-[var(--button-pres)] text-sm font-extralight";
 
 const FooterList = ({ title, items }) => (
-  <section className="mt-40 col-span-1 row-span-4 flex flex-col lg:justify-start lg:items-center mb-10">
+  <section className="lg:mt-40 col-span-1 row-span-4 flex flex-col lg:justify-start lg:items-center mb-10">
     <ul className="text-center lg:text-left">
       <h1 className="text-2xl text-amber-100 mb-5 ">{title}</h1>
       {items.map(({ titulo, enlace }) => (
