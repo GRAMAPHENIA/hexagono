@@ -56,7 +56,7 @@ p {
   margin: auto;
 }
 
-@media only screen and (min-width: 375px) {
+@media (max-width: 676px) {
   .fondo {
     margin: 0;
     padding: 0;
