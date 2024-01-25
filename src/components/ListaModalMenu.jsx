@@ -3,14 +3,14 @@ import Link from "next/link";
 
 // Constantes de estilos
 const listItemStyle =
-  "hover:text-[var(--font-light)] text-[var(--button-pres)] text-sm font-extralight text-left cursor-pointer";
+  "hover:text-[var(--font-light)] text-[var(--button-pres)] text-sm font-extralight text-left lg:text-left cursor-pointer";
 
 const ModalList = ({ title, items }) => (
-  <section className="col-span-1 row-span-4 flex flex-col lg:justify-start lg:items-center mb-10">
+  <section className="col-span-1 row-span-4 flex flex-col lg:justify-start lg:items-center">
     <ul className="text-center lg:text-left">
-      <h1 className="text-2xl text-amber-100 mb-5 ">{title}</h1>
+      <h1 className="text-2xl text-amber-100 mb-5 mt-10 ">{title}</h1>
       {items.map(({ titulo, enlace }) => (
-        <li key={titulo} className={listItemStyle}>
+        <li key={titulo} className={`${listItemStyle} text-center`}>
           {/* Verifica si hay un enlace antes de renderizar el componente Link */}
           {enlace ? (
             <Link href={enlace}>{titulo}</Link>
@@ -55,7 +55,7 @@ const ListaModalMenu = () => {
 
   return (
     <>
-      <section className="flex flex-col lg:grid lg:grid-cols-4 lg:grid-rows-3 justify-center align-middle gap-4 mt-5 ">
+      <section className="flex flex-col lg:grid lg:grid-cols-4 lg:grid-rows-3 justify-center align-middle gap-2 mt-5 ">
         {/* Sección de navegación */}
         <ModalList title="Navegación" items={navegacion} />
 
