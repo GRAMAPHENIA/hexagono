@@ -19,7 +19,7 @@ const Navbar = () => {
   };
   return (
     <>
-      <nav className="col-span-6 p-12">
+      <nav className="col-span-6 pr-6 pt-3 lg:p-12">
         <ul className="flex justify-end">
           {/* <li className="">
             <Image
@@ -38,7 +38,8 @@ const Navbar = () => {
             </button>
             <button
               onClick={openModal}
-              className="bg-[var(--card-dark)] text-[var(--font-semi-light)] text-3xl h-12 w-12 rounded-full sombra border border-[var(--card-light)]"
+              className="bg-[var(--card-dark)] text-[var(--font-semi-light)] lg:text-3xl h-8
+              w-8  lg:h-12  lg:w-12 rounded-full sombra border border-[var(--card-light)]"
             >
               ≋
             </button>
