@@ -38,8 +38,8 @@ const Navbar = () => {
             </button>
             <button
               onClick={openModal}
-              className="bg-[var(--card-dark)] text-[var(--font-semi-light)] lg:text-3xl h-8
-              w-8  lg:h-12  lg:w-12 rounded-full sombra border border-[var(--card-light)]"
+              className="bg-[var(--card-dark)] text-[var(--font-semi-light)] text-xl lg:text-3xl h-11
+              w-11 lg:h-12 lg:w-12 rounded-full sombra border border-[var(--card-light)]"
             >
               ≋
             </button>
