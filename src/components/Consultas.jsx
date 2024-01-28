@@ -9,11 +9,10 @@ const Consultas = () => {
           alt="Imagen para la sección que destaca el desarrollo web"
           width={500}
           height={200}
-          
         />
       </figure>
 
-      <section className="flex flex-col justify-center items-center border border-[var(--button-dark)] py-20 lg:p-20 rounded-xl bg-[#1011121d] backdrop-blur-sm mx-auto w-[340px]  lg:w-[700px] mb-20 sombra-inactiva">
+      <section className="flex flex-col justify-center items-center border border-[var(--button-dark)] py-10 lg:p-10 rounded-xl bg-[#1011121d] backdrop-blur-sm mx-auto w-[340px]  lg:w-[700px] mb-0 sombra-inactiva">
         <form action="/my-handling-form-page" method="post">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
             <div className="flex flex-col my-2">
@@ -60,7 +59,9 @@ const Consultas = () => {
             ></textarea>
           </div>
         </form>
-        <button className="col-span-5 flex justify-center items-center text-[var(--font-light)] bg-[var(--gradient-end)] mt-4 px-8 py-4 rounded-full sombra-light border border-[var(--card-light)]">Enviar</button>
+        <button className="col-span-5 flex justify-center items-center text-[var(--font-light)] bg-[var(--gradient-end)] mt-4 px-8 py-4 rounded-full sombra-light border border-[var(--card-light)]">
+          Enviar
+        </button>
       </section>
     </>
   );
