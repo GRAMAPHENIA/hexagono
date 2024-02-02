@@ -35,7 +35,6 @@ html {
   line-height: 1.6;
   color: white;
   scroll-behavior: smooth;
-  box-sizing: border-box;
 }
 
 p {

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
+
 // Constantes de estilos
 const listItemStyle =
   "hover:text-[var(--font-light)] text-[var(--button-pres)] text-sm font-extralight text-left lg:text-left cursor-pointer";

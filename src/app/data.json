@@ -1,0 +1,32 @@
+{
+  "ListaModalMenu": {
+    "navegacion": [
+      { "titulo": "Desarrollo Web", "enlace": "/desarrollo-web" },
+      { "titulo": "Diseño Gráfico", "enlace": "/diseno-grafico" },
+      { "titulo": "Modelado 3D", "enlace": "/modelado-3d" },
+      { "titulo": "Difusión de Redes", "enlace": "/difusion-redes" }
+    ],
+    "informacion": [
+      { "titulo": "Dominios", "enlace": "/dominios" },
+      { "titulo": "Hosting", "enlace": "/hosting" },
+      { "titulo": "Precios", "enlace": "/precios" },
+      { "titulo": "Formas de Pago", "enlace": "/formas-pago" }
+    ],
+    "compania": [
+      { "titulo": "Sobre Hexágono", "enlace": "/sobre-hexagono" },
+      { "titulo": "Tecnologías que utilizamos", "enlace": "/tecnologias" },
+      { "titulo": "Mapa de Ruta", "enlace": "/mapa-ruta" },
+      { "titulo": "Blog", "enlace": "/blog" }
+    ],
+    "redes": [
+      { "titulo": "Instagram", "enlace": "https://www.instagram.com/" },
+      { "titulo": "Facebook", "enlace": "https://www.facebook.com/" },
+      { "titulo": "Youtube", "enlace": "https://www.youtube.com/" },
+      { "titulo": "WhatsApp", "enlace": "https://wa.me/" }
+    ],
+    "otra_seccion": [
+      { "titulo": "Título de ejemplo", "enlace": "/ejemplo" },
+      { "titulo": "Otro título", "enlace": "/otro-ejemplo" }
+    ]
+  }
+}
