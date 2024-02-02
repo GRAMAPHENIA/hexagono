@@ -79,12 +79,12 @@ const Modelado3D = () => {
           <Modal3D isOpen={isModalOpen} onClose={closeModal}>
             {/* Aca se escribe el contenido que se ve en el children */}
 
-            <h1 className="text-7xl text-amber-100 p-8 text-center font-black">
+            <h1 className="text-2xl mt-40 lg:text-7xl text-amber-100 p-2 lg:p-8 text-center font-black">
               <span className="text-amber-200">Modelado 3D: </span> Pilares para
               Crear Entornos Virtuales Impactantes
               <span className="text-amber-200">.</span>
             </h1>
-            <p className="text-[var(--font-semi-light)] text-center font-extralight p-16 italic antialiased">
+            <p className="text-[var(--font-semi-light)] text-center font-extralight p-8 lg:p-16 italic antialiased">
               &quot;Al integrar estos elementos en el proceso de modelado 3D, no
               solo estás creando representaciones visuales, sino construyendo
               mundos virtuales cautivadores y funcionales. Cada aspecto, desde
@@ -95,8 +95,8 @@ const Modelado3D = () => {
 
             <ul className="text-center lg:text-left">
               {modal3d.map(({ titulo, descripcion }) => (
-                <li className="px-32 mb-10 text-2xl" key={titulo}>
-                  <h1 className="mb-4 underline underline-offset-4 decoration-[var(--font-semi-light)] text-amber-50 font-extrabold ">
+                <li className="px-8 text-left lg:px-32 mb-10 text-2xl" key={titulo}>
+                  <h1 className="mb-4 underline underline-offset-4 decoration-[var(--font-semi-light)] text-amber-50 font-extrabold">
                     {titulo}
                   </h1>
                   <p className="pb-10 text-lg font-extralight antialiased">

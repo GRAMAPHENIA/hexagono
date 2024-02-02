@@ -116,12 +116,12 @@ const Tecnologias = () => {
         <ModalTecnologia isOpen={isModalOpen} onClose={closeModal}>
           {/* Aca se escribe el contenido que se ve en el children */}
 
-          <h1 className="text-7xl text-amber-100 p-8 text-center font-black">
+          <h1 className="text-2xl mt-40 lg:text-7xl text-amber-100 p-2 lg:p-8 text-center font-black">
             <span className="text-amber-200">Tecnologías Web: </span>
             Cimientos para un Desarrollo Dinámico e Innovador
             <span className="text-amber-200">.</span>
           </h1>
-          <p className="text-[var(--font-semi-light)] text-center font-extralight p-16 italic antialiased">
+          <p className="text-[var(--font-semi-light)] text-center font-extralight p-8 lg:p-16 italic antialiased">
             &quot;La combinación de estas tecnologías web forma un conjunto
             poderoso y versátil que impulsa el desarrollo de aplicaciones y
             sitios web modernos. Desde la estructura y estilo hasta la dinámica
@@ -131,7 +131,7 @@ const Tecnologias = () => {
 
           <ul className="text-center lg:text-left">
             {modaltecnologia.map(({ titulo, descripcion }) => (
-              <li className="px-32 mb-10 text-2xl" key={titulo}>
+              <li className="px-8 text-left lg:px-32 mb-10 text-2xl" key={titulo}>
                 <h1 className="mb-4 underline underline-offset-4 decoration-[var(--font-semi-light)] text-amber-50 font-extrabold">
                   {titulo}
                 </h1>
