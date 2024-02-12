@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 
-const Modal3D = ({ isOpen, onClose, children, className }) => {
+const ModalTecnologia = ({ isOpen, onClose, children, className }) => {
   if (!isOpen) return null;
 
   return (
@@ -20,4 +20,4 @@ const Modal3D = ({ isOpen, onClose, children, className }) => {
   );
 };
 
-export default Modal3D;
+export default ModalTecnologia;
