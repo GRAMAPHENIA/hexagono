@@ -100,7 +100,7 @@ const Grafico = () => {
           <Modal isOpen={isModalOpen} onClose={closeModal}>
             {/* Aca se escribe el contenido que se ve en el children */}
 
-            <h1 className="text-2xl mt-40 lg:text-7xl text-amber-100 p-2 lg:p-8 text-center font-black">
+            <h1 className="text-2xl mt-32 lg:mt-14 lg:text-7xl text-amber-100 p-2 lg:p-8 text-center font-black">
               <span className="text-amber-200">Diseño Gráfico: </span>
               Transformando ideas en realidad
               <span className="text-amber-200">.</span>
