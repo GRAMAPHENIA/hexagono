@@ -84,7 +84,7 @@ const Tecnologias = () => {
 
   return (
     <>
-      <section className="mt-20 ">
+      <section className="mt-20" id="tecnologias">
         <figure className="flex flex-col items-center py-10">
           <Image
             src="/titulos/tecnologias.svg"

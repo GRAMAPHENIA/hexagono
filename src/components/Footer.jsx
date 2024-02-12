@@ -5,7 +5,7 @@ import Link from "next/link";
 const listItemStyle =
   "hover:text-[var(--font-light)] text-[var(--button-pres)] text-sm font-extralight";
 
-const FooterList = ({ title, items }) => (
+const FooterList = ({ title, items, handleCloseModal }) => (
   <section className="lg:mt-40 col-span-1 row-span-4 flex flex-col lg:justify-start lg:items-center mb-10">
     <ul className="text-center lg:text-left">
       <h1 className="text-2xl text-amber-100 mb-5 ">{title}</h1>
@@ -13,7 +13,9 @@ const FooterList = ({ title, items }) => (
         <li key={titulo} className={listItemStyle}>
           {/* Verifica si hay un enlace antes de renderizar el componente Link */}
           {enlace ? (
-            <Link href={enlace}>{titulo}</Link>
+            <Link href={enlace} onClick={handleCloseModal}>
+              {titulo}
+            </Link>
           ) : (
             // Si no hay enlace, renderiza solo el título
             <span>{titulo}</span>
@@ -24,12 +26,12 @@ const FooterList = ({ title, items }) => (
   </section>
 );
 
-const Footer = () => {
+const Footer = ({ handleCloseModal }) => {
   const navegacion = [
-    { titulo: "Desarrollo Web", enlace: "/desarrollo-web" },
-    { titulo: "Diseño Gráfico", enlace: "/diseno-grafico" },
-    { titulo: "Modelado 3D", enlace: "/modelado-3d" },
-    { titulo: "Difusión de Redes", enlace: "/difusion-redes" },
+    { titulo: "Diseño Gráfico", enlace: "#diseno-grafico" },
+    { titulo: "Desarrollo Web", enlace: "#desarrollo-web" },
+    { titulo: "Modelado 3D", enlace: "#modelado-3d" },
+    { titulo: "Tecnologías", enlace: "#tecnologias" },
   ];
 
   const informacion = [
@@ -76,16 +78,32 @@ const Footer = () => {
         </figure>
 
         {/* Sección de navegación */}
-        <FooterList title="Navegación" items={navegacion} />
+        <FooterList
+          title="Navegación"
+          items={navegacion}
+          handleCloseModal={handleCloseModal}
+        />
 
         {/* Sección de información */}
-        <FooterList title="Información" items={informacion} />
+        <FooterList
+          title="Información"
+          items={informacion}
+          handleCloseModal={handleCloseModal}
+        />
 
         {/* Sección de compañía */}
-        <FooterList title="Compañía" items={compania} />
+        <FooterList
+          title="Compañía"
+          items={compania}
+          handleCloseModal={handleCloseModal}
+        />
 
         {/* Sección de redes */}
-        <FooterList title="Redes" items={redes} />
+        <FooterList
+          title="Redes"
+          items={redes}
+          handleCloseModal={handleCloseModal}
+        />
 
         <section className="col-span-6 flex justify-center items-center my-10 text-[var(--font-light)]">
           <p>

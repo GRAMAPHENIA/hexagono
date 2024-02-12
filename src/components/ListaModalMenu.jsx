@@ -1,12 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
 
-
 // Constantes de estilos
 const listItemStyle =
   "hover:text-[var(--font-light)] text-[var(--button-pres)] text-sm font-extralight text-left lg:text-left cursor-pointer";
 
-const ModalList = ({ title, items }) => (
+const ModalList = ({ title, items, handleCloseModal }) => (
   <section className="col-span-1 row-span-4 flex flex-col lg:justify-start lg:items-center">
     <ul className="text-center lg:text-left">
       <h1 className="text-2xl text-amber-100 mb-5 mt-10 ">{title}</h1>
@@ -14,7 +13,9 @@ const ModalList = ({ title, items }) => (
         <li key={titulo} className={`${listItemStyle} text-center`}>
           {/* Verifica si hay un enlace antes de renderizar el componente Link */}
           {enlace ? (
-            <Link href={enlace}>{titulo}</Link>
+            <Link href={enlace} onClick={handleCloseModal}>
+              {titulo}
+            </Link>
           ) : (
             // Si no hay enlace, renderiza solo el título
             <span>{titulo}</span>
@@ -25,12 +26,12 @@ const ModalList = ({ title, items }) => (
   </section>
 );
 
-const ListaModalMenu = () => {
+const ListaModalMenu = ({ handleCloseModal }) => {
   const navegacion = [
+    { titulo: "Diseño Gráfico", enlace: "#diseno-grafico" },
     { titulo: "Desarrollo Web", enlace: "#desarrollo-web" },
-    { titulo: "Diseño Gráfico", enlace: "/diseno-grafico" },
-    { titulo: "Modelado 3D", enlace: "/modelado-3d" },
-    { titulo: "Difusión de Redes", enlace: "/difusion-redes" },
+    { titulo: "Modelado 3D", enlace: "#modelado-3d" },
+    { titulo: "Tecnologías", enlace: "#tecnologias" },
   ];
 
   const informacion = [
@@ -58,16 +59,32 @@ const ListaModalMenu = () => {
     <>
       <section className="flex flex-col lg:grid lg:grid-cols-4 lg:grid-rows-3 justify-center align-middle gap-2 mt-5">
         {/* Sección de navegación */}
-        <ModalList title="Navegación" items={navegacion} />
+        <ModalList
+          title="Navegación"
+          items={navegacion}
+          handleCloseModal={handleCloseModal}
+        />
 
         {/* Sección de información */}
-        <ModalList title="Información" items={informacion} />
+        <ModalList
+          title="Información"
+          items={informacion}
+          handleCloseModal={handleCloseModal}
+        />
 
         {/* Sección de compañía */}
-        <ModalList title="Compañía" items={compania} />
+        <ModalList
+          title="Compañía"
+          items={compania}
+          handleCloseModal={handleCloseModal}
+        />
 
         {/* Sección de redes */}
-        <ModalList title="Redes" items={redes} />
+        <ModalList
+          title="Redes"
+          items={redes}
+          handleCloseModal={handleCloseModal}
+        />
       </section>
       <figure className="col-span-2 row-span-3 flex flex-col justify-end items-center mt-16 mb-10">
         <Image

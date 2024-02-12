@@ -9,7 +9,7 @@ const Servicios = () => {
   return (
     <>
       <section className="lg:pt-10 px-8 lg:px-20">
-        <Grafico />
+        <Grafico/>
         <DesarrolloWeb />
         <Modelado3D />
         <Tecnologias />

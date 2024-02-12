@@ -68,7 +68,7 @@ const Grafico = () => {
 
   return (
     <>
-      <section className="mt-20 lg:mt-40 mb-20 ">
+      <section className="mt-20 lg:mt-40 mb-20" id="diseno-grafico">
         <figure className="flex flex-col items-end py-10">
           <Image
             src="/titulos/grafico.svg"
