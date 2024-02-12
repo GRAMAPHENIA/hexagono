@@ -171,6 +171,7 @@ p {
   z-index: 999;
 }
 
+
 .modal-overlay-web {
   background-image: url("../../public/fondo/modal-web.svg");
   position: fixed;

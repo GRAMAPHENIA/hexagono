@@ -56,7 +56,7 @@ const ListaModalMenu = () => {
 
   return (
     <>
-      <section className="flex flex-col lg:grid lg:grid-cols-4 lg:grid-rows-3 justify-center align-middle gap-2 mt-5 ">
+      <section className="flex flex-col lg:grid lg:grid-cols-4 lg:grid-rows-3 justify-center align-middle gap-2 mt-5">
         {/* Sección de navegación */}
         <ModalList title="Navegación" items={navegacion} />
 

@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import Image from "next/image";
 import ModalTecnologia from "@/components/ModalTecnologia.jsx";
@@ -70,6 +70,18 @@ const Tecnologias = () => {
     setModalOpen(false);
   };
 
+  useEffect(() => {
+    if (isModalOpen) {
+      document.documentElement.style.overflow = "hidden";
+    } else {
+      document.documentElement.style.overflow = "auto";
+    }
+
+    return () => {
+      document.documentElement.style.overflow = "auto";
+    };
+  }, [isModalOpen]);
+
   return (
     <>
       <section className="mt-20 ">
@@ -131,7 +143,10 @@ const Tecnologias = () => {
 
           <ul className="text-center lg:text-left">
             {modaltecnologia.map(({ titulo, descripcion }) => (
-              <li className="px-8 text-left lg:px-32 mb-10 text-2xl" key={titulo}>
+              <li
+                className="px-8 text-left lg:px-32 mb-10 text-2xl"
+                key={titulo}
+              >
                 <h1 className="mb-4 underline underline-offset-4 decoration-[var(--font-semi-light)] text-amber-50 font-extrabold">
                   {titulo}
                 </h1>
