@@ -27,7 +27,7 @@ const ModalList = ({ title, items }) => (
 
 const ListaModalMenu = () => {
   const navegacion = [
-    { titulo: "Desarrollo Web", enlace: "/desarrollo-web" },
+    { titulo: "Desarrollo Web", enlace: "#desarrollo-web" },
     { titulo: "Diseño Gráfico", enlace: "/diseno-grafico" },
     { titulo: "Modelado 3D", enlace: "/modelado-3d" },
     { titulo: "Difusión de Redes", enlace: "/difusion-redes" },

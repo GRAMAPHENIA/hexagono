@@ -64,7 +64,7 @@ const DesarrolloWeb = () => {
 
   return (
     <>
-      <section className="my-20">
+      <section className="my-20" id="desarrollo-web">
         <figure className="flex flex-col items-center py-10">
           <Image
             src="/titulos/web.svg"
