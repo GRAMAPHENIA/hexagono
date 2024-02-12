@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 
 import ListaModalMenu from "@/components/ListaModalMenu.jsx";
@@ -17,6 +17,19 @@ const Navbar = () => {
   const closeModal = () => {
     setModalOpen(false);
   };
+
+  useEffect(() => {
+    if (isModalOpen) {
+      document.documentElement.style.overflow = "hidden";
+    } else {
+      document.documentElement.style.overflow = "auto";
+    }
+
+    return () => {
+      document.documentElement.style.overflow = "auto";
+    };
+  }, [isModalOpen]);
+
   return (
     <>
       <nav className="col-span-6 pr-6 pt-3 lg:p-12">
