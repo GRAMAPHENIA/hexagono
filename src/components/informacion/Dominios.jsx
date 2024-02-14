@@ -68,7 +68,7 @@ const Dominios = () => {
 
   return (
     <>
-      <section className="mt-20 lg:mt-40 mb-20" id="diseno-grafico">
+      <section className="mt-20 lg:mt-40 mb-20" id="dominios">
         <figure className="flex flex-col items-end py-10">
           <Image
             src="/titulos/grafico.svg"

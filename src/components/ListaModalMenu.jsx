@@ -28,15 +28,15 @@ const ModalList = ({ title, items, handleCloseModal }) => (
 
 const ListaModalMenu = ({ handleCloseModal }) => {
   const navegacion = [
-    { titulo: "Diseño Gráfico", enlace: "#diseno-grafico" },
-    { titulo: "Desarrollo Web", enlace: "#desarrollo-web" },
-    { titulo: "Modelado 3D", enlace: "#modelado-3d" },
-    { titulo: "Tecnologías", enlace: "#tecnologias" },
+    { titulo: "Diseño Gráfico", enlace: "/#diseno-grafico" },
+    { titulo: "Desarrollo Web", enlace: "/#desarrollo-web" },
+    { titulo: "Modelado 3D", enlace: "/#modelado-3d" },
+    { titulo: "Tecnologías", enlace: "/#tecnologias" },
   ];
 
   const informacion = [
-    { titulo: "Dominios", enlace: "/dominios" },
-    { titulo: "Hosting", enlace: "/hosting" },
+    { titulo: "Dominios", enlace: "/informacion#dominios" },
+    { titulo: "Hosting", enlace: "/informacion#hosting" },
     { titulo: "Precios", enlace: "/precios" },
     { titulo: "Formas de Pago", enlace: "/formas-pago" },
   ];

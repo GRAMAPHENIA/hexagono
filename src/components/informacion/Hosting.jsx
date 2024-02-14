@@ -68,15 +68,15 @@ const Hosting = () => {
 
   return (
     <>
-      <section className="mt-20 lg:mt-40 mb-20" id="diseno-grafico">
+      <section className="mt-20 lg:mt-40 mb-20" id="hosting">
         <figure className="flex flex-col items-end py-10">
-          <Image
+          {/* <Image
             src="/titulos/grafico.svg"
             alt="Imagen para la  sección que destaca el diseño gráfico"
             width={500}
             height={200}
             className="py-10"
-          />
+          /> */}
           <p className="text-[var(--font-light)] text-base lg:text-xl font-extralight text-center max-w-[720px] pb-10 border border-[var(--button-dark)] p-5 lg:p-10 rounded-xl bg-[#1011121d] backdrop-blur-sm">
             <span className="text-amber-50 text-2xl lg:text-4xl font-light">
               ¡Impulsa tu Marca con Nuestros Servicios de Diseño Gráfico!

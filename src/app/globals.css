@@ -46,7 +46,7 @@ p {
 .fondo {
   margin: 0;
   padding: 0;
-  background-image: url("../../public/fondo/fondo-completo-mod.svg");
+  background-image: url("/fondo/fondo-completo-mod.svg");
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -171,7 +171,6 @@ p {
   z-index: 999;
 }
 
-
 .modal-overlay-web {
   background-image: url("../../public/fondo/modal-web.svg");
   position: fixed;
@@ -269,7 +268,7 @@ p {
     background: var(--dark);
     height: 100vh;
     width: 100vh;
-    padding: .25rem;
+    padding: 0.25rem;
     margin: 0;
     color: var(--font-light);
     overflow-y: auto;
