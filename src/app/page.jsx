@@ -3,7 +3,6 @@ import Image from "next/image";
 import Navbar from "@/components/Navbar.jsx";
 import Header from "@/components/Header.jsx";
 import Servicios from "@/components/Servicios.jsx";
-import Informacion from "@/components/Informacion.jsx";
 import Footer from "@/components/Footer.jsx";
 import Consultas from "@/components/Consultas.jsx";
 
@@ -13,7 +12,6 @@ const Home = () => {
       <Navbar />
       <Header />
       <Servicios />
-      <Informacion />
       <Consultas />
       <Footer />
     </main>

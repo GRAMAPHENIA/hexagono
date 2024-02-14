@@ -13,7 +13,7 @@ const ModalList = ({ title, items, handleCloseModal }) => (
         <li key={titulo} className={`${listItemStyle} text-center`}>
           {/* Verifica si hay un enlace antes de renderizar el componente Link */}
           {enlace ? (
-            <Link href={enlace} onClick={handleCloseModal}>
+            <Link href={enlace} onClick={handleCloseModal} prefetch={true}>
               {titulo}
             </Link>
           ) : (
@@ -37,15 +37,15 @@ const ListaModalMenu = ({ handleCloseModal }) => {
   const informacion = [
     { titulo: "Dominios", enlace: "/informacion#dominios" },
     { titulo: "Hosting", enlace: "/informacion#hosting" },
-    { titulo: "Precios", enlace: "/precios" },
-    { titulo: "Formas de Pago", enlace: "/formas-pago" },
+    { titulo: "Precios", enlace: "/informacion#precios" },
+    { titulo: "Formas de Pago", enlace: "/informacion#formas-pago" },
   ];
 
-  const compania = [
-    { titulo: "Sobre Hexágono", enlace: "/sobre-hexagono" },
-    { titulo: "Tecnologías que utilizamos", enlace: "/tecnologias" },
-    { titulo: "Mapa de Ruta", enlace: "/mapa-ruta" },
-    { titulo: "Blog", enlace: "/blog" },
+  const hexagono = [
+    { titulo: "Sobre Hexágono", enlace: "/hexagono/#sobre-hexagono" },
+    { titulo: "Tecnologías que utilizamos", enlace: "/hexagono/#tecnologias" },
+    { titulo: "Mapa de Ruta", enlace: "/" },
+    { titulo: "Blog", enlace: "/hexagono/#blog" },
   ];
 
   const redes = [
@@ -74,8 +74,8 @@ const ListaModalMenu = ({ handleCloseModal }) => {
 
         {/* Sección de compañía */}
         <ModalList
-          title="Compañía"
-          items={compania}
+          title="Hexágono"
+          items={hexagono}
           handleCloseModal={handleCloseModal}
         />
 
