@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <>
       <section
-        className="relative mt-56 lg:mt-0"
+        className="relative mt-44 lg:mt-0"
       >
         <p className="text-sm absolute top-[22px] left-[22px] lg:text-xl lg:top-[10px] lg:left-[25px] font-extralight uppercase col-span-5 sm:ml-48 sm:w-80 text-[--font-light] text-amber-100">
           concepto hexágono
