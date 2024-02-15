@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 
-import ModalGrafico from "@/components/ModalGrafico";
+import Modal from "@/components/Modal";
 
 const Grafico = () => {
   const caracteristicas = [
@@ -120,7 +120,7 @@ const Grafico = () => {
             Saber Más
           </button>
 
-          <ModalGrafico isOpen={isModalOpen} onClose={closeModal}>
+          <Modal isOpen={isModalOpen} onClose={closeModal}>
             {/* Aca se escribe el contenido que se ve en el children */}
 
             <h1 className="text-2xl mt-32 lg:mt-14 lg:text-7xl text-amber-100 p-2 lg:p-8 text-center font-black">
@@ -152,7 +152,7 @@ const Grafico = () => {
                 </li>
               ))}
             </ul>
-          </ModalGrafico>
+          </Modal>
         </div>
       </section>
     </>
