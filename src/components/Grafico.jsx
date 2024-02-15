@@ -5,6 +5,24 @@ import React, { useEffect, useState } from "react";
 import ModalGrafico from "@/components/ModalGrafico.jsx";
 
 const Grafico = () => {
+  const caracteristicas = [
+    {
+      titulo: "Creatividad",
+    },
+    {
+      titulo: "Eficiencia",
+    },
+    {
+      titulo: "Prototipos",
+    },
+    {
+      titulo: "Marca",
+    },
+    {
+      titulo: "Flexibilidad",
+    },
+  ];
+
   const modalgrafica = [
     {
       titulo: "Libertad Creativa",
@@ -84,6 +102,16 @@ const Grafico = () => {
             crean la conexión visual duradera con tu audiencia.
           </p>
         </figure>
+        <section className="grid lg:grid-cols-5 justify-center gap-8 pt-2 mb-14">
+          {caracteristicas.map(({ titulo }, index) => (
+            <div
+              className="text-[var(--dark)] col-span-1 flex justify-center items-center bg-[var(--font-semi-light)] p-2 py-2 rounded-sm sombra-inactiva border border-[var(--border-card-dark)]"
+              key={index}
+            >
+              <h1 className="text-sm text-sm:ml-48 ml-2">{titulo}</h1>
+            </div>
+          ))}
+        </section>
         <div className="flex justify-center lg:justify-end mb-20">
           <button
             onClick={openModal}
