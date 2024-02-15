@@ -28,24 +28,24 @@ const FooterList = ({ title, items, handleCloseModal }) => (
 
 const Footer = ({ handleCloseModal }) => {
   const navegacion = [
-    { titulo: "Diseño Gráfico", enlace: "#diseno-grafico" },
-    { titulo: "Desarrollo Web", enlace: "#desarrollo-web" },
-    { titulo: "Modelado 3D", enlace: "#modelado-3d" },
-    { titulo: "Tecnologías", enlace: "#tecnologias" },
+    { titulo: "Diseño Gráfico", enlace: "/#diseno-grafico" },
+    { titulo: "Desarrollo Web", enlace: "/#desarrollo-web" },
+    { titulo: "Modelado 3D", enlace: "/#modelado-3d" },
+    { titulo: "Tecnologías", enlace: "/#tecnologias" },
   ];
 
   const informacion = [
-    { titulo: "Dominios", enlace: "/dominios" },
-    { titulo: "Hosting", enlace: "/hosting" },
-    { titulo: "Precios", enlace: "/precios" },
-    { titulo: "Formas de Pago", enlace: "/formas-pago" },
+    { titulo: "Dominios", enlace: "/informacion#dominios" },
+    { titulo: "Hosting", enlace: "/informacion#hosting" },
+    { titulo: "Precios", enlace: "/informacion#precios" },
+    { titulo: "Formas de Pago", enlace: "/informacion#formas-pago" },
   ];
 
-  const compania = [
-    { titulo: "Sobre Hexágono", enlace: "/sobre-hexagono" },
-    { titulo: "Tecnologías que utilizamos", enlace: "/tecnologias" },
-    { titulo: "Mapa de Ruta", enlace: "/mapa-ruta" },
-    { titulo: "Blog", enlace: "/blog" },
+  const hexagono = [
+    { titulo: "Sobre Hexágono", enlace: "/hexagono/#sobre-hexagono" },
+    { titulo: "Tecnologías que utilizamos", enlace: "/hexagono/#tecnologias" },
+    { titulo: "Mapa de Ruta", enlace: "/" },
+    { titulo: "Blog", enlace: "/hexagono/#blog" },
   ];
 
   const redes = [
@@ -93,8 +93,8 @@ const Footer = ({ handleCloseModal }) => {
 
         {/* Sección de compañía */}
         <FooterList
-          title="Compañía"
-          items={compania}
+          title="Hexágono"
+          items={hexagono}
           handleCloseModal={handleCloseModal}
         />
 

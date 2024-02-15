@@ -2,7 +2,6 @@
 
 import React, { useEffect, useState } from "react";
 
-import Image from "next/image";
 import Modal3D from "@/components/Modal3D.jsx";
 
 const Modelado3D = () => {
@@ -78,15 +77,11 @@ const Modelado3D = () => {
 
   return (
     <>
-      <section className="my-20" id="modelado-3d">
+      <section className="my-20 mb-40" id="modelado-3d">
         <figure className="flex flex-col items-start py-10">
-          <Image
-            src="/titulos/3d.svg"
-            alt="Picture of the author"
-            width={500}
-            height={200}
-            className=""
-          />
+          <h2 className="text-6xl font-serif text-slate-400 py-10">
+            Modelado <span className="text-amber-100">3D</span>
+          </h2>
           <p className="text-[var(--font-light)] text-base lg:text-xl font-extralight text-center max-w-[720px] pb-10 border border-[var(--button-dark)] p-5 lg:p-10 rounded-xl bg-[#1011121d] backdrop-blur-sm">
             <span className="text-amber-50 text-2xl lg:text-4xl font-light">
               ¡Eleva tu Presentación Visual con Nuestros Servicios de Modelado

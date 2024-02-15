@@ -8,8 +8,8 @@ import Tecnologias from "@/components/Tecnologias.jsx";
 const Servicios = () => {
   return (
     <>
-      <section className="lg:pt-10 px-8 lg:px-20">
-        <Grafico/>
+      <section className=" lg:pt-10 px-8 lg:px-20">
+        <Grafico />
         <DesarrolloWeb />
         <Modelado3D />
         <Tecnologias />

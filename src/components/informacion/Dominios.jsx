@@ -6,34 +6,61 @@ import Image from "next/image";
 import Modal from "@/components/Modal.jsx";
 
 const Dominios = () => {
+  const metodos = [
+    {
+      titulo: "personalidad",
+    },
+    {
+      titulo: "Profesionalismo",
+    },
+    {
+      titulo: "Control",
+    },
+    {
+      titulo: "Notable",
+    },
+    {
+      titulo: "Posicionamiento",
+    },
+    {
+      titulo: "Flexibilidad",
+    },
+  ];
   const modaldominios = [
     {
-      titulo: "/",
-      descripcion: "/",
+      titulo: "Nombre de dominio personalizado",
+      descripcion:
+        "Obtener un nombre de dominio personalizado te permite tener una identidad única en línea que refleje tu personalidad, marca o negocio.",
     },
     {
-      titulo: "/",
-      descripcion: "/",
+      titulo: "Profesionalismo",
+      descripcion:
+        "Un dominio personalizado transmite profesionalismo y credibilidad a tus visitantes y clientes potenciales.",
     },
     {
-      titulo: "/",
-      descripcion: "/",
+      titulo: "Control total",
+      descripcion:
+        "Tener tu propio dominio te otorga control total sobre tu presencia en línea, incluyendo el diseño, contenido y funcionalidades de tu sitio web.",
     },
     {
-      titulo: "/",
-      descripcion: "/",
+      titulo: "Facilidad de recordación",
+      descripcion:
+        "Un nombre de dominio personalizado es más fácil de recordar para tus visitantes que una dirección web larga y genérica.",
     },
     {
-      titulo: "/",
-      descripcion: "/",
+      titulo: "Correo electrónico personalizado",
+      descripcion:
+        "Puedes crear direcciones de correo electrónico personalizadas basadas en tu nombre de dominio, lo que ayuda a fortalecer tu marca y profesionalismo.",
     },
     {
-      titulo: "/",
-      descripcion: "/",
+      titulo: "Posicionamiento en buscadores",
+      descripcion:
+        "Un dominio personalizado puede mejorar tu posicionamiento en los resultados de búsqueda, lo que facilita que las personas te encuentren en línea.",
     },
     {
-      titulo: "/",
-      descripcion: "/",
+      titulo: "Flexibilidad",
+      descripcion:
+        "Con tu propio dominio, tienes la flexibilidad para cambiar de proveedor de alojamiento web o redireccionar tu sitio según tus necesidades.",
     },
   ];
 
@@ -63,14 +90,9 @@ const Dominios = () => {
     <>
       <section className="mt-20 lg:mt-40 mb-20" id="dominios">
         <figure className="flex flex-col items-end py-10">
-          {/* <Image
-            src="/titulos/grafico.svg"
-            alt="Imagen para la  sección que destaca el diseño gráfico"
-            width={500}
-            height={200}
-            className="py-10"
-          /> */}
-          DOMINIOS
+          <h2 className="text-6xl text-center font-serif text-slate-400 py-10">
+            Pedí tu <span className="text-amber-100">Dominio</span>
+          </h2>
           <p className="text-[var(--font-light)] text-base lg:text-xl font-extralight text-center max-w-[720px] pb-10 border border-[var(--button-dark)] p-5 lg:p-10 rounded-xl bg-[#1011121d] backdrop-blur-sm">
             <span className="text-amber-50 text-2xl lg:text-4xl font-light">
               La Base de tu Presencia en Línea
@@ -86,6 +108,16 @@ const Dominios = () => {
             profesional.
           </p>
         </figure>
+        <section className="grid grid-cols-2 lg:grid-cols-6 justify-center gap-8 pt-2 mb-14">
+          {metodos.map(({ titulo }, index) => (
+            <div
+              className="text-[var(--dark)] lg:col-span-1 flex justify-center items-center bg-[var(--font-semi-light)] p-2 py-2 rounded-sm sombra-inactiva border border-[var(--border-card-dark)]"
+              key={index}
+            >
+              <h2 className="text-sm text-sm:ml-48 ml-2">{titulo}</h2>
+            </div>
+          ))}
+        </section>
         <div className="flex justify-center lg:justify-end mb-20">
           <button
             onClick={openModal}
@@ -98,17 +130,16 @@ const Dominios = () => {
             {/* Aca se escribe el contenido que se ve en el children */}
 
             <h1 className="text-2xl mt-32 lg:mt-14 lg:text-7xl text-amber-100 p-2 lg:p-8 text-center font-black">
-              <span className="text-amber-200">Diseño Gráfico: </span>
-              Transformando ideas en realidad
+              <span className="text-amber-200">Tu Presencia: </span>
+              La Importancia del Dominio
               <span className="text-amber-200">.</span>
             </h1>
             <p className="text-[var(--font-semi-light)] text-center font-extralight p-8 lg:p-16 italic antialiased">
-              &quot;El diseño gráfico es una herramienta fundamental en el mundo
-              visual de hoy, permitiendo la creación de contenido impactante y
-              memorable. Al aprovechar herramientas avanzadas como Figma y otros
-              softwares de diseño, los diseñadores pueden llevar sus habilidades
-              al siguiente nivel y ofrecer soluciones visuales
-              excepcionales.&quot;
+              &quot;Los dominios son pilares esenciales en el panorama digital
+              actual, brindando la base para establecer una presencia en línea
+              efectiva y duradera. Al igual que el diseño gráfico, los dominios
+              son herramientas fundamentales que permiten a las marcas destacar
+              y dejar una impresión perdurable en el mundo virtual.&quot;
             </p>
 
             <ul className="text-center lg:text-left">

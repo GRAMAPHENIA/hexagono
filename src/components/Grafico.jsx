@@ -2,7 +2,6 @@
 
 import React, { useEffect, useState } from "react";
 
-import Image from "next/image";
 import Modal from "@/components/Modal.jsx";
 
 const Grafico = () => {
@@ -68,15 +67,11 @@ const Grafico = () => {
 
   return (
     <>
-      <section className="mt-20 lg:mt-40 mb-20" id="diseno-grafico">
+      <section className="mt-20 lg:mt-40 mb-40" id="diseno-grafico">
         <figure className="flex flex-col items-end py-10">
-          <Image
-            src="/titulos/grafico.svg"
-            alt="Imagen para la  sección que destaca el diseño gráfico"
-            width={500}
-            height={200}
-            className="py-10"
-          />
+          <h2 className="text-6xl font-serif text-slate-400 py-10">
+            Diseño <span className="text-amber-100">Gráfico</span>
+          </h2>
           <p className="text-[var(--font-light)] text-base lg:text-xl font-extralight text-center max-w-[720px] pb-10 border border-[var(--button-dark)] p-5 lg:p-10 rounded-xl bg-[#1011121d] backdrop-blur-sm">
             <span className="text-amber-50 text-2xl lg:text-4xl font-light">
               ¡Impulsa tu Marca con Nuestros Servicios de Diseño Gráfico!

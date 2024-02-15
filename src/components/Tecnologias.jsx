@@ -2,7 +2,6 @@
 
 import React, { useEffect, useState } from "react";
 
-import Image from "next/image";
 import ModalTecnologia from "@/components/ModalTecnologia.jsx";
 
 const Tecnologias = () => {
@@ -84,15 +83,11 @@ const Tecnologias = () => {
 
   return (
     <>
-      <section className="mt-20" id="tecnologias">
+      <section className="mt-20 " id="tecnologias">
         <figure className="flex flex-col items-center py-10">
-          <Image
-            src="/titulos/tecnologias.svg"
-            alt="Imagen para la sección que destaca el desarrollo tecnologías"
-            width={400}
-            height={100}
-            className="py-10"
-          />
+          <h2 className="text-6xl font-serif text-slate-400 py-10">
+            Tecnologías <span className="text-amber-100">Web</span>
+          </h2>
           <p className="text-[var(--font-light)] text-base lg:text-xl font-extralight text-center max-w-[720px] pb-10 border border-[var(--button-dark)] p-5 lg:p-10 rounded-xl bg-[#1011121d] backdrop-blur-sm">
             <span className="text-amber-50 text-2xl lg:text-4xl font-light">
               ¡Moderniza tu Espacio Virtual con Nuestro Estilo Tecnológico!
@@ -117,7 +112,7 @@ const Tecnologias = () => {
           </div>
         ))}
       </section>
-      <div className="flex justify-center lg:justify-end mt-10 mb-20">
+      <div className="flex justify-center lg:justify-end mt-10 mb-40">
         <button
           onClick={openModal}
           className="col-span-6 flex justify-center items-center text-[var(--font-light)] bg-[var(--gradient-end)] px-8 py-4 rounded-full sombra-light border border-[var(--card-light)]"

@@ -57,7 +57,7 @@ const ListaModalMenu = ({ handleCloseModal }) => {
 
   return (
     <>
-      <section className="flex flex-col lg:grid lg:grid-cols-4 lg:grid-rows-3 justify-center align-middle gap-2 mt-5">
+      <section className="flex flex-col lg:grid lg:grid-cols-4 lg:grid-rows-3 justify-center align-middle gap-2 mt-10">
         {/* Sección de navegación */}
         <ModalList
           title="Navegación"
@@ -86,7 +86,7 @@ const ListaModalMenu = ({ handleCloseModal }) => {
           handleCloseModal={handleCloseModal}
         />
       </section>
-      <figure className="col-span-2 row-span-3 flex flex-col justify-end items-center mt-16 mb-10">
+      <figure className="col-span-2 row-span-3 flex flex-col justify-end items-center mt-16">
         <Image
           src="/logo.svg"
           alt="Picture of the author"

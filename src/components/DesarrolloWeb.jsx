@@ -2,7 +2,6 @@
 
 import React, { useEffect, useState } from "react";
 
-import Image from "next/image";
 import ModalWeb from "@/components/ModalWeb.jsx";
 
 const DesarrolloWeb = () => {
@@ -76,15 +75,11 @@ const DesarrolloWeb = () => {
 
   return (
     <>
-      <section className="my-20" id="desarrollo-web">
+      <section className="my-20 mb-40" id="desarrollo-web">
         <figure className="flex flex-col items-center py-10">
-          <Image
-            src="/titulos/web.svg"
-            alt="Imagen para la sección que destaca el desarrollo web"
-            width={500}
-            height={100}
-            className=""
-          />
+          <h2 className="text-6xl font-serif text-slate-400 py-10">
+            Desarrollo <span className="text-amber-100">Web</span>
+          </h2>
           <p className="text-[var(--font-light)] text-base lg:text-xl font-extralight text-center max-w-[720px] pb-10 border border-[var(--button-dark)] p-5 lg:p-10 rounded-xl bg-[#1011121d] backdrop-blur-sm">
             <span className="text-amber-50 text-2xl lg:text-4xl font-light">
               ¡Destaca tu Presencia Digital con Nuestros Servicios de Desarrollo
