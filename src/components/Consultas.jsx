@@ -2,7 +2,7 @@ const Consultas = () => {
   return (
     <>
       <figure
-        className="pt-10 mb-16 flex justify-center items-center m-4"
+        className=" mb-16 flex justify-center items-center m-4"
         id="consultas"
       >
         <h2 className="text-6xl text-center font-serif text-slate-400 py-10">

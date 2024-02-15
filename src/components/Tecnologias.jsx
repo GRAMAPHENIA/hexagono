@@ -112,7 +112,7 @@ const Tecnologias = () => {
           </div>
         ))}
       </section>
-      <div className="flex justify-center lg:justify-end mt-10 mb-40">
+      <div className="flex justify-center lg:justify-end mt-10 mb-20">
         <button
           onClick={openModal}
           className="col-span-6 flex justify-center items-center text-[var(--font-light)] bg-[var(--gradient-end)] px-8 py-4 rounded-full sombra-light border border-[var(--card-light)]"
