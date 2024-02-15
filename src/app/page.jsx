@@ -1,8 +1,8 @@
 import Navbar from "@/components/Navbar.jsx";
 import Header from "@/components/Header.jsx";
 import Servicios from "@/components/Servicios.jsx";
-import Footer from "@/components/Footer.jsx";
 import Consultas from "@/components/Consultas.jsx";
+import Footer from "@/components/Footer.jsx";
 
 const Home = () => {
   return (

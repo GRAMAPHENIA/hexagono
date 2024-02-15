@@ -9,38 +9,31 @@ const Hosting = () => {
   const modalhosting = [
     {
       titulo: "/",
-      descripcion:
-        "/",
+      descripcion: "/",
     },
     {
       titulo: "/",
-      descripcion:
-        "/",
+      descripcion: "/",
     },
     {
       titulo: "/",
-      descripcion:
-        "/",
+      descripcion: "/",
     },
     {
       titulo: "/",
-      descripcion:
-        "/",
+      descripcion: "/",
     },
     {
       titulo: "/",
-      descripcion:
-        "/",
+      descripcion: "/",
     },
     {
       titulo: "/",
-      descripcion:
-        "/",
+      descripcion: "/",
     },
     {
       titulo: "/",
-      descripcion:
-        "/",
+      descripcion: "/",
     },
   ];
 
@@ -69,7 +62,7 @@ const Hosting = () => {
   return (
     <>
       <section className="mt-20 lg:mt-40 mb-20" id="hosting">
-        <figure className="flex flex-col items-end py-10">
+        <figure className="flex flex-col items-start py-10">
           {/* <Image
             src="/titulos/grafico.svg"
             alt="Imagen para la  sección que destaca el diseño gráfico"
@@ -77,19 +70,23 @@ const Hosting = () => {
             height={200}
             className="py-10"
           /> */}
+          HOSTING
           <p className="text-[var(--font-light)] text-base lg:text-xl font-extralight text-center max-w-[720px] pb-10 border border-[var(--button-dark)] p-5 lg:p-10 rounded-xl bg-[#1011121d] backdrop-blur-sm">
             <span className="text-amber-50 text-2xl lg:text-4xl font-light">
-              ¡Impulsa tu Marca con Nuestros Servicios de Diseño Gráfico!
+            Servicios de Hosting Confiables para tu Sitio Web.
             </span>
             <br />
             <br />
-            En el vibrante mundo visual de hoy, la identidad de tu marca es
-            crucial. Nos especializamos en ofrecer servicios de diseño gráfico
-            que no solo capturan la esencia de tu negocio, sino que también
-            crean la conexión visual duradera con tu audiencia.
+            La elección del hosting adecuado es esencial para el éxito en línea.
+            Nos especializamos en servicios de hosting confiables y seguros que
+            garantizan un funcionamiento óptimo para tu sitio web. Ya sea que
+            necesites hosting compartido, VPS o dedicado, estamos aquí para
+            proporcionarte la solución perfecta para tus necesidades de
+            alojamiento web. Confía en nosotros para mantener tu sitio en línea
+            y en funcionamiento sin problemas.
           </p>
         </figure>
-        <div className="flex justify-center lg:justify-end mb-20">
+        <div className="flex justify-center lg:justify-center mb-20">
           <button
             onClick={openModal}
             className="col-span-5 flex justify-center items-center text-[var(--font-light)] bg-[var(--gradient-end)] px-8 py-4 rounded-full sombra-light border border-[var(--card-light)]"
@@ -137,4 +134,4 @@ const Hosting = () => {
 };
 
 export default Hosting;
-Hosting
+Hosting;
