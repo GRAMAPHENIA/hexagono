@@ -11,8 +11,8 @@ const HeaderInfo = () => {
           Información
           <br />
         </h1>
-        <p className="font-extralight col-span-5 sm:ml-[212px] text-[--font-light] mb-20 leading-[15px]">
-          Datos<span className="text-rose-300">.</span>
+        <p className="font-extralight col-span-5 sm:ml-[218px] text-[--font-light] mb-20 leading-[15px]">
+          De interes<span className="text-rose-300">.</span>
         </p>
       </section>
     </>

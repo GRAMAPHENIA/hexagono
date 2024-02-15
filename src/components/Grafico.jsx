@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 
-import ModalGrafico from "@/components/ModalGrafico.jsx";
+import ModalGrafico from "@/components/ModalGrafico";
 
 const Grafico = () => {
   const caracteristicas = [
