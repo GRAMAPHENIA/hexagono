@@ -7,7 +7,7 @@ const ModalMenu = ({ isOpen, onClose, children, className }) => {
 
   return (
     <div className="modal-menu-overlay bg-[#1011129f] backdrop-blur-sm bg-opacity-80">
-      <div className="modal-menu">
+      <div className="modal-menu mx-auto max-w-screen-xl max-h-[700px]">
         <div className="relative flex justify-end">
           <button
             className="absolute mt-4 mr-4 lg:mt-0 lg:mr-0 bg-[var(--card-dark)] text-[var(--font-semi-light)] text-xl h-8

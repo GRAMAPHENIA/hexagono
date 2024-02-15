@@ -57,7 +57,7 @@ const ListaModalMenu = ({ handleCloseModal }) => {
 
   return (
     <>
-      <section className="flex flex-col lg:grid lg:grid-cols-4 lg:grid-rows-3 justify-center align-middle gap-2 mt-10">
+      <section className=" flex flex-col lg:grid lg:grid-cols-4 lg:grid-rows-3 justify-center align-middle gap-2 mt-10">
         {/* Sección de navegación */}
         <ModalList
           title="Navegación"

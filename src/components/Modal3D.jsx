@@ -7,7 +7,7 @@ const Modal3D = ({ isOpen, onClose, children, className }) => {
 
   return (
     <div className="modal-overlay-3d">
-      <div className="modal">
+      <div className="modal max-w-screen-xl max-h-[700px]">
         <button
           className="close-button mt-10 mr-10 flex justify-center items-center text-[var(--font-light)] bg-[var(--gradient-end)] px-8 py-4 rounded-full sombra-light border border-[var(--card-light)]"
           onClick={onClose}
