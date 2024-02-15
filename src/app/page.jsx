@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 import Navbar from "@/components/Navbar.jsx";
 import Header from "@/components/Header.jsx";
 import Servicios from "@/components/Servicios.jsx";

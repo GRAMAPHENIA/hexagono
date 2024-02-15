@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Informacion from "@/components/Informacion";
+import HeaderInfo from "@/app/informacion/HeaderInfo"
 
 export const metadata = {
   title: "INFORMACION",
@@ -9,8 +10,12 @@ export const metadata = {
 const page = () => {
   return (
     <>
+    <section className="mx-auto max-w-screen-xl">
       <Navbar />
+      <HeaderInfo/>
       <Informacion />
+    </section>
+      
     </>
   );
 };
