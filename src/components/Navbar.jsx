@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import ListaModalMenu from "@/components/ListaModalMenu.jsx";
 import ModalMenu from "@/components/ModalMenu.jsx";
 
@@ -34,11 +35,14 @@ const Navbar = () => {
         <ul className="flex justify-end">
           <li className="space-x-4 flex flex-row align-middle">
             <button className="text-[var(--button-dark)] hidden lg:block bg-[var(--font-semi-light)] px-4 py-2 rounded-full sombra border border-[var(--card-light)]">
+              <Link href=""></Link>
               presupuestos
-            </button>
-            <button className="font-light hidden lg:block bg-[var(--card-dark)] text-[var(--font-light)] px-4 py-2 rounded-full sombra border border-[var(--card-light)]">
-              contacto
-            </button>
+            </button>{" "}
+            <Link href="#consultas">
+              <button className="font-light hidden lg:block bg-[var(--card-dark)] text-[var(--font-light)] px-4 py-2 rounded-full sombra border border-[var(--card-light)]">
+                contacto
+              </button>{" "}
+            </Link>
             <button
               onClick={openModal}
               className="bg-[var(--card-dark)] text-[var(--font-semi-light)] text-xl lg:text-3xl h-11

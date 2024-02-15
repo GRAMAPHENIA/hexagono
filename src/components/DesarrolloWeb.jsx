@@ -83,7 +83,7 @@ const DesarrolloWeb = () => {
             alt="Imagen para la sección que destaca el desarrollo web"
             width={500}
             height={100}
-            className="py-10"
+            className=""
           />
           <p className="text-[var(--font-light)] text-base lg:text-xl font-extralight text-center max-w-[720px] pb-10 border border-[var(--button-dark)] p-5 lg:p-10 rounded-xl bg-[#1011121d] backdrop-blur-sm">
             <span className="text-amber-50 text-2xl lg:text-4xl font-light">

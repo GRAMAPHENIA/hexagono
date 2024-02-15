@@ -3,7 +3,10 @@ import Image from "next/image";
 const Consultas = () => {
   return (
     <>
-      <figure className="pt-10 flex justify-center items-center m-4">
+      <figure
+        className="pt-10 flex justify-center items-center m-4"
+        id="consultas"
+      >
         <Image
           src="/titulos/consultas.svg"
           alt="Imagen para la sección que destaca el desarrollo web"

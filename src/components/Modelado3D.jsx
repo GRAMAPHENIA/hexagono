@@ -85,7 +85,7 @@ const Modelado3D = () => {
             alt="Picture of the author"
             width={500}
             height={200}
-            className="py-10"
+            className=""
           />
           <p className="text-[var(--font-light)] text-base lg:text-xl font-extralight text-center max-w-[720px] pb-10 border border-[var(--button-dark)] p-5 lg:p-10 rounded-xl bg-[#1011121d] backdrop-blur-sm">
             <span className="text-amber-50 text-2xl lg:text-4xl font-light">
@@ -121,11 +121,11 @@ const Modelado3D = () => {
           <Modal3D isOpen={isModalOpen} onClose={closeModal}>
             {/* Aca se escribe el contenido que se ve en el children */}
 
-            <h1 className="text-2xl mt-32 lg:mt-14 lg:text-7xl text-amber-100 p-2 lg:p-8 text-center font-black">
+            <h2 className="text-2xl mt-32 lg:mt-14 lg:text-7xl text-amber-100 p-2 lg:p-8 text-center font-black">
               <span className="text-amber-200">Modelado 3D: </span> Pilares para
               Crear Entornos Virtuales Impactantes
               <span className="text-amber-200">.</span>
-            </h1>
+            </h2>
             <p className="text-[var(--font-semi-light)] text-center font-extralight p-8 lg:p-16 italic antialiased">
               &quot;Al integrar estos elementos en el proceso de modelado 3D, no
               solo estás creando representaciones visuales, sino construyendo
