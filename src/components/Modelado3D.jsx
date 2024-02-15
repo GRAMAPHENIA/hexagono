@@ -6,6 +6,26 @@ import Image from "next/image";
 import Modal3D from "@/components/Modal3D.jsx";
 
 const Modelado3D = () => {
+  const metodos = [
+    {
+      titulo: "Modelado",
+    },
+    {
+      titulo: "Iluminación",
+    },
+    {
+      titulo: "Texturización",
+    },
+    {
+      titulo: "Animación",
+    },
+    {
+      titulo: "Rigging",
+    },
+    {
+      titulo: "Optimización",
+    },
+  ];
   const modal3d = [
     {
       titulo: "Técnica de Modelado 3D",
@@ -81,7 +101,17 @@ const Modelado3D = () => {
             marca a nuevas alturas.
           </p>
         </figure>
-        <div className="flex justify-center lg:justify-start mb-20">
+        <section className="grid grid-cols-2 lg:grid-cols-6 justify-center gap-8 pt-2 mb-14">
+          {metodos.map(({ titulo }, index) => (
+            <div
+              className="text-[var(--dark)] lg:col-span-1 flex justify-center items-center bg-[var(--font-semi-light)] p-2 py-2 rounded-sm sombra-inactiva border border-[var(--border-card-dark)]"
+              key={index}
+            >
+              <h2 className="text-sm text-sm:ml-48 ml-2">{titulo}</h2>
+            </div>
+          ))}
+        </section>
+        <div className="flex justify-center lg:justify-start mb-14">
           <button
             onClick={openModal}
             className="col-span-5 flex justify-center items-center text-[var(--font-light)] bg-[var(--gradient-end)] px-8 py-4 rounded-full sombra-light border border-[var(--card-light)]"

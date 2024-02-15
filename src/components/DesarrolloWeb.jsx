@@ -109,7 +109,7 @@ const DesarrolloWeb = () => {
             </div>
           ))}
         </section>
-        <div className="flex justify-center lg:justify-start my-20">
+        <div className="flex justify-center lg:justify-start my-14">
           <button
             onClick={openModal}
             className="col-span-5 flex justify-center items-center text-[var(--font-light)] bg-[var(--gradient-end)] px-8 py-4 rounded-full sombra-light border border-[var(--card-light)]"
@@ -119,12 +119,12 @@ const DesarrolloWeb = () => {
           <ModalWeb isOpen={isModalOpen} onClose={closeModal}>
             {/* Aca se escribe el contenido que se ve en el children */}
 
-            <h1 className="text-2xl mt-32 lg:mt-14 lg:text-7xl text-amber-100 p-2 lg:p-8 text-center font-black">
+            <h2 className="text-2xl mt-32 lg:mt-14 lg:text-7xl text-amber-100 p-2 lg:p-8 text-center font-black">
               <span className="text-amber-200">Desarrollo Web:</span> Elementos
               Clave para una Página Exitosa
               <span className="text-amber-200">.</span>
-            </h1>
-            <p className="text-[var(--font-semi-light)] text-center font-extralight p-8 lg:p-16 italic antialiased">
+            </h2>
+            <p className="text-[var(--font-semi-light)] text-center font-extralight p-8 lg:p-14 italic antialiased">
               &quot;Al incorporar estos elementos en el desarrollo de tu página
               web, no solo estás construyendo una plataforma visualmente
               atractiva, sino también una herramienta efectiva para atraer,
@@ -134,13 +134,13 @@ const DesarrolloWeb = () => {
             <ul className="text-center lg:text-left">
               {modalweb.map(({ titulo, descripcion }) => (
                 <li
-                  className="px-8 text-left lg:px-32 mb-10 text-2xl"
+                  className="px-8 text-left lg:px-32 mb-14 text-2xl"
                   key={titulo}
                 >
-                  <h1 className="mb-4 underline underline-offset-4 decoration-[var(--font-semi-light)] text-amber-50 font-extrabold">
+                  <h2 className="mb-4 underline underline-offset-4 decoration-[var(--font-semi-light)] text-amber-50 font-extrabold">
                     {titulo}
-                  </h1>
-                  <p className="pb-10 text-lg font-extralight antialiased">
+                  </h2>
+                  <p className="pb-14 text-lg font-extralight antialiased">
                     {descripcion}
                   </p>
                 </li>
