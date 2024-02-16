@@ -1,4 +1,4 @@
-"use client";
+'use client'
 
 import React, { useState } from "react";
 
@@ -13,8 +13,9 @@ const Planes = () => {
       options: [
         {
           id: "basic-six",
+          titulo: "Inicial",
           price: "$99",
-          duration: " / 6 meses",
+          duration: " / 3 meses",
           description: [
             "Sitio web de una página",
             "Diseño personalizado",
@@ -25,8 +26,9 @@ const Planes = () => {
         },
         {
           id: "basic-twelve",
+          titulo: "Emprendimientos",
           price: "$189",
-          duration: " / 12 meses",
+          duration: " / 3 meses",
           description: [
             "Sitio web de hasta 5 páginas",
             "Diseño responsive",
@@ -39,12 +41,13 @@ const Planes = () => {
       ],
     },
     {
-      title: "Plan Distinción",
+      title: "Plan Premiun",
       options: [
         {
           id: "popular-six",
+          titulo: "Negocios",
           price: "$99",
-          duration: " / 6 meses",
+          duration: " / 3 meses",
           description: [
             "Sitio web de hasta 10 páginas",
             "Diseño personalizado con múltiples revisiones",
@@ -55,8 +58,9 @@ const Planes = () => {
         },
         {
           id: "popular-twelve",
+          titulo: "Empresarial",
           price: "$189",
-          duration: " / 12 meses",
+          duration: " / 3 meses",
           description: [
             "Sitio web de hasta 20 páginas",
             "Diseño avanzado con animaciones y efectos visuales",
@@ -76,7 +80,10 @@ const Planes = () => {
 
   return (
     <>
-      <h2 className="text-6xl text-center font-serif text-slate-400 pt-10">
+      <h2
+        className="text-6xl text-center font-serif text-slate-400 pt-10"
+        id="planes"
+      >
         Planes de <span className="text-amber-100">Desarrollo Web</span>
       </h2>
       <div className="bg-gray-800/20 backdrop-blur-lg flex items-center justify-center font-nunito text-gray-600 m-36 rounded-lg shadow-md py-4">
@@ -88,12 +95,15 @@ const Planes = () => {
                 className="w-[calc(50%-1rem)] bg-gray-800/20 backdrop-blur-lg p-8 rounded-lg gap-3 flex items-start justify-center shadow-md flex-col mb-10"
               >
                 <li className="pr-4 grow">
-                  <h2 className="mb-3 text-amber-100 text-center text-3xl font-serif mt-3 ">
+                  <h2 className="mb-3 text-amber-100 text-center text-4xl font-serif mt-3 ">
                     {plan.title}
                   </h2>
                   <section>
-                    {plan.options.map((option) => (
+                    {plan.options.map((option, optIndex) => (
                       <>
+                        <h2 className="mb-3 text-center text-orange-200 text-2xl font-thin mt-10">
+                          {option.titulo}
+                        </h2>
                         <label
                           htmlFor={option.id}
                           className="flex items-center justify-start w-full gap-0 p-3 font-semibold cursor-pointer my-10 text-blue-400"
@@ -106,6 +116,7 @@ const Planes = () => {
                             checked={selectedOption === option.id}
                             onChange={() => handleOptionChange(option.id)}
                           />
+
                           <span className="inline-block pl-3 text-xl pr-2">
                             {option.price}
                           </span>
@@ -122,6 +133,11 @@ const Planes = () => {
                               {desc}
                             </li>
                           ))}
+                          {plan.title === "Plan Premiun" && optIndex === 0 && (
+                            <span className="absolute slide-in-top bg-amber-100 text-slate-900 px-24 py-[4px] rounded-br-lg left-0 top-0 text-sm">
+                              Más Popular
+                            </span>
+                          )}
                         </ul>
                       </>
                     ))}

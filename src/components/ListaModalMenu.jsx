@@ -37,7 +37,7 @@ const ListaModalMenu = ({ handleCloseModal }) => {
   const informacion = [
     { titulo: "Dominios", enlace: "/informacion#dominios" },
     { titulo: "Hosting", enlace: "/informacion#hosting" },
-    { titulo: "Precios", enlace: "/informacion#precios" },
+    { titulo: "Planes", enlace: "/informacion#planes" },
     { titulo: "Formas de Pago", enlace: "/informacion#formas-pago" },
   ];
 
