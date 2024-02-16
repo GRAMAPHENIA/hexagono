@@ -79,7 +79,7 @@ const Planes = () => {
       <h2 className="text-6xl text-center font-serif text-slate-400 pt-10">
         Planes de <span className="text-amber-100">Desarrollo Web</span>
       </h2>
-      <div className="bg-gray-800/20 backdrop-blur-lg flex items-center justify-center font-nunito text-gray-600 m-36 rounded-lg shadow-md">
+      <div className="bg-gray-800/20 backdrop-blur-lg flex items-center justify-center font-nunito text-gray-600 m-36 rounded-lg shadow-md py-4">
         <section className="max-w-[968px] w-full mx-4">
           <div className="flex flex-wrap justify-between">
             {planes.map((plan, index) => (
