@@ -94,7 +94,7 @@ const Planes = () => {
                 key={index}
                 className="w-[calc(50%-1rem)] bg-gray-800/20 backdrop-blur-lg p-8 rounded-lg gap-3 flex items-start justify-center shadow-md flex-col mb-10"
               >
-                <li className="pr-4 grow">
+                <li className="grow">
                   <h2 className="mb-3 text-amber-100 text-center text-4xl font-serif mt-3 ">
                     {plan.title}
                   </h2>
