@@ -134,7 +134,7 @@ const Planes = () => {
                             </li>
                           ))}
                           {plan.title === "Plan Premiun" && optIndex === 0 && (
-                            <span className="absolute slide-in-top bg-amber-100 text-slate-900 px-24 py-[4px] rounded-br-lg left-0 top-0 text-sm">
+                            <span className="absolute slide-in-top bg-amber-100/30 text-amber-50 px-24 py-[4px] rounded-br-lg left-0 top-0 text-sm border-2 border-t-0 border-l-0 border-b-amber-100 border-r-amber-100 rounded-tl-lg">
                               Más Popular
                             </span>
                           )}
