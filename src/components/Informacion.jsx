@@ -3,7 +3,7 @@ import React from "react";
 import Dominios from "@/components/informacion/Dominios";
 import Hosting from "@/components/informacion/Hosting";
 import Planes from "@/components/planes/Planes";
-// import PresupuestoForm from "@/components/presupuestos/PresupuestoForm";
+import PresWeb from "@/components/presupuestos/PresWeb";
 
 const Informacion = () => {
   return (
@@ -12,7 +12,7 @@ const Informacion = () => {
         <Dominios />
         <Hosting />
         <Planes />
-        {/* <PresupuestoForm /> */}
+        <PresWeb />
       </section>
     </>
   );

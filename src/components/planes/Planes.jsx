@@ -3,6 +3,8 @@
 import React, { useState } from "react";
 import Link from "next/link";
 
+// import PresWeb from "@/components/presupuestos/PresWeb";
+
 const Planes = () => {
   // Estado para almacenar la opción seleccionada
   const [selectedOption, setSelectedOption] = useState(null);
@@ -95,7 +97,7 @@ const Planes = () => {
       >
         Crea una experiencia digital<span className="text-amber-400">.</span>
       </h4>
-      <div className="bg-gray-800/20 backdrop-blur-lg flex items-center justify-center font-nunito text-gray-600 mx-20 my-10 rounded-lg shadow-md py-4 mb-40">
+      <div className="bg-gray-800/20 backdrop-blur-lg flex items-center justify-center font-nunito text-gray-600 mx-20 my-10 rounded-lg shadow-md py-4 mb-10">
         <section className="max-w-[968px] w-full mx-4">
           <div className="flex flex-wrap justify-between">
             {planes.map((plan, index) => (
@@ -123,7 +125,7 @@ const Planes = () => {
                             </li>
                           ))}
                           {plan.title === "Elemental" && optIndex === 0 && (
-                            <span className="absolute text-md slide-in-top left-0 top-0 px-24 py-[4px] rounded-br-lg bg-gradient-to-r from-amber-100 via-amber-200 to-amber-300 text-amber-900 border border-t-0 border-l-0 border-b-gray-600 border-r-gray-600 rounded-tl-lg sombra-inactiva-planes">
+                            <span className="absolute text-md slide-in-top left-0 top-0 px-24 py-[4px] rounded-br-lg bg-gradient-to-r from-amber-100 via-amber-200 to-amber-300/95 text-amber-900 border border-t-0 border-l-0 border-b-gray-600 border-r-gray-600 rounded-tl-lg sombra-inactiva-planes">
                               Más Popular
                             </span>
                           )}
@@ -164,12 +166,13 @@ const Planes = () => {
             web pueden variar. Por favor, revisa detenidamente los detalles de
             cada plan antes de realizar tu elección.
           </p>
-          <Link
+          {/* <PresWeb /> */}
+          {/* <Link
             href="#consultas"
             className="col-span-5 w-[250px] flex justify-center items-center text-[var(--font-light)] bg-amber-200/90 px-8 py-4 rounded-full sombra-light-amber border border-[var(--card-light)] m-10 mx-auto text-slate-800"
           >
             Pedir ahora
-          </Link>
+          </Link> */}
         </section>
       </div>
     </>
