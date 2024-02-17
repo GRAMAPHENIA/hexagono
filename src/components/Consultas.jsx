@@ -5,12 +5,12 @@ const Consultas = () => {
         className="mb-16 flex justify-center items-center m-4"
         id="consultas"
       >
-        <h2 className="text-6xl text-center font-serif text-slate-400 py-10">
+        <h2 className="text-6xl text-center font-serif text-slate-400 mt-14">
           Hace tu <span className="text-amber-100">Consulta</span>
         </h2>
       </figure>
 
-      <section className="flex  flex-col justify-center items-center border border-[var(--button-dark)] py-10 lg:p-10 rounded-xl bg-[#1011121d] backdrop-blur-sm mx-auto w-[340px]  lg:w-[700px] mb-0 sombra-inactiva">
+      <section className="flex flex-col justify-center items-center border border-[var(--button-dark)] py-10 lg:p-10 rounded-xl bg-[#1011121d] backdrop-blur-sm mx-auto w-[340px] lg:w-[700px] mb-0 sombra-inactiva">
         <form action="/my-handling-form-page" method="post">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
             <div className="flex flex-col my-2">

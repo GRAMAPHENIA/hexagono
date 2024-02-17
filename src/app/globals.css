@@ -110,6 +110,10 @@ p {
   box-shadow: 5px 6px 0px var(--font-semi-light-dark);
 }
 
+.sombra-inactiva-planes {
+  box-shadow: 5px 6px 0px #ffebaf;
+}
+
 .sombra-completa {
   box-shadow: 6px 8px 0px var(--hover);
 }
