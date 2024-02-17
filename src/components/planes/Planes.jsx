@@ -42,7 +42,7 @@ const Planes = () => {
       ],
     },
     {
-      title: "Premiun",
+      title: "Premium",
       options: [
         {
           id: "popular-six",
@@ -123,7 +123,7 @@ const Planes = () => {
                             </li>
                           ))}
                           {plan.title === "Elemental" && optIndex === 0 && (
-                            <span className="absolute text-md slide-in-top left-0 top-0 px-24 py-[4px] rounded-br-lg bg-gradient-to-r from-white to-amber-200 text-amber-900 border border-t-0 border-l-0 border-b-gray-600 border-r-gray-600 rounded-tl-lg sombra-inactiva-planes">
+                            <span className="absolute text-md slide-in-top left-0 top-0 px-24 py-[4px] rounded-br-lg bg-gradient-to-r from-amber-100 via-amber-200 to-amber-300 text-amber-900 border border-t-0 border-l-0 border-b-gray-600 border-r-gray-600 rounded-tl-lg sombra-inactiva-planes">
                               Más Popular
                             </span>
                           )}
