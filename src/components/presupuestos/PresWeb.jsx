@@ -28,7 +28,7 @@ const PresWeb = () => {
   return (
     <>
       <form
-        className="justify-center items-center border border-[var(--button-dark)] py-10 p-10 lg:p-10 rounded-xl bg-[#1011121d] backdrop-blur-sm mx-auto w-[340px] lg:w-[700px] sombra-inactiva grid grid-cols-1 lg:grid-cols-2 gap-4"
+        className="justify-center items-center border border-[var(--button-dark)] py-10 p-4 lg:p-10 rounded-xl bg-[#1011121d] backdrop-blur-sm mx-auto w-[340px] lg:w-[700px] sombra-inactiva grid grid-cols-1 lg:grid-cols-2 gap-4"
         onSubmit={handleSubmit}
       >
         <div className="col-span-2 text-sm mb-1 text-amber-100 font-extralight">
