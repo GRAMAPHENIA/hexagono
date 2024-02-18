@@ -8,7 +8,7 @@ import PresWeb from "@/components/presupuestos/PresWeb";
 const Informacion = () => {
   return (
     <>
-      <section className="lg:pt-10 px-4 lg:px-20">
+      <section className="lg:pt-52 px-4 lg:px-20">
         <Dominios />
         <Hosting />
         <Planes />
