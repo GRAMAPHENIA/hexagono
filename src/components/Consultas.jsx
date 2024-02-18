@@ -10,12 +10,12 @@ const Consultas = () => {
         </h2>
       </figure>
 
-      <section className="flex flex-col justify-center items-center border border-[var(--button-dark)] py-10 lg:p-10 rounded-xl bg-[#1011121d] backdrop-blur-sm mx-auto w-[340px] lg:w-[700px] mb-0 sombra-inactiva">
+      <section className="flex flex-col justify-center items-center border border-[var(--button-dark)] py-10 p-0 lg:p-10 rounded-xl bg-[#1011121d] backdrop-blur-sm mx-auto w-[340px] lg:w-[700px] mb-0 sombra-inactiva">
         <form action="/my-handling-form-page" method="post">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-            <div className="flex flex-col my-2">
+            <div className="cols-2 lg:col-span-1 flex flex-col w-[280px] lg:w-auto my-2">
               <label
-                className="text-sm mb-1 text-amber-100 font-extralight"
+                className=" col-span-1 text-sm mb-1 text-amber-100 font-extralight"
                 htmlFor="name"
               >
                 Nombre:
@@ -27,7 +27,7 @@ const Consultas = () => {
                 name="user_name"
               />
             </div>
-            <div className="flex flex-col my-2">
+            <div className="col-span-1 flex flex-col my-2">
               <label
                 className="text-sm mb-1 text-amber-100 font-extralight"
                 htmlFor="mail"
