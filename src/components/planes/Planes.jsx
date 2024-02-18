@@ -15,7 +15,7 @@ const Planes = () => {
       title: "Elemental",
       options: [
         {
-          id: "basic-six",
+          id: "0",
           titulo: "Plan Inicial",
           price: "$112",
           duration: " / 3 meses",
@@ -28,7 +28,7 @@ const Planes = () => {
           ],
         },
         {
-          id: "basic-twelve",
+          id: "1",
           titulo: "Plan Emprendedores",
           price: "$135",
           duration: " / 3 meses",
@@ -47,7 +47,7 @@ const Planes = () => {
       title: "Premium",
       options: [
         {
-          id: "popular-six",
+          id: "2",
           titulo: "Plan Negocios",
           price: "$155",
           duration: " / 3 meses",
@@ -61,7 +61,7 @@ const Planes = () => {
           ],
         },
         {
-          id: "popular-twelve",
+          id: "3",
           titulo: "Plan Empresarial",
           price: "$170",
           duration: " / 3 meses",
@@ -97,13 +97,14 @@ const Planes = () => {
       >
         Crea una experiencia digital<span className="text-amber-400">.</span>
       </h4>
-      <div className="bg-gray-800/20 backdrop-blur-lg flex items-center justify-center font-nunito text-gray-600 mx-20 my-10 rounded-lg shadow-md py-4 mb-10">
+      
+      <div className="bg-gray-800/20 backdrop-blur-lg flex items-center justify-center font-nunito text-gray-600 lg:mx-20 my-10 rounded-lg shadow-md py-4 mb-10">
         <section className="max-w-[968px] w-full mx-4">
-          <div className="flex flex-wrap justify-between">
+          <div className="grid grid-cols-1 lg:grid-cols-2">
             {planes.map((plan, index) => (
               <ul
                 key={index}
-                className="w-[calc(50%-1rem)] bg-gray-800/20 backdrop-blur-lg p-8 rounded-lg gap-3 flex items-start justify-center shadow-md flex-col mb-10 border border-slate-700"
+                className="col-span-1 w-auto bg-gray-800/20 backdrop-blur-lg p-8 rounded-lg gap-3 flex items-start justify-center shadow-md flex-col mb-10 border border-slate-700 m-0 lg:m-8"
               >
                 <li className="grow">
                   <h2 className="mb-3 text-amber-100 text-center text-7xl font-serif mt-10 ">
@@ -118,12 +119,13 @@ const Planes = () => {
                         <ul className="my-4">
                           {option.description.map((desc, index) => (
                             <li
-                              className="list-disc ml-16 text-amber-50 font-extralight mb-2" // Ajusta la clase mb-2 para agregar espacio entre los elementos
+                              className="list-disc lg:ml-16 text-amber-50 font-extralight mb-2" // Ajusta la clase mb-2 para agregar espacio entre los elementos
                               key={index}
                             >
                               {desc}
                             </li>
                           ))}
+
                           {plan.title === "Elemental" && optIndex === 0 && (
                             <span className="absolute text-md slide-in-top left-0 top-0 px-24 py-[4px] rounded-br-lg bg-gradient-to-r from-amber-100 via-amber-200 to-amber-300/95 text-amber-900 border border-t-0 border-l-0 border-b-gray-600 border-r-gray-600 rounded-tl-lg sombra-inactiva-planes">
                               Más Popular
