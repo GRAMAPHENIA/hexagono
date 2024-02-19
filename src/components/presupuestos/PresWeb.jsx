@@ -182,13 +182,13 @@ const PresWeb = () => {
   return (
     <>
       <form
-        className="justify-center items-center py-10 p-4 lg:p-8 mt-5 mx-auto w-[340px] lg:w-[700px]  grid grid-cols-1 lg:grid-cols-2 gap-4"
+        className="justify-center items-center py-10 p-4 lg:p-8 mt-5 mx-auto w-[340px] lg:w-[700px]  grid grid-cols-1 lg:grid-cols-2 gap-4 "
         onSubmit={handleSubmit}
       >
         <div className="col-span-2 text-sm mb-1 text-amber-100 font-extralight">
           <label htmlFor="servicio"></label>
           <select
-            className="col-span-2 lg:col-span-1 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-amber-200/ block w-full p-2.5 dark:bg-gray-800 dark:border-amber-100 dark:placeholder-gray-700 dark:text-white dark:focus:ring-amber-200 dark:focus:border-amber-200 mb-2"
+            className="col-span-2 lg:col-span-1 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-amber-200/ block w-full p-2.5 dark:bg-gray-800 dark:border-amber-100 dark:placeholder-gray-700 dark:text-white dark:focus:ring-amber-200 dark:focus:border-amber-200 mb-2 cursor-pointer"
             id="servicio"
             value={servicio}
             onChange={(e) => {
