@@ -368,3 +368,28 @@ p {
 }
 
 /* 🟡 CUSTOM-RADIO 🟡 */
+
+.select-wrapper {
+  position: relative;
+  
+}
+
+.select-wrapper::after {
+  content: "\25BC"; /* flecha hacia abajo */
+  font-size: 12px;
+  position: absolute;
+  top: 45%;
+  right: 14px; /* ajusta el espacio entre la flecha y el borde derecho */
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+/* Oculta la flecha predeterminada del select */
+.select-wrapper select {
+  -webkit-appearance: none; /* Oculta la flecha en Safari */
+  -moz-appearance: none; /* Oculta la flecha en Firefox */
+  appearance: none;
+  width: 100%; /* Ajusta el ancho del select al 100% del contenedor */
+  overflow: hidden; /* Oculta cualquier desbordamiento */
+ 
+}

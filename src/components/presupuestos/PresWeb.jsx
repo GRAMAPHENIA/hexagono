@@ -1,164 +1,47 @@
 "use client";
+
 import { useState } from "react";
 
+
+const preguntasPorPlan = {
+  "Plan Inicial": [
+    "Pregunta A para Plan Inicial",
+    "Pregunta B para Plan Inicial",
+    "Pregunta C para Plan Inicial",
+    "Pregunta D para Plan Inicial",
+  ],
+  "Plan Emprendedores": [
+    "Pregunta 1 para Plan Emprendedores",
+    "Pregunta 2 para Plan Emprendedores",
+    "Pregunta 3 para Plan Emprendedores",
+    "Pregunta 4 para Plan Emprendedores",
+  ],
+  "Plan Negocios": [
+    "Pregunta 1 para Plan Negocios",
+    "Pregunta 2 para Plan Negocios",
+    "Pregunta 3 para Plan Negocios",
+    "Pregunta 4 para Plan Negocios",
+  ],
+  "Plan Empresarial": [
+    "Pregunta 1 para Plan Empresarial",
+    "Pregunta 2 para Plan Empresarial",
+    "Pregunta 3 para Plan Empresarial",
+    "Pregunta 4 para Plan Empresarial",
+  ],
+  // Agrega más planes si es necesario
+};
+
 const PreguntasDesarrollo = ({ plan }) => {
-  switch (plan) {
-    case "Plan Inicial":
-      return (
-        <>
-          {/* Preguntas específicas para el Plan Inicial */}
-          <div className="col-span-2 lg:col-span-1 flex flex-col text-sm mb-1 text-amber-100 font-extralight">
-            <label htmlFor="pregunta1">Pregunta 1 para Plan Inicial:</label>
-            <input
-              className="border border-[var(--button-dark)] rounded-sm bg-transparent p-1 mt-2 text-[var(--font-light)] font-extralight focus:outline-none input-style"
-              type="text"
-              id="pregunta1"
-            />
-          </div>
-          <div className="col-span-2 lg:col-span-1 flex flex-col text-sm mb-1 text-amber-100 font-extralight">
-            <label htmlFor="pregunta2">Pregunta 2 para Plan Inicial:</label>
-            <input
-              className="border border-[var(--button-dark)] rounded-sm bg-transparent p-1 mt-2 text-[var(--font-light)] font-extralight focus:outline-none input-style"
-              type="text"
-              id="pregunta2"
-            />
-          </div>
-          <div className="col-span-2 lg:col-span-1 flex flex-col text-sm mb-1 text-amber-100 font-extralight">
-            <label htmlFor="pregunta1">Pregunta 3 para Plan Inicial:</label>
-            <input
-              className="border border-[var(--button-dark)] rounded-sm bg-transparent p-1 mt-2 text-[var(--font-light)] font-extralight focus:outline-none input-style"
-              type="text"
-              id="pregunta1"
-            />
-          </div>
-          <div className="col-span-2 lg:col-span-1 flex flex-col text-sm mb-1 text-amber-100 font-extralight">
-            <label htmlFor="pregunta2">Pregunta 4 para Plan Inicial:</label>
-            <input
-              className="border border-[var(--button-dark)] rounded-sm bg-transparent p-1 mt-2 text-[var(--font-light)] font-extralight focus:outline-none input-style"
-              type="text"
-              id="pregunta2"
-            />
-          </div>
-        </>
-      );
-    case "Plan Emprendedores":
-      return (
-        <>
-          {/* Preguntas específicas para el Plan Emprendedores */}
-          <div className="col-span-2 lg:col-span-1 flex flex-col text-sm mb-1 text-amber-100 font-extralight">
-            <label htmlFor="pregunta1">Pregunta 1 para Plan Inicial:</label>
-            <input
-              className="border border-[var(--button-dark)] rounded-sm bg-transparent p-1 mt-2 text-[var(--font-light)] font-extralight focus:outline-none input-style"
-              type="text"
-              id="pregunta1"
-            />
-          </div>
-          <div className="col-span-2 lg:col-span-1 flex flex-col text-sm mb-1 text-amber-100 font-extralight">
-            <label htmlFor="pregunta2">Pregunta 2 para Plan Inicial:</label>
-            <input
-              className="border border-[var(--button-dark)] rounded-sm bg-transparent p-1 mt-2 text-[var(--font-light)] font-extralight focus:outline-none input-style"
-              type="text"
-              id="pregunta2"
-            />
-          </div>
-          <div className="col-span-2 lg:col-span-1 flex flex-col text-sm mb-1 text-amber-100 font-extralight">
-            <label htmlFor="pregunta1">Pregunta 3 para Plan Inicial:</label>
-            <input
-              className="border border-[var(--button-dark)] rounded-sm bg-transparent p-1 mt-2 text-[var(--font-light)] font-extralight focus:outline-none input-style"
-              type="text"
-              id="pregunta1"
-            />
-          </div>
-          <div className="col-span-2 lg:col-span-1 flex flex-col text-sm mb-1 text-amber-100 font-extralight">
-            <label htmlFor="pregunta2">Pregunta 4 para Plan Inicial:</label>
-            <input
-              className="border border-[var(--button-dark)] rounded-sm bg-transparent p-1 mt-2 text-[var(--font-light)] font-extralight focus:outline-none input-style"
-              type="text"
-              id="pregunta2"
-            />
-          </div>
-        </>
-      );
-    case "Plan Negocios":
-      return (
-        <>
-          {/* Preguntas específicas para el Plan Negocios */}
-          <div className="col-span-2 lg:col-span-1 flex flex-col text-sm mb-1 text-amber-100 font-extralight">
-            <label htmlFor="pregunta1">Pregunta 1 para Plan Inicial:</label>
-            <input
-              className="border border-[var(--button-dark)] rounded-sm bg-transparent p-1 mt-2 text-[var(--font-light)] font-extralight focus:outline-none input-style"
-              type="text"
-              id="pregunta1"
-            />
-          </div>
-          <div className="col-span-2 lg:col-span-1 flex flex-col text-sm mb-1 text-amber-100 font-extralight">
-            <label htmlFor="pregunta2">Pregunta 2 para Plan Inicial:</label>
-            <input
-              className="border border-[var(--button-dark)] rounded-sm bg-transparent p-1 mt-2 text-[var(--font-light)] font-extralight focus:outline-none input-style"
-              type="text"
-              id="pregunta2"
-            />
-          </div>
-          <div className="col-span-2 lg:col-span-1 flex flex-col text-sm mb-1 text-amber-100 font-extralight">
-            <label htmlFor="pregunta1">Pregunta 3 para Plan Inicial:</label>
-            <input
-              className="border border-[var(--button-dark)] rounded-sm bg-transparent p-1 mt-2 text-[var(--font-light)] font-extralight focus:outline-none input-style"
-              type="text"
-              id="pregunta1"
-            />
-          </div>
-          <div className="col-span-2 lg:col-span-1 flex flex-col text-sm mb-1 text-amber-100 font-extralight">
-            <label htmlFor="pregunta2">Pregunta 4 para Plan Inicial:</label>
-            <input
-              className="border border-[var(--button-dark)] rounded-sm bg-transparent p-1 mt-2 text-[var(--font-light)] font-extralight focus:outline-none input-style"
-              type="text"
-              id="pregunta2"
-            />
-          </div>
-        </>
-      );
-    case "Plan Empresarial":
-      return (
-        <>
-          {/* Preguntas específicas para el Plan Empresarial */}
-          <div className="col-span-2 lg:col-span-1 flex flex-col text-sm mb-1 text-amber-100 font-extralight">
-            <label htmlFor="pregunta1">Pregunta 1 para Plan Inicial:</label>
-            <input
-              className="border border-[var(--button-dark)] rounded-sm bg-transparent p-1 mt-2 text-[var(--font-light)] font-extralight focus:outline-none input-style"
-              type="text"
-              id="pregunta1"
-            />
-          </div>
-          <div className="col-span-2 lg:col-span-1 flex flex-col text-sm mb-1 text-amber-100 font-extralight">
-            <label htmlFor="pregunta2">Pregunta 2 para Plan Inicial:</label>
-            <input
-              className="border border-[var(--button-dark)] rounded-sm bg-transparent p-1 mt-2 text-[var(--font-light)] font-extralight focus:outline-none input-style"
-              type="text"
-              id="pregunta2"
-            />
-          </div>
-          <div className="col-span-2 lg:col-span-1 flex flex-col text-sm mb-1 text-amber-100 font-extralight">
-            <label htmlFor="pregunta1">Pregunta 3 para Plan Inicial:</label>
-            <input
-              className="border border-[var(--button-dark)] rounded-sm bg-transparent p-1 mt-2 text-[var(--font-light)] font-extralight focus:outline-none input-style"
-              type="text"
-              id="pregunta1"
-            />
-          </div>
-          <div className="col-span-2 lg:col-span-1 flex flex-col text-sm mb-1 text-amber-100 font-extralight">
-            <label htmlFor="pregunta2">Pregunta 4 para Plan Inicial:</label>
-            <input
-              className="border border-[var(--button-dark)] rounded-sm bg-transparent p-1 mt-2 text-[var(--font-light)] font-extralight focus:outline-none input-style"
-              type="text"
-              id="pregunta2"
-            />
-          </div>
-        </>
-      );
-    // Añade casos para los otros planes con sus preguntas específicas
-    default:
-      return null;
-  }
+  return preguntasPorPlan[plan]?.map((pregunta, index) => (
+    <div key={index} className="col-span-2 lg:col-span-1 flex flex-col text-sm mb-1 text-amber-100 font-extralight">
+      <label htmlFor={`pregunta-${index + 1}`}>{pregunta}:</label>
+      <input
+        className="border border-[var(--button-dark)] rounded-sm bg-transparent p-1 mt-2 text-[var(--font-light)] font-extralight focus:outline-none input-style"
+        type="text"
+        id={`pregunta-${index + 1}`}
+      />
+    </div>
+  ));
 };
 
 const PresWeb = () => {
@@ -185,7 +68,7 @@ const PresWeb = () => {
         className="justify-center items-center py-10 p-4 lg:p-8 mt-5 mx-auto w-[340px] lg:w-[700px]  grid grid-cols-1 lg:grid-cols-2 gap-4 "
         onSubmit={handleSubmit}
       >
-        <div className="col-span-2 text-sm mb-1 text-amber-100 font-extralight">
+        <div className="col-span-2 text-sm mb-1 text-amber-100 font-extralight select-wrapper">
           <label htmlFor="servicio"></label>
           <select
             className="col-span-2 lg:col-span-1 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-amber-200/ block w-full p-2.5 dark:bg-gray-800 dark:border-amber-100 dark:placeholder-gray-700 dark:text-white dark:focus:ring-amber-200 dark:focus:border-amber-200 mb-2 cursor-pointer"
@@ -197,13 +80,13 @@ const PresWeb = () => {
             }}
           >
             <option value="" disabled>
-              Selecciona un Plan
+              Selecciona un Plan...
             </option>
-            <option value="Plan Inicial">Plan Inicial</option>
-            <option value="Plan Emprendedores">Plan Emprendedores</option>
-            <option value="Plan Negocios">Plan Negocios</option>
-            <option value="Plan Empresarial">Plan Empresarial</option>
-            {/* Agrega opciones para otros planes */}
+            {Object.keys(preguntasPorPlan).map((plan, index) => (
+              <option key={index} value={plan}>
+                {plan}
+              </option>
+            ))}
           </select>
         </div>
 
