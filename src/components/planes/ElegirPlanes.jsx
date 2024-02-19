@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 import ModalPlanes from "@/components/modales/ModalPlanes";
-import PresWeb from "@/components/presupuestos/Presweb";
+import PresWeb from "@/components/presupuestos/PresWeb";
 
 const ElegirPlanes = () => {
   const [isModalOpen, setModalOpen] = useState(false);
@@ -39,14 +39,14 @@ const ElegirPlanes = () => {
         <ModalPlanes isOpen={isModalOpen} onClose={closeModal}>
           {/* Aca se escribe el contenido que se ve en el children */}
 
-          {/* <h1 className="text-2xl lg:text-2xl text-amber-100 lg:text-center font-black">
-            <span className="text-amber-200">Diseño Gráfico: </span>
-            Transformando ideas en realidad
+          <h1 className="text-2xl lg:text-4xl text-amber-100 lg:text-center font-black">
+            <span className="text-amber-200">Planes </span>
+            Web
             <span className="text-amber-200">.</span>
-          </h1> */}
-          {/* <p className="text-[var(--font-semi-light)] mx-auto w-[70%] text-sm text-center font-extralight p-0 lg:italic antialiased">
-            &quot;Encuentra el plan adecuado para tu página web.&quot;
-          </p> */}
+          </h1>
+          <p className="text-[var(--font-semi-light)] mx-auto text-sm text-center font-extralight p-0 lg:italic antialiased">
+            &quot;Encuentra el adecuado para tu página web.&quot;
+          </p>
 
           {/* Aca se renderizan los componentes para presupuestar */}
           <PresWeb />
