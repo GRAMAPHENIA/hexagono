@@ -46,7 +46,7 @@ const PreguntasDesarrollo = ({ plan }) => {
         <>
           {/* Preguntas específicas para el Plan Emprendedores */}
           <div className="col-span-2 lg:col-span-1 flex flex-col text-sm mb-1 text-amber-100 font-extralight">
-          <label htmlFor="pregunta1">Pregunta 1 para Plan Inicial:</label>
+            <label htmlFor="pregunta1">Pregunta 1 para Plan Inicial:</label>
             <input
               className="border border-[var(--button-dark)] rounded-sm bg-transparent p-1 mt-2 text-[var(--font-light)] font-extralight focus:outline-none input-style"
               type="text"
@@ -84,7 +84,7 @@ const PreguntasDesarrollo = ({ plan }) => {
         <>
           {/* Preguntas específicas para el Plan Negocios */}
           <div className="col-span-2 lg:col-span-1 flex flex-col text-sm mb-1 text-amber-100 font-extralight">
-          <label htmlFor="pregunta1">Pregunta 1 para Plan Inicial:</label>
+            <label htmlFor="pregunta1">Pregunta 1 para Plan Inicial:</label>
             <input
               className="border border-[var(--button-dark)] rounded-sm bg-transparent p-1 mt-2 text-[var(--font-light)] font-extralight focus:outline-none input-style"
               type="text"
@@ -122,7 +122,7 @@ const PreguntasDesarrollo = ({ plan }) => {
         <>
           {/* Preguntas específicas para el Plan Empresarial */}
           <div className="col-span-2 lg:col-span-1 flex flex-col text-sm mb-1 text-amber-100 font-extralight">
-          <label htmlFor="pregunta1">Pregunta 1 para Plan Inicial:</label>
+            <label htmlFor="pregunta1">Pregunta 1 para Plan Inicial:</label>
             <input
               className="border border-[var(--button-dark)] rounded-sm bg-transparent p-1 mt-2 text-[var(--font-light)] font-extralight focus:outline-none input-style"
               type="text"
