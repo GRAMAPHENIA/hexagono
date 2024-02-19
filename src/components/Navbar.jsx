@@ -36,7 +36,7 @@ const Navbar = () => {
           <li className="space-x-4 flex flex-row align-middle">
             <button className="text-[var(--button-dark)] hidden lg:block bg-[var(--font-semi-light)] px-4 py-2 rounded-full sombra border border-[var(--card-light)]">
               <Link href=""></Link>
-              presupuestos
+              portfolio
             </button>{" "}
             <Link href="#consultas">
               <button className="font-light hidden lg:block bg-[var(--card-dark)] text-[var(--font-light)] px-4 py-2 rounded-full sombra border border-[var(--card-light)]">

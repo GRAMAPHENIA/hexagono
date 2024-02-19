@@ -5,7 +5,7 @@ const Consultas = () => {
         className="mb-16 flex justify-center items-center m-4"
         id="consultas"
       >
-        <h2 className="text-6xl text-center font-serif text-slate-400 mt-36">
+        <h2 className="text-6xl text-center font-serif text-slate-400 mt-20">
           Hace tu <span className="text-amber-100">Consulta</span>
         </h2>
       </figure>

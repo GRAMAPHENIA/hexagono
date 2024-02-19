@@ -3,11 +3,11 @@
 import React, { useState } from "react";
 import Link from "next/link";
 
-import ElegirPlanes from "@/components/planes/ElegirPlanes";
+import ElegirPlanesWeb from "@/components/planes/ElegirPlanesWeb";
 
 // import PresWeb from "@/components/presupuestos/PresWeb";
 
-const Planes = () => {
+const PlanesWeb = () => {
   // Estado para almacenar la opción seleccionada
   const [selectedOption, setSelectedOption] = useState(null);
 
@@ -84,19 +84,16 @@ const Planes = () => {
   return (
     <>
       <h2
-        className="text-6xl text-center font-serif text-slate-400 pt-10 mt-40"
-        id="planes"
+        className="text-6xl text-center font-serif text-slate-400 pt-10 mt-20"
+        id="planesweb"
       >
         Planes de <span className="text-amber-100">Desarrollo Web</span>
       </h2>
-      <h4
-        className="text-2xl text-center font-serif text-slate-400 pt-10"
-        id="planes"
-      >
+      <h4 className="text-2xl text-center font-serif text-slate-400 pt-10">
         Crea una experiencia digital<span className="text-amber-400">.</span>
       </h4>
 
-      <div className="bg-gray-800/20 backdrop-blur-lg flex items-center justify-center font-nunito text-gray-600 lg:mx-20 my-10 rounded-lg shadow-md py-4 mb-10">
+      <div className="flex items-center justify-center font-nunito text-gray-600 lg:mx-20 my-16 py-10 mb-10">
         <section className="max-w-[968px] w-full lg:mx-4">
           <div className="grid grid-cols-1 lg:grid-cols-2">
             {planes.map((plan, index) => (
@@ -105,7 +102,7 @@ const Planes = () => {
                 className="col-span-1 w-auto bg-gray-800/20 backdrop-blur-lg p-8 rounded-lg gap-3 flex items-start justify-center shadow-md flex-col mb-10 border border-slate-700 m-0 lg:m-8"
               >
                 <li className="grow">
-                  <h2 className="mb-3 text-amber-100 text-center text-5xl lg:text-7xl font-serif mt-10 ">
+                  <h2 className="mb-3 text-amber-200 text-center text-5xl lg:text-7xl font-serif mt-10 ">
                     {plan.title}
                   </h2>
                   <section className="">
@@ -125,7 +122,7 @@ const Planes = () => {
                           ))}
 
                           {plan.title === "Elemental" && optIndex === 0 && (
-                            <span className="absolute text-md slide-in-top left-0 top-0 px-24 py-[4px] rounded-br-lg bg-gradient-to-r from-amber-100 via-amber-200 to-amber-300/95 text-amber-900 border border-t-0 border-l-0 border-b-gray-600 border-r-gray-600 rounded-tl-lg sombra-inactiva-planes">
+                            <span className="absolute text-md slide-in-top left-0 top-0 px-24 py-[4px] rounded-br-lg bg-gradient-to-r from-amber-100 to-amber-300 text-amber-900 border border-t-0 border-l-0 border-b-gray-600 border-r-gray-600 rounded-tl-lg sombra-inactiva-planes">
                               Popular
                             </span>
                           )}
@@ -157,11 +154,10 @@ const Planes = () => {
           </p>
         </section>
       </div>
-
       {/* MODAL para ELEGIR PLANES */}
-      <ElegirPlanes />
+      <ElegirPlanesWeb />
     </>
   );
 };
 
-export default Planes;
+export default PlanesWeb;

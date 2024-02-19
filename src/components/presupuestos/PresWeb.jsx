@@ -1,45 +1,206 @@
 "use client";
-
 import { useState } from "react";
 
-
 const preguntasPorPlan = {
-  "Plan Inicial": [
-    "Pregunta A para Plan Inicial",
-    "Pregunta B para Plan Inicial",
-    "Pregunta C para Plan Inicial",
-    "Pregunta D para Plan Inicial",
+  "Elemental - Plan Inicial": [
+    {
+      pregunta: "¿Cuál es el propósito de tu landing page?",
+      opciones: [
+        "Capturar leads",
+        "Promocionar un producto o servicio",
+        "Evento o lanzamiento de producto",
+        "Otro",
+      ],
+    },
+    {
+      pregunta: "¿Qué información deseas incluir?",
+      opciones: [
+        "Descripción breve del producto/servicio",
+        "Ventajas y beneficios",
+        "Llamado a la acción",
+        "Testimonios de clientes",
+        "Otro",
+      ],
+    },
+    {
+      pregunta: "¿Tenes un diseño en mente?",
+      opciones: [
+        "Minimalista y limpio",
+        "Colorido y llamativo",
+        "Profesional y corporativo",
+        "Moderno y creativo",
+        "Otro",
+      ],
+    },
+    {
+      pregunta: "¿Cuál será la acción principal?",
+      opciones: [
+        "Suscribirse al boletín informativo",
+        "Descargar un recurso gratuito",
+        "Solicitar una demostración",
+        "Realizar una compra",
+        "Otro",
+      ],
+    },
   ],
-  "Plan Emprendedores": [
-    "Pregunta 1 para Plan Emprendedores",
-    "Pregunta 2 para Plan Emprendedores",
-    "Pregunta 3 para Plan Emprendedores",
-    "Pregunta 4 para Plan Emprendedores",
+  "Elemental - Plan Emprendedores": [
+    {
+      pregunta: "¿Cuál es el propósito de tu sitio web?",
+      opciones: [
+        "Promocionar productos o servicios",
+        "Informar sobre tu empresa",
+        "Generar leads o contactos",
+        "Vender productos en línea",
+        "Otro",
+      ],
+    },
+    {
+      pregunta: "¿Qué funcionalidades te gustaría incluir?",
+      opciones: [
+        "Formulario de contacto",
+        "Catálogo de productos o servicios",
+        "Integración con redes sociales",
+        "Galería de imágenes",
+        "Blog",
+        "Otro",
+      ],
+    },
+    {
+      pregunta: "¿Tienes contenido multimedia?",
+      opciones: [
+        "Sí, tengo imágenes de alta calidad",
+        "Sí, tengo videos",
+        "No, necesito ayuda para crear contenido multimedia",
+        "No, solo tengo contenido textual",
+        "Otro",
+      ],
+    },
+    {
+      pregunta: "¿Tienes definida una estructura de navegación?",
+      opciones: [
+        "Sí, tengo una idea clara de la estructura",
+        "No, necesito ayuda para definirla",
+        "No, confío en el criterio del equipo de diseño",
+        "Otro",
+      ],
+    },
   ],
-  "Plan Negocios": [
-    "Pregunta 1 para Plan Negocios",
-    "Pregunta 2 para Plan Negocios",
-    "Pregunta 3 para Plan Negocios",
-    "Pregunta 4 para Plan Negocios",
+  "Premium - Plan Negocios": [
+    {
+      pregunta: "¿Cuál es el objetivo principal de tu sitio web?",
+      opciones: [
+        "Generar ventas",
+        "Aumentar la visibilidad de la marca",
+        "Facilitar la comunicación con los clientes",
+        "Brindar información detallada sobre productos/servicios",
+        "Otro",
+      ],
+    },
+    {
+      pregunta: "¿Qué tipo de diseño prefieres?",
+      opciones: [
+        "Minimalista y moderno",
+        "Colorido y llamativo",
+        "Profesional y corporativo",
+        "Creativo y fuera de lo común",
+        "Otro",
+      ],
+    },
+    {
+      pregunta: "¿Qué funcionalidades consideras esenciales para tu sitio web?",
+      opciones: [
+        "Formularios de contacto",
+        "Galería de imágenes",
+        "Integración con redes sociales",
+        "Blog o sección de noticias",
+        "SEO básico",
+        "Otro",
+      ],
+    },
+    {
+      pregunta:
+        "¿Qué tan familiarizado estás con el SEO (Search Engine Optimization)?",
+      opciones: [
+        "Soy experto y puedo proporcionar contenido optimizado",
+        "Tengo conocimientos básicos pero necesito ayuda",
+        "No estoy familiarizado y necesito orientación",
+        "Otro",
+      ],
+    },
   ],
-  "Plan Empresarial": [
-    "Pregunta 1 para Plan Empresarial",
-    "Pregunta 2 para Plan Empresarial",
-    "Pregunta 3 para Plan Empresarial",
-    "Pregunta 4 para Plan Empresarial",
+  "Premium - Plan Empresarial": [
+    {
+      pregunta: "¿Cuál es el objetivo principal de tu sitio web?",
+      opciones: [
+        "Impulsar las ventas",
+        "Mejorar la visibilidad de la marca",
+        "Proporcionar información detallada sobre productos/servicios",
+        "Ofrecer una experiencia de usuario única",
+        "Otro",
+      ],
+    },
+    {
+      pregunta: "¿Qué tipo de diseño prefieres?",
+      opciones: [
+        "Minimalista y elegante",
+        "Moderno y creativo",
+        "Sofisticado y profesional",
+        "Vibrante y llamativo",
+        "Otro",
+      ],
+    },
+    {
+      pregunta:
+        "¿Qué tipo de animaciones o efectos visuales te gustaría incluir?",
+      opciones: [
+        "Transiciones suaves entre secciones",
+        "Animaciones de carga",
+        "Efectos de paralaje",
+        "Elementos interactivos",
+        "Otro",
+      ],
+    },
+    {
+      pregunta: "¿Tienes contenido multimedia de alta calidad?",
+      opciones: [
+        "Sí, tengo imágenes y videos de alta resolución",
+        "Tengo algunas imágenes, pero necesito más contenido multimedia",
+        "No, necesito ayuda para crear contenido multimedia",
+        "No, solo tengo contenido textual",
+        "Otro",
+      ],
+    },
   ],
-  // Agrega más planes si es necesario
 };
 
-const PreguntasDesarrollo = ({ plan }) => {
+const PreguntasDesarrollo = ({ plan, respuestas, setRespuestas }) => {
+  const handleRespuestaChange = (index, value) => {
+    const newRespuestas = [...respuestas];
+    newRespuestas[index] = value;
+    setRespuestas(newRespuestas);
+  };
+
   return preguntasPorPlan[plan]?.map((pregunta, index) => (
-    <div key={index} className="col-span-2 lg:col-span-1 flex flex-col text-sm mb-1 text-amber-100 font-extralight">
-      <label htmlFor={`pregunta-${index + 1}`}>{pregunta}:</label>
-      <input
-        className="border border-[var(--button-dark)] rounded-sm bg-transparent p-1 mt-2 text-[var(--font-light)] font-extralight focus:outline-none input-style"
-        type="text"
+    <div
+      key={index}
+      className="col-span-2 lg:col-span-1 flex flex-col text-sm mb-1 text-amber-100 font-extralight select-wrapper"
+    >
+      <label htmlFor={`pregunta-${index + 1}`}></label>
+      <select
+        className="col-span-2 lg:col-span-1 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-amber-200/ block w-full p-2.5 dark:bg-gray-800 dark:border-amber-100 dark:placeholder-gray-700 dark:text-white dark:focus:ring-amber-200 dark:focus:border-amber-200 mb-2 cursor-pointer"
         id={`pregunta-${index + 1}`}
-      />
+        value={respuestas[index]}
+        onChange={(e) => handleRespuestaChange(index, e.target.value)}
+      >
+        <option value="" disabled>
+          {pregunta.pregunta}
+        </option>
+        {pregunta.opciones.map((opcion, i) => (
+          <option key={i} value={opcion}>
+            {opcion}
+          </option>
+        ))}
+      </select>
     </div>
   ));
 };
@@ -50,6 +211,7 @@ const PresWeb = () => {
   const [email, setEmail] = useState("");
   const [telefono, setTelefono] = useState("");
   const [mostrarFormulario, setMostrarFormulario] = useState(false);
+  const [respuestas, setRespuestas] = useState([]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -57,7 +219,8 @@ const PresWeb = () => {
       Servicio: ${servicio}
       Nombre: ${nombre}
       Email: ${email}
-      Teléfono: ${telefono}`;
+      Teléfono: ${telefono}
+      Respuestas: ${respuestas}`;
     console.log(mensaje);
     // Aquí puedes agregar la lógica para enviar los datos a través de WhatsApp
   };
@@ -76,6 +239,9 @@ const PresWeb = () => {
             value={servicio}
             onChange={(e) => {
               setServicio(e.target.value);
+              setRespuestas(
+                Array(preguntasPorPlan[e.target.value].length).fill("")
+              );
               setMostrarFormulario(true); // Mostrar el formulario cuando se selecciona un plan
             }}
           >
@@ -91,7 +257,13 @@ const PresWeb = () => {
         </div>
 
         {/* Preguntas relacionadas con el desarrollo web, solo si se ha seleccionado un plan */}
-        {mostrarFormulario && <PreguntasDesarrollo plan={servicio} />}
+        {mostrarFormulario && (
+          <PreguntasDesarrollo
+            plan={servicio}
+            respuestas={respuestas}
+            setRespuestas={setRespuestas}
+          />
+        )}
 
         {/* Campos de nombre, email y teléfono, solo si se ha seleccionado un plan */}
         {mostrarFormulario && (

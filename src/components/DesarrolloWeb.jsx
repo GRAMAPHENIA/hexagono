@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
+import Link from "next/link"
 
 import ModalWeb from "@/components/modales/ModalWeb.jsx";
 
@@ -111,6 +112,12 @@ const DesarrolloWeb = () => {
           >
             Saber Más
           </button>
+          <Link href="/planes-desarrollo-web">
+            <button className="flex justify-center items-end bg-amber-200/90 hover:bg-amber-200 px-8 py-4 rounded-full sombra-light-amber border border-slate-600/40 text-slate-800 hover:text-[#171c21] ml-10">
+              Conocer planes
+            </button>
+          </Link>
+
           <ModalWeb isOpen={isModalOpen} onClose={closeModal}>
             {/* Aca se escribe el contenido que se ve en el children */}
 

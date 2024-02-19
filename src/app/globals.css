@@ -5,6 +5,8 @@
 :root {
   --dark: #161b22;
   --light: #1d2434;
+  --danger: #d25148;
+  --shadow-danger: #56312d;
   --font-light: #d3ddf4;
   --font-semi-light: #85b6cb;
   --font-semi-light-dark: #507381;
@@ -88,6 +90,9 @@ p {
 .sombra {
   box-shadow: 2px 5px 0px var(--border);
 }
+.sombra-danger {
+  box-shadow: 2px 5px 0px var(--shadow-danger);
+}
 
 .sombra-light {
   box-shadow: 2px 5px 0px var(--font-semi-light);
@@ -128,6 +133,10 @@ p {
 }
 
 .sombra-card:hover {
+  box-shadow: 0px 0px 0px var(--font-semi-light);
+  transform: translate(2px, 5px);
+}
+.sombra-danger:hover {
   box-shadow: 0px 0px 0px var(--font-semi-light);
   transform: translate(2px, 5px);
 }
@@ -369,6 +378,10 @@ p {
 
 /* 🟡 CUSTOM-RADIO 🟡 */
 
+
+/* 🔴 SELECT-WRAPPER 🔴 */
+
+
 .select-wrapper {
   position: relative;
   
@@ -393,3 +406,5 @@ p {
   overflow: hidden; /* Oculta cualquier desbordamiento */
  
 }
+
+/* 🔴 SELECT-WRAPPER 🔴 */
