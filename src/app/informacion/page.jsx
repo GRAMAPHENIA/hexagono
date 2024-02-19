@@ -1,7 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Informacion from "@/components/Informacion";
 import HeaderInfo from "@/app/informacion/HeaderInfo";
-import Consultas from "@/components/Consultas.jsx";
 import Footer from "@/components/Footer.jsx";
 
 export const metadata = {
@@ -16,7 +15,6 @@ const page = () => {
         <Navbar />
         <HeaderInfo />
         <Informacion />
-        {/* <Consultas /> */}
         <Footer />
       </section>
     </>

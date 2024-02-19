@@ -17,7 +17,9 @@ const PreguntasDesarrollo = ({ plan }) => {
             />
           </div>
           <div className="col-span-2 lg:col-span-1 flex flex-col text-sm mb-1 text-amber-100 font-extralight">
-            <label htmlFor="diseno">Diseño o funcionalidad específica deseada:</label>
+            <label htmlFor="diseno">
+              Diseño o funcionalidad específica deseada:
+            </label>
             <input
               className="border border-[var(--button-dark)] rounded-sm bg-transparent p-1 mt-2 text-[var(--font-light)] font-extralight focus:outline-none input-style"
               type="text"
@@ -38,7 +40,9 @@ const PreguntasDesarrollo = ({ plan }) => {
       return (
         <>
           <div className="col-span-2 lg:col-span-1 flex flex-col text-sm mb-1 text-amber-100 font-extralight">
-            <label htmlFor="interactividad">Tipo de interactividad esperada:</label>
+            <label htmlFor="interactividad">
+              Tipo de interactividad esperada:
+            </label>
             <input
               className="border border-[var(--button-dark)] rounded-sm bg-transparent p-1 mt-2 text-[var(--font-light)] font-extralight focus:outline-none input-style"
               type="text"
@@ -46,7 +50,9 @@ const PreguntasDesarrollo = ({ plan }) => {
             />
           </div>
           <div className="col-span-2 lg:col-span-1 flex flex-col text-sm mb-1 text-amber-100 font-extralight">
-            <label htmlFor="ecommerce">Requisitos de e-commerce (si aplica):</label>
+            <label htmlFor="ecommerce">
+              Requisitos de e-commerce (si aplica):
+            </label>
             <input
               className="border border-[var(--button-dark)] rounded-sm bg-transparent p-1 mt-2 text-[var(--font-light)] font-extralight focus:outline-none input-style"
               type="text"
@@ -54,7 +60,9 @@ const PreguntasDesarrollo = ({ plan }) => {
             />
           </div>
           <div className="col-span-2 lg:col-span-1 flex flex-col text-sm mb-1 text-amber-100 font-extralight">
-            <label htmlFor="redesSociales">Integraciones con redes sociales:</label>
+            <label htmlFor="redesSociales">
+              Integraciones con redes sociales:
+            </label>
             <input
               className="border border-[var(--button-dark)] rounded-sm bg-transparent p-1 mt-2 text-[var(--font-light)] font-extralight focus:outline-none input-style"
               type="text"
@@ -75,7 +83,9 @@ const PreguntasDesarrollo = ({ plan }) => {
             />
           </div>
           <div className="col-span-2 lg:col-span-1 flex flex-col text-sm mb-1 text-amber-100 font-extralight">
-            <label htmlFor="areasMembresia">Áreas de membresía o acceso restringido:</label>
+            <label htmlFor="areasMembresia">
+              Áreas de membresía o acceso restringido:
+            </label>
             <input
               className="border border-[var(--button-dark)] rounded-sm bg-transparent p-1 mt-2 text-[var(--font-light)] font-extralight focus:outline-none input-style"
               type="text"
@@ -83,7 +93,9 @@ const PreguntasDesarrollo = ({ plan }) => {
             />
           </div>
           <div className="col-span-2 lg:col-span-1 flex flex-col text-sm mb-1 text-amber-100 font-extralight">
-            <label htmlFor="funcionPersonalizada">Función personalizada deseada:</label>
+            <label htmlFor="funcionPersonalizada">
+              Función personalizada deseada:
+            </label>
             <input
               className="border border-[var(--button-dark)] rounded-sm bg-transparent p-1 mt-2 text-[var(--font-light)] font-extralight focus:outline-none input-style"
               type="text"
@@ -96,7 +108,9 @@ const PreguntasDesarrollo = ({ plan }) => {
       return (
         <>
           <div className="col-span-2 lg:col-span-1 flex flex-col text-sm mb-1 text-amber-100 font-extralight">
-            <label htmlFor="objetivosLargoPlazo">Objetivos a largo plazo:</label>
+            <label htmlFor="objetivosLargoPlazo">
+              Objetivos a largo plazo:
+            </label>
             <input
               className="border border-[var(--button-dark)] rounded-sm bg-transparent p-1 mt-2 text-[var(--font-light)] font-extralight focus:outline-none input-style"
               type="text"
@@ -104,7 +118,9 @@ const PreguntasDesarrollo = ({ plan }) => {
             />
           </div>
           <div className="col-span-2 lg:col-span-1 flex flex-col text-sm mb-1 text-amber-100 font-extralight">
-            <label htmlFor="integracionesAvanzadas">Integraciones de (bases de datos, CMS, etc.):</label>
+            <label htmlFor="integracionesAvanzadas">
+              Integraciones de (bases de datos, CMS, etc.):
+            </label>
             <input
               className="border border-[var(--button-dark)] rounded-sm bg-transparent p-1 mt-2 text-[var(--font-light)] font-extralight focus:outline-none input-style"
               type="text"
@@ -112,7 +128,9 @@ const PreguntasDesarrollo = ({ plan }) => {
             />
           </div>
           <div className="col-span-2 lg:col-span-1 flex flex-col text-sm mb-1 text-amber-100 font-extralight">
-            <label htmlFor="requisitosSeguridad">Requisitos de seguridad específicos:</label>
+            <label htmlFor="requisitosSeguridad">
+              Requisitos de seguridad específicos:
+            </label>
             <input
               className="border border-[var(--button-dark)] rounded-sm bg-transparent p-1 mt-2 text-[var(--font-light)] font-extralight focus:outline-none input-style"
               type="text"
@@ -146,7 +164,7 @@ const PresWeb = () => {
   return (
     <>
       <form
-        className="justify-center items-center border border-[var(--button-dark)] py-10 p-4 lg:p-8 mt-20 rounded-xl bg-[#1011121d] backdrop-blur-sm mx-auto w-[340px] lg:w-[700px] sombra-inactiva grid grid-cols-1 lg:grid-cols-2 gap-4"
+        className="justify-center items-center py-10 p-4 lg:p-8 mt-20 mx-auto w-[340px] lg:w-[700px]  grid grid-cols-1 lg:grid-cols-2 gap-4"
         onSubmit={handleSubmit}
       >
         <div className="col-span-2 text-sm mb-1 text-amber-100 font-extralight">
@@ -201,7 +219,7 @@ const PresWeb = () => {
           />
         </div>
         <button
-          className="w-[250px] col-span-2 flex justify-center items-center  bg-amber-200/90 hover:bg-amber-200 px-8 py-4 rounded-full sombra-light-amber border border-slate-600/40 m-10 mx-auto text-slate-800 hover:text-[#171c21]"
+          className="w-[250px] col-span-2 flex justify-center items-end bg-amber-200/90 hover:bg-amber-200 px-8 py-4 rounded-full sombra-light-amber border border-slate-600/40 m-10 mx-auto text-slate-800 hover:text-[#171c21]"
           type="submit"
         >
           Pedir ahora

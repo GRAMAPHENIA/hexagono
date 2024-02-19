@@ -3,8 +3,8 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import ListaModalMenu from "@/components/ListaModalMenu.jsx";
-import ModalMenu from "@/components/ModalMenu.jsx";
+import ListaModalMenu from "@/components/modales/ListaModalMenu.jsx";
+import ModalMenu from "@/components/modales/ModalMenu.jsx";
 
 const Navbar = () => {
   const [isModalOpen, setModalOpen] = useState(false);

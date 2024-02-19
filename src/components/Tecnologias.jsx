@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 
-import ModalTecnologia from "@/components/ModalTecnologia.jsx";
+import ModalTecnologia from "@/components/modales/ModalTecnologia.jsx";
 
 const Tecnologias = () => {
   const metodos = [

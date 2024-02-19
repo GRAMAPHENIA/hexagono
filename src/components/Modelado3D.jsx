@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 
-import Modal3D from "@/components/Modal3D.jsx";
+import Modal3D from "@/components/modales/Modal3D.jsx";
 
 const Modelado3D = () => {
   const metodos = [

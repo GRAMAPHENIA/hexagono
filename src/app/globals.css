@@ -290,6 +290,64 @@ p {
 
 /* 🔴 MODAL-MENU 🔴 */
 
+/* 🔴 MODAL-MENU-PLANES 🔴 */
+
+.modal-menu-overlay-planes {
+  margin: auto;
+  /* background-image: url("../../public/fondo/modal-menu.svg"); */
+  background: var(--dark);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-menu-planes {
+  background: var(--dark);
+  height: 100vh;
+  width: 50vw;
+  /* padding: 2rem; */
+  margin: 2rem;
+  border-radius: 12px;
+  color: var(--font-light);
+  border: 1px solid var(--button-dark);
+  overflow-y: auto;
+  box-shadow: 7px 6px 0px var(--button-pres);
+}
+
+@media (max-width: 676px) {
+  .modal-menu-planes {
+    background: var(--dark);
+    height: 100vh;
+    width: 100vh;
+    padding: 0;
+    margin: 0;
+    color: var(--font-light);
+    overflow-y: auto;
+    border-radius: 0px;
+  }
+}
+
+@media (max-width: 676px) {
+  .modal-menu-overlay-planes {
+    background: var(--dark);
+    height: 100vh;
+    width: 100vh;
+    padding: 0.25rem;
+    margin: 0;
+    color: var(--font-light);
+    overflow-y: auto;
+    border-radius: 0px;
+  }
+}
+
+/* 🔴 MODAL-MENU-PLANES 🔴 */
+
 /* 🟡 CUSTOM-RADIO 🟡 */
 
 .custom-radio {

@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 
-import Modal from "@/components/Modal";
+import Modal from "@/components/modales/Modal";
 
 const Grafico = () => {
   const caracteristicas = [

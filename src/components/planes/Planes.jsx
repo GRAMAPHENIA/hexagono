@@ -3,6 +3,8 @@
 import React, { useState } from "react";
 import Link from "next/link";
 
+import ElegirPlanes from "@/components/planes/ElegirPlanes";
+
 // import PresWeb from "@/components/presupuestos/PresWeb";
 
 const Planes = () => {
@@ -168,15 +170,11 @@ const Planes = () => {
             web pueden variar. Por favor, revisa detenidamente los detalles de
             cada plan antes de realizar tu elección.
           </p>
-          
-          {/* <Link
-            href="#consultas"
-            className="col-span-5 w-[250px] flex justify-center items-center text-[var(--font-light)] bg-amber-200/90 px-8 py-4 rounded-full sombra-light-amber border border-[var(--card-light)] m-10 mx-auto text-slate-800"
-          >
-            Pedir ahora
-          </Link> */}
         </section>
       </div>
+
+      {/* MODAL para ELEGIR PLANES */}
+      <ElegirPlanes />
     </>
   );
 };

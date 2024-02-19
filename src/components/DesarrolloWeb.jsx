@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 
-import ModalWeb from "@/components/ModalWeb.jsx";
+import ModalWeb from "@/components/modales/ModalWeb.jsx";
 
 const DesarrolloWeb = () => {
   const caracteristicas = [

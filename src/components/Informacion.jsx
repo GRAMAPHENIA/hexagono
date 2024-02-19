@@ -12,7 +12,7 @@ const Informacion = () => {
         <Dominios />
         <Hosting />
         <Planes />
-        <PresWeb />
+        {/* <PresWeb /> */}
       </section>
     </>
   );

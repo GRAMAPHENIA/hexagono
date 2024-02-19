@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from "react";
 
 import Image from "next/image";
-import Modal from "@/components/Modal.jsx";
+import Modal from "@/components/modales/Modal.jsx";
 
 const Dominios = () => {
   const metodos = [
