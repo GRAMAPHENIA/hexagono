@@ -18,7 +18,7 @@ const FooterList = ({ title, items, handleCloseModal }) => (
             </Link>
           ) : (
             // Si no hay enlace, renderiza solo el título
-            <span>{titulo}</span>
+            <span>{titulo}</span> 
           )}
         </li>
       ))}
@@ -37,7 +37,7 @@ const Footer = ({ handleCloseModal }) => {
   const informacion = [
     { titulo: "Dominios", enlace: "/informacion#dominios" },
     { titulo: "Hosting", enlace: "/informacion#hosting" },
-    { titulo: "Precios", enlace: "/informacion#precios" },
+    { titulo: "Planes", enlace: "/planes-desarrollo-web#planes" },
     { titulo: "Formas de Pago", enlace: "/informacion#formas-pago" },
   ];
 

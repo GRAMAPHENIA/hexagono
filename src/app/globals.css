@@ -70,6 +70,33 @@ p {
 }
 /* 🔴 FONDO GENERAL 🔴 */
 
+/* 🔴 FONDO INFORMACION 🔴 */
+
+.fondo {
+  margin: 0;
+  padding: 0;
+  background-image: url("/fondo/fondo-completo-mod.svg");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  height: fit-content;
+  max-width: 1524px;
+  margin: auto;
+}
+
+@media (max-width: 676px) {
+  .fondo {
+    margin: 0;
+    padding: 0;
+    background-image: url("../../public/fondo/fondo-completo-mobile.svg");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    margin: auto;
+  }
+}
+/* 🔴 FONDO INFORMACION 🔴 */
+
 /* 🟡 SCROLL 🟡 */
 
 ::-webkit-scrollbar {
