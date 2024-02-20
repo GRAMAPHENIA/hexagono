@@ -70,12 +70,12 @@ p {
 }
 /* 🔴 FONDO GENERAL 🔴 */
 
-/* 🔴 FONDO INFORMACION 🔴 */
+/* 🔴 FONDO WEB 🔴 */
 
-.fondo {
+.fondo-planes-web {
   margin: 0;
   padding: 0;
-  background-image: url("/fondo/fondo-completo-mod.svg");
+  background-image: url("/fondo/fondo-planes-web.svg");
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -95,7 +95,7 @@ p {
     margin: auto;
   }
 }
-/* 🔴 FONDO INFORMACION 🔴 */
+/* 🔴 FONDO WEB 🔴 */
 
 /* 🟡 SCROLL 🟡 */
 
