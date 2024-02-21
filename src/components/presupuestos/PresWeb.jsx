@@ -4,7 +4,7 @@ import { useState } from "react";
 const preguntasPorPlan = {
   "Elemental - Plan Inicial": [
     {
-      pregunta: "¿Cuál es el propósito de tu landing page?",
+      pregunta: "¿Cuál es el propósito de tu página?",
       opciones: [
         "Capturar leads",
         "Promocionar un producto o servicio",
@@ -66,33 +66,33 @@ const preguntasPorPlan = {
       ],
     },
     {
-      pregunta: "¿Tienes contenido multimedia?",
+      pregunta: "¿Tenes contenido multimedia?",
       opciones: [
         "Sí, tengo imágenes de alta calidad",
         "Sí, tengo videos",
-        "No, necesito ayuda para crear contenido multimedia",
+        "No, necesito ayuda para crear contenido",
         "No, solo tengo contenido textual",
         "Otro",
       ],
     },
     {
-      pregunta: "¿Tienes definida una estructura de navegación?",
+      pregunta: "¿Tenes la estructura de navegación?",
       opciones: [
         "Sí, tengo una idea clara de la estructura",
         "No, necesito ayuda para definirla",
-        "No, confío en el criterio del equipo de diseño",
+        "No, confío en el equipo de diseño",
         "Otro",
       ],
     },
   ],
   "Premium - Plan Negocios": [
     {
-      pregunta: "¿Cuál es el objetivo principal de tu sitio web?",
+      pregunta: "¿Cuál es el objetivo principal de tu sitio?",
       opciones: [
         "Generar ventas",
         "Aumentar la visibilidad de la marca",
         "Facilitar la comunicación con los clientes",
-        "Brindar información detallada sobre productos/servicios",
+        "Dar información de productos/servicios",
         "Otro",
       ],
     },
@@ -107,7 +107,7 @@ const preguntasPorPlan = {
       ],
     },
     {
-      pregunta: "¿Qué funcionalidades consideras esenciales para tu sitio web?",
+      pregunta: "¿Qué funcionalidades son esenciales?",
       opciones: [
         "Formularios de contacto",
         "Galería de imágenes",
@@ -119,22 +119,22 @@ const preguntasPorPlan = {
     },
     {
       pregunta:
-        "¿Qué tan familiarizado estás con el SEO (Search Engine Optimization)?",
+        "¿Qué tan familiarizado estás con el SEO?",
       opciones: [
-        "Soy experto y puedo proporcionar contenido optimizado",
-        "Tengo conocimientos básicos pero necesito ayuda",
-        "No estoy familiarizado y necesito orientación",
+        "Soy experto, se proporcionar contenido.",
+        "Tengo conocimientos básicos",
+        "No estoy familiarizado",
         "Otro",
       ],
     },
   ],
   "Premium - Plan Empresarial": [
     {
-      pregunta: "¿Cuál es el objetivo principal de tu sitio web?",
+      pregunta: "¿Cuál es el objetivo principal de tu sitio?",
       opciones: [
         "Impulsar las ventas",
         "Mejorar la visibilidad de la marca",
-        "Proporcionar información detallada sobre productos/servicios",
+        "Dar información de productos/servicios",
         "Ofrecer una experiencia de usuario única",
         "Otro",
       ],
@@ -151,7 +151,7 @@ const preguntasPorPlan = {
     },
     {
       pregunta:
-        "¿Qué tipo de animaciones o efectos visuales te gustaría incluir?",
+        "¿Animaciones o efectos que incluirias?",
       opciones: [
         "Transiciones suaves entre secciones",
         "Animaciones de carga",
@@ -161,11 +161,11 @@ const preguntasPorPlan = {
       ],
     },
     {
-      pregunta: "¿Tienes contenido multimedia de alta calidad?",
+      pregunta: "¿Tienes contenido de alta calidad?",
       opciones: [
-        "Sí, tengo imágenes y videos de alta resolución",
-        "Tengo algunas imágenes, pero necesito más contenido multimedia",
-        "No, necesito ayuda para crear contenido multimedia",
+        "Sí, tengo contenido de alta resolución.",
+        "Tengo algunas imágenes y videos",
+        "No, necesito ayuda para crear contenido",
         "No, solo tengo contenido textual",
         "Otro",
       ],
