@@ -37,12 +37,20 @@ const clientes = [
 const ChildrenModalPortfolio = () => {
   return (
     <>
-      <section className="bg-gray-800/20 backdrop-blur-lg px-32 rounded-xl border border-gray-600 py-20">
-        <h2 className="text-6xl text-amber-200 lg:text-8xl font-serif font-black text-center antialiased  p-10">
+      <section className="bg-gray-800/40 backdrop-blur-xl px-32 rounded-xl border border-gray-600 py-20">
+        <Image
+          className="mx-auto"
+          src="fondo/adornos/portfolio.svg"
+          alt=""
+          width={300}
+          height={300}
+        />
+        <h2 className="text-6xl text-amber-200 lg:text-8xl font-serif font-black text-center antialiased mt-1">
           Portafolio
         </h2>
         <h6 className="text-2xl text-gray-500 lg:text-4xl font-serif font-normal text-center antialiased  pb-10">
-          coleccion de trabajos realizados
+          <span className="text-amber-100">.</span> coleccion de trabajos
+          realizados <span className="text-amber-100">.</span>
         </h6>
         <ul className="grid grid-cols-1 lg:grid-cols-3 gap-8 py-10">
           {clientes.map((nombre, index) => (
