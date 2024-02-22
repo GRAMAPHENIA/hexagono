@@ -103,7 +103,7 @@ const ListaModalMenu = ({ handleCloseModal }) => {
           </small>
           <br />
           <br />
-          <span className="flex justify-center text-amber-50">2020-2024</span>
+          <span className="flex justify-center text-amber-50">2020-2024</span> 
         </p>
       </figure>
     </>
