@@ -9,7 +9,7 @@ const ModalPortfolio = ({ isOpen, onClose, children, className }) => {
     <div className="modal-overlay-Portfolio">
       <div className="max-w-screen-xl max-h-[700px]">
         <button
-          className="close-button mt-10 mr-10 flex justify-center items-center text-[var(--font-light)] bg-[var(--gradient-end)] px-8 py-4 rounded-full sombra-light border border-[var(--card-light)]"
+          className="close-button mt-16 mr-36 flex justify-center items-center text-[var(--font-light)] bg-[var(--gradient-end)] px-8 py-4 rounded-full sombra-light border border-[var(--card-light)] z-50"
           onClick={onClose}
         >
           Volver
