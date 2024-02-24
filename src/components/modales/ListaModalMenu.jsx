@@ -28,6 +28,7 @@ const ModalList = ({ title, items, handleCloseModal }) => (
 
 const ListaModalMenu = ({ handleCloseModal }) => {
   const navegacion = [
+    { titulo: "Comenzar", enlace: "/" },
     { titulo: "Diseño Gráfico", enlace: "/#diseno-grafico" },
     { titulo: "Desarrollo Web", enlace: "/#desarrollo-web" },
     { titulo: "Modelado 3D", enlace: "/#modelado-3d" },
@@ -35,6 +36,7 @@ const ListaModalMenu = ({ handleCloseModal }) => {
   ];
 
   const informacion = [
+    { titulo: "Información", enlace: "/informacion" },
     { titulo: "Dominios", enlace: "/informacion#dominios" },
     { titulo: "Hosting", enlace: "/informacion#hosting" },
     { titulo: "Planes Web", enlace: "/planes-desarrollo-web#planes" },
@@ -103,7 +105,7 @@ const ListaModalMenu = ({ handleCloseModal }) => {
           </small>
           <br />
           <br />
-          <span className="flex justify-center text-amber-50">2020-2024</span> 
+          <span className="flex justify-center text-amber-50">2020-2024</span>
         </p>
       </figure>
     </>

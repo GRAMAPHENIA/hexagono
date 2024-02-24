@@ -3,18 +3,18 @@ import Image from "next/image";
 const HeaderInfo = () => {
   return (
     <>
-      <section className="relative mt-20 lg:mt-10">
-        <p className="text-sm lg:absolute lg:text-xl lg:top-[10px] lg:left-[25px] font-extralight uppercase col-span-5 sm:ml-48 sm:w-80 text-[--font-light] text-amber-100">
-          concepto hexágono
-        </p>
-        <h1 className="flex lg:justify-start col-span-6 text-5xl font-extrabold lg:relative lg:-tracking-[.5rem] lg:text-9xl bg-clip-text text-transparent bg-gradient-to-r from-[var(--gradient-start)] via-[var(--gradient-via)] to-[var(--gradient-end)] ml-3 sm:ml-[212px] lg:leading-[100px] pt-8 uppercase">
-          Información
+      <section className="relative mt-44 ml-8 lg:mt-0">
+        <h1 className="mx-auto text-8xl font-serif text-amber-100 ml-40 tracking-tight leading-[80px]">
+          <span className="text-[var(--button-pres)]">In</span>
           <br />
+          forma
+          <br />
+          <span className="text-gray-400">ción</span>
         </h1>
-        <p className="font-extralight col-span-5 sm:ml-[218px] text-[--font-light] mb-20 leading-[15px]">
-          De interes<span className="text-rose-300">.</span>
-        </p>
       </section>
+      <p className="text-sm top-[22px] left-[22px] lg:text-xl lg:top-[-30px] lg:left-[25px] font-extralight col-span-5 sm:ml-52 sm:w-80 text-[--font-light] text-amber-100">
+        <span className="text-gray-400">Concepto</span> || <span className="text-gray-400">Hexágono</span>
+      </p>
     </>
   );
 };

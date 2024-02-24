@@ -28,6 +28,7 @@ const FooterList = ({ title, items, handleCloseModal }) => (
 
 const Footer = ({ handleCloseModal }) => {
   const navegacion = [
+    { titulo: "Comenzar", enlace: "/" },
     { titulo: "Diseño Gráfico", enlace: "/#diseno-grafico" },
     { titulo: "Desarrollo Web", enlace: "/#desarrollo-web" },
     { titulo: "Modelado 3D", enlace: "/#modelado-3d" },
@@ -35,6 +36,7 @@ const Footer = ({ handleCloseModal }) => {
   ];
 
   const informacion = [
+    { titulo: "Información", enlace: "/informacion" },
     { titulo: "Dominios", enlace: "/informacion#dominios" },
     { titulo: "Hosting", enlace: "/informacion#hosting" },
     { titulo: "Planes Web", enlace: "/planes-desarrollo-web#planes" },

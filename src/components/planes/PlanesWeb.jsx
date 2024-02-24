@@ -83,17 +83,21 @@ const PlanesWeb = () => {
 
   return (
     <>
-      <h2
-        className="text-6xl text-center font-serif text-slate-400 pt-10 mt-20"
-        id="planesweb"
-      >
-        Planes de <span className="text-amber-100">Desarrollo Web</span>
-      </h2>
-      <h4 className="text-2xl text-center font-serif text-slate-400 pt-10">
-        Crea una experiencia digital<span className="text-amber-400">.</span>
-      </h4>
+      <section className="relative mt-44 ml-8 lg:ml-10 lg:mt-0">
+        <h1 className="mx-auto text-8xl font-serif text-amber-100 ml-52 tracking-tight leading-[80px]">
+          <span className="text-[var(--button-pres)]">planes de</span>
+          <br />
+          desarrollo
+          <br />
+          <span className="text-gray-400">web</span>
+        </h1>
+      </section>
+      <p className="text-sm top-[22px] left-[22px] lg:text-xl lg:top-[-30px] lg:left-[25px] font-extralight col-span-5 sm:ml-[260px] sm:w-80 text-[--font-light] text-amber-100">
+        <span className="text-gray-400">Concepto</span> ||{" "}
+        <span className="text-gray-400">Hexágono</span>
+      </p>
 
-      <div className="flex items-center justify-center font-nunito text-gray-600 lg:mx-20 my-16 py-10 mb-10">
+      <div className="flex items-center justify-center font-nunito text-gray-600 mt-80 lg:mx-20 my-16 py-10 mb-10">
         <section className="max-w-[968px] w-full lg:mx-4">
           <div className="grid grid-cols-1 lg:grid-cols-2">
             {planes.map((plan, index) => (
@@ -122,7 +126,7 @@ const PlanesWeb = () => {
                           ))}
 
                           {plan.title === "Elemental" && optIndex === 0 && (
-                            <span className="absolute text-md slide-in-top left-0 top-0 px-24 py-[4px] rounded-br-lg bg-gradient-to-r from-amber-100 to-amber-300 text-amber-900 border border-t-0 border-l-0 border-b-gray-600 border-r-gray-600 rounded-tl-lg sombra-inactiva-planes">
+                            <span className="absolute text-md slide-in-top left-0 top-0 px-24 py-[4px] rounded-br-lg bg-amber-200 text-amber-950 border border-t-0 border-l-0 border-b-gray-600 border-r-gray-600 rounded-tl-lg sombra-inactiva-planes">
                               Popular
                             </span>
                           )}

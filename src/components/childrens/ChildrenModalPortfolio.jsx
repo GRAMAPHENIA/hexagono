@@ -37,7 +37,7 @@ const clientes = [
 const ChildrenModalPortfolio = () => {
   return (
     <>
-      <section className="bg-gray-800/40 backdrop-blur-xl px-32 rounded-xl border border-gray-600 py-20">
+      <section className="bg-[var(--dark)] px-10 lg:px-32 rounded-t-xl border border-gray-600 border-b-0 py-20 pb-40 sombra-inactiva-portfolio">
         <Image
           className="mx-auto"
           src="fondo/adornos/portfolio.svg"
@@ -46,28 +46,28 @@ const ChildrenModalPortfolio = () => {
           height={300}
         />
         <h2 className="text-6xl text-amber-200 lg:text-8xl font-serif font-black text-center antialiased mt-1">
-          Portafolio
+          Portfolio
         </h2>
         <h6 className="text-2xl text-gray-500 lg:text-4xl font-serif font-normal text-center antialiased  pb-10">
           <span className="text-amber-100">.</span> coleccion de trabajos
           realizados <span className="text-amber-100">.</span>
         </h6>
-        <ul className="grid grid-cols-1 lg:grid-cols-3 gap-8 py-10">
+        <ul className="grid grid-cols-1 lg:grid-cols-3 gap-10 py-20">
           {clientes.map((nombre, index) => (
             <li key={index}>
-              <figure className="border border-gray-600 m-4 h-full rounded-lg text-[var(--font-light)] text-base lg:text-xl font-extralight text-left bg-[var(--card-dark)] space-y-8">
+              <figure className="border border-gray-600 p-2 h-full rounded-lg text-[var(--font-light)] text-base lg:text-xl font-extralight text-left bg-[var(--card-dark)] space-y-8">
                 <Image
-                  className="mx-auto border-b border-gray-600 w-full rounded-t-lg"
+                  className="mx-auto border-[3px] border-gray-700 w-full rounded-t-lg "
                   src={nombre.src}
                   alt={nombre.alt}
-                  width={80}
+                  width={100}
                   height={100}
                 />
                 <section>
-                  <h1 className="text-2xl font-bold mx-5 mb-5 text-amber-100">
+                  <h1 className="text-2xl font-bold mx-5 mb-2 text-amber-100">
                     {nombre.nombre}
                   </h1>
-                  <p className="mx-5">{nombre.descripcion}</p>
+                  <p className="mx-5 mb-10">{nombre.descripcion}</p>
                 </section>
               </figure>
             </li>
