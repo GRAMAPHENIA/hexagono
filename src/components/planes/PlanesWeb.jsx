@@ -85,11 +85,11 @@ const PlanesWeb = () => {
     <>
       <section className="relative mt-44 ml-8 lg:ml-10 lg:mt-0">
         <h1 className="mx-auto text-8xl font-serif text-amber-100 ml-52 tracking-tight leading-[80px]">
-          <span className="text-[var(--button-pres)]">planes de</span>
+          <span className="">planes de</span>
           <br />
           desarrollo
           <br />
-          <span className="text-gray-400">web</span>
+          <span className="">web</span>
         </h1>
       </section>
       <p className="text-sm top-[22px] left-[22px] lg:text-xl lg:top-[-30px] lg:left-[25px] font-extralight col-span-5 sm:ml-[260px] sm:w-80 text-[--font-light] text-amber-100">
@@ -106,7 +106,7 @@ const PlanesWeb = () => {
                 className="col-span-1 w-auto bg-gray-800/20 backdrop-blur-lg p-8 rounded-lg gap-3 flex items-start justify-center shadow-md flex-col mb-10 border border-slate-700 m-0 lg:m-8"
               >
                 <li className="grow">
-                  <h2 className="mb-3 text-amber-200 text-center text-5xl lg:text-7xl font-serif mt-10 ">
+                  <h2 className="mb-3 text-amber-100 text-center text-5xl lg:text-7xl font-serif mt-10 ">
                     {plan.title}
                   </h2>
                   <section className="">
@@ -126,7 +126,7 @@ const PlanesWeb = () => {
                           ))}
 
                           {plan.title === "Elemental" && optIndex === 0 && (
-                            <span className="absolute text-md slide-in-top left-0 top-0 px-24 py-[4px] rounded-br-lg bg-amber-200 text-amber-950 border border-t-0 border-l-0 border-b-gray-600 border-r-gray-600 rounded-tl-lg sombra-inactiva-planes">
+                            <span className="absolute text-md slide-in-top left-0 top-0 px-24 py-[4px] rounded-br-lg bg-amber-100 text-amber-950 border border-t-0 border-l-0 border-b-gray-600 border-r-gray-600 rounded-tl-lg sombra-inactiva-planes">
                               Popular
                             </span>
                           )}
