@@ -18,7 +18,7 @@ const FooterList = ({ title, items, handleCloseModal }) => (
             </Link>
           ) : (
             // Si no hay enlace, renderiza solo el título
-            <span>{titulo}</span> 
+            <span>{titulo}</span>
           )}
         </li>
       ))}
@@ -40,11 +40,10 @@ const Footer = ({ handleCloseModal }) => {
     { titulo: "Dominios", enlace: "/informacion#dominios" },
     { titulo: "Hosting", enlace: "/informacion#hosting" },
     { titulo: "Planes Web", enlace: "/planes-desarrollo-web#planes" },
-    { titulo: "Formas de Pago", enlace: "/informacion#formas-pago" },
   ];
 
   const hexagono = [
-    { titulo: "Sobre Hexágono", enlace: "/hexagono/#sobre-hexagono" },
+    { titulo: "Sobre Hexágono", enlace: "/hexagono" },
     { titulo: "Tecnologías que utilizamos", enlace: "/hexagono/#tecnologias" },
     { titulo: "Mapa de Ruta", enlace: "/" },
     { titulo: "Blog", enlace: "/hexagono/#blog" },

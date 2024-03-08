@@ -26,7 +26,7 @@ const PlanesWeb = () => {
             "Diseño responsive",
             "Diseño personalizado",
             "Soporte por correo electrónico",
-            "Un solo pago de: $299",
+            // "Un solo pago de: $299",
           ],
         },
         {
@@ -39,7 +39,7 @@ const PlanesWeb = () => {
             "Diseño responsive",
             "Integración con redes sociales",
             "Soporte por correo electrónico y teléfono",
-            "Un solo pago de: $499",
+            // "Un solo pago de: $499",
           ],
         },
       ],
@@ -59,7 +59,7 @@ const PlanesWeb = () => {
             "SEO básico",
             "Integración con redes sociales y Google Analytics",
             "Soporte por correo electrónico, teléfono y chat en vivo",
-            "Un solo pago de: $299",
+            // "Un solo pago de: $299",
           ],
         },
         {
@@ -74,7 +74,7 @@ const PlanesWeb = () => {
             "SEO avanzado",
             "Integración con redes sociales, Google Analytics y herramientas de marketing automatizado",
             "Soporte prioritario 24/7 por correo electrónico, teléfono y chat en vivo",
-            "Un solo pago de: $299",
+            // "Un solo pago de: $299",
           ],
         },
       ],
@@ -83,16 +83,16 @@ const PlanesWeb = () => {
 
   return (
     <>
-      <section className="relative mt-44 ml-8 lg:ml-10 lg:mt-0">
-        <h1 className="mx-auto text-8xl font-serif text-amber-100 ml-52 tracking-tight leading-[80px]">
+      <section className="relative mt-44 lg:mt-0">
+        <h2 className="mx-auto text-7xl font-serif text-amber-100 ml-10 lg:ml-40 tracking-tight leading-[80px]">
           <span className="">planes de</span>
           <br />
           desarrollo
           <br />
           <span className="">web</span>
-        </h1>
+        </h2>
       </section>
-      <p className="text-sm top-[22px] left-[22px] lg:text-xl lg:top-[-30px] lg:left-[25px] font-extralight col-span-5 sm:ml-[260px] sm:w-80 text-[--font-light] text-amber-100">
+      <p className="text-xl font-extralight col-span-5 mt-1 ml-10  sm:ml-52 sm:w-80 text-[--font-light] text-amber-100">
         <span className="text-gray-400">Concepto</span> ||{" "}
         <span className="text-gray-400">Hexágono</span>
       </p>
@@ -136,12 +136,12 @@ const PlanesWeb = () => {
                           htmlFor={option.id}
                           className="flex text-2xl items-center justify-center w-full gap-0 p-3 font-semibold  my-10 text-blue-400"
                         >
-                          <span className="inline-block pl-3 text-4xl px-2">
+                          {/* <span className="inline-block pl-3 text-4xl px-2">
                             {option.price}
-                          </span>
-                          <span className="text-2xl font-extralight text-blue-200/90">
+                          </span> */}
+                          {/* <span className="text-2xl font-extralight text-blue-200/90">
                             {option.duration}
-                          </span>
+                          </span> */}
                         </label>
                       </>
                     ))}
