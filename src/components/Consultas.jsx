@@ -54,15 +54,15 @@ const Consultas = () => {
   }, []);
   return (
     <>
-      <section className="flex flex-col justify-center items-center border border-[var(--button-dark)]  p-0 lg:p-1 rounded-xl bg-[#1011121d] backdrop-blur-sm mx-auto w-[340px] lg:w-[700px] mb-0 ">
+      <section className="flex flex-col justify-center items-center border border-[var(--button-dark)] p-0 lg:p-1 rounded-xl bg-[#1011121d] backdrop-blur-sm mx-auto w-[340px] lg:w-[700px] mb-0 m-20">
         <form
           action="https://formspree.io/f/xjvnorgy"
           method="POST"
           onSubmit={handleSubmit}
-          className="max-w-md mx-auto my-8"
+          className="max-w-md mx-auto my-6"
         >
           <figure
-            className="mb-16 flex justify-center items-center m-4"
+            className="mb-8 flex justify-center items-center m-4"
             id="consultas"
           >
             <h2 className="text-6xl text-center font-serif text-slate-400">
@@ -86,7 +86,7 @@ const Consultas = () => {
             />
           </div>
 
-          <div className="mb-4 flex flex-wrap">
+          <div className="mb- flex flex-wrap">
             <div className="w-full lg:w-1/2 lg:pr-2">
               <label
                 className="text-sm mb-1 text-amber-100 font-extralight"
