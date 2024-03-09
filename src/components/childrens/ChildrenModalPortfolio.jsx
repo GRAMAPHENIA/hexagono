@@ -34,7 +34,7 @@ const clientes = [
   },
 ];
 
-const ChildrenModalPortfolio = () => {
+const ChildrenModalPortfolio = () => { 
   return (
     <>
       <section className="bg-[var(--dark)] px-10 lg:px-32 rounded-t-xl border border-gray-600 border-b-0 py-20 pb-40 sombra-inactiva-portfolio">

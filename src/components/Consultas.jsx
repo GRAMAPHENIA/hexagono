@@ -23,7 +23,7 @@ const Consultas = () => {
     if (!response.ok) {
       setMessage(result.errors.map((error) => error.message).join(", "));
     } else {
-      setMessage("Se ha enviado tu correo satisfactoriamente");
+      setMessage("Se ha enviado tu correo satisfactoriamente.");
       event.target.reset();
       setShowMessage(true);
       setTimeout(() => {
@@ -59,7 +59,7 @@ const Consultas = () => {
           action="https://formspree.io/f/xjvnorgy"
           method="POST"
           onSubmit={handleSubmit}
-          className="relative max-w-md mx-auto my-8"
+          className="max-w-md mx-auto my-8"
         >
           <figure
             className="mb-16 flex justify-center items-center m-4"
@@ -138,13 +138,13 @@ const Consultas = () => {
 
           <button
             type="submit"
-            className="flex justify-center items-end bg-amber-200/90 hover:bg-amber-200 px-8 py-4 rounded-full sombra-light-amber border border-slate-600/40 text-slate-800 hover:text-[#171c21] ml-10"
+            className="flex bg-amber-200/90 hover:bg-amber-200 px-8 py-2 rounded-full sombra-light-amber border border-slate-600/40 text-slate-800 hover:text-[#171c21] "
           >
             Enviar
           </button>
 
           {showMessage && (
-            <p className="absolute border border-gray-600 rounded p-4 top-0 bg-green-400/40 backdrop-blur-2xl">
+            <p className="absolute font-extralight border border-gray-600 rounded p-4 bottom-2 -right-[25rem] bg-emerald-700/20 backdrop-blur-3xl">
               {" "}
               <span className="text-green-300">✓</span> {message}
             </p>
