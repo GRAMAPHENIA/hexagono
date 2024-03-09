@@ -54,7 +54,10 @@ const Consultas = () => {
   }, []);
   return (
     <>
-      <section className="flex flex-col justify-center items-center border border-[var(--button-dark)] p-8 lg:p-1 rounded-xl bg-[#1011121d] backdrop-blur-sm mx-auto w-[340px] lg:w-[700px] mb-0 m-20">
+      <section
+        id="consultas"
+        className="flex flex-col justify-center items-center border border-[var(--button-dark)] p-8 lg:p-1 rounded-xl bg-[#1011121d] backdrop-blur-sm mx-auto w-[340px] lg:w-[700px] m-20"
+      >
         <form
           action="https://formspree.io/f/xjvnorgy"
           method="POST"
@@ -63,7 +66,7 @@ const Consultas = () => {
         >
           <figure
             className="mb-8 flex justify-center items-center m-4"
-            id="consultas"
+            // id="consultas"
           >
             <h2 className="text-6xl text-center font-serif text-slate-400">
               Hace tu <span className="text-amber-100">Consulta</span>
@@ -115,6 +118,7 @@ const Consultas = () => {
                 id="phone"
                 name="phone"
                 className="w-full border border-[var(--button-dark)] rounded-sm bg-transparent backdrop-blur-lg p-1 text-[var(--font-light)] font-extralight focus:outline-none"
+                required
               />
             </div>
           </div>
@@ -144,7 +148,7 @@ const Consultas = () => {
           </button>
 
           {showMessage && (
-            <p className="absolute font-extralight border border-gray-600 rounded p-4 bottom-2 -right-[25rem] bg-emerald-700/20 backdrop-blur-3xl">
+            <p className="absolute font-extralight border border-gray-600 rounded p-4 bottom-2 -right-[25rem] bg-emerald-500/20 backdrop-blur-3xl">
               {" "}
               <span className="text-green-300">✓</span> {message}
             </p>
