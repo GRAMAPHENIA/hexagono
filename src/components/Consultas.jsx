@@ -54,7 +54,7 @@ const Consultas = () => {
   }, []);
   return (
     <>
-      <section className="flex flex-col justify-center items-center border border-[var(--button-dark)] p-0 lg:p-1 rounded-xl bg-[#1011121d] backdrop-blur-sm mx-auto w-[340px] lg:w-[700px] mb-0 m-20">
+      <section className="flex flex-col justify-center items-center border border-[var(--button-dark)] p-8 lg:p-1 rounded-xl bg-[#1011121d] backdrop-blur-sm mx-auto w-[340px] lg:w-[700px] mb-0 m-20">
         <form
           action="https://formspree.io/f/xjvnorgy"
           method="POST"
@@ -86,8 +86,8 @@ const Consultas = () => {
             />
           </div>
 
-          <div className="mb- flex flex-wrap">
-            <div className="w-full lg:w-1/2 lg:pr-2">
+          <div className="flex flex-wrap">
+            <div className="w-full lg:w-1/2 lg:pr-2 mb-4">
               <label
                 className="text-sm mb-1 text-amber-100 font-extralight"
                 htmlFor="email"
@@ -103,7 +103,7 @@ const Consultas = () => {
               />
             </div>
 
-            <div className="w-full lg:w-1/2 lg:pl-2">
+            <div className="w-full lg:w-1/2 lg:pl-2 mb-4">
               <label
                 className="text-sm mb-1 text-amber-100 font-extralight"
                 htmlFor="phone"
@@ -119,9 +119,9 @@ const Consultas = () => {
             </div>
           </div>
 
-          <div className="mb-4">
+          <div className="mb-4 lg:mt-2">
             <label
-              className="text-sm mb-1 text-amber-100 font-extralight"
+              className="text-sm text-amber-100 font-extralight"
               htmlFor="message"
             >
               Mensaje:
