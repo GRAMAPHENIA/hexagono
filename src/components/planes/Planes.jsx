@@ -59,7 +59,7 @@ const Planes = () => {
             "SEO básico",
             "Integración con redes sociales y Google Analytics",
             "Soporte por correo electrónico, teléfono y chat en vivo",
-            "Un solo pago de: $299",
+            // "Un solo pago de: $299",
           ],
         },
         {
@@ -74,7 +74,7 @@ const Planes = () => {
             "SEO avanzado",
             "Integración con redes sociales, Google Analytics y herramientas de marketing automatizado",
             "Soporte prioritario 24/7 por correo electrónico, teléfono y chat en vivo",
-            "Un solo pago de: $299",
+            // "Un solo pago de: $299",
           ],
         },
       ],
@@ -131,7 +131,7 @@ const Planes = () => {
                           )}
                         </ul>
 
-                        <label
+                        {/* <label
                           htmlFor={option.id}
                           className="flex text-2xl items-center justify-center w-full gap-0 p-3 font-semibold  my-10 text-blue-400"
                         >
@@ -141,7 +141,7 @@ const Planes = () => {
                           <span className="text-2xl font-extralight text-blue-200/90">
                             {option.duration}
                           </span>
-                        </label>
+                        </label> */}
                       </>
                     ))}
                   </section>

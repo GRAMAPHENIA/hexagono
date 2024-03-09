@@ -84,7 +84,7 @@ const PlanesWeb = () => {
   return (
     <>
       <section className="relative mt-44 lg:mt-0">
-        <h2 className="mx-auto text-7xl font-serif text-amber-100 ml-10 lg:ml-40 tracking-tight leading-[80px]">
+        <h2 className="mx-auto text-7xl lg:text-8xl font-serif text-amber-100 ml-10 lg:ml-48   tracking-tight leading-[80px]">
           <span className="">planes de</span>
           <br />
           desarrollo
