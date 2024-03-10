@@ -85,7 +85,7 @@ const Grafico = () => {
 
   return (
     <>
-      <section className="mt-20 lg:mt-72 mb-40" id="diseno-grafico">
+      <section className="mt-20 lg:mt-72 lg:mb-40" id="diseno-grafico">
         <figure className="flex flex-col items-end py-10">
           <h2 className="text-6xl font-serif text-slate-400 py-10">
             Diseño <span className="text-amber-100">Gráfico</span>

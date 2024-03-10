@@ -39,7 +39,7 @@ const ElegirPlanesWeb = () => {
         <ModalPlanes isOpen={isModalOpen} onClose={closeModal}>
           {/* Aca se escribe el contenido que se ve en el children */}
 
-          <h1 className="text-2xl lg:text-4xl text-amber-100 lg:text-center font-black">
+          <h1 className="text-5xl lg:text-6xl text-amber-100 text-center font-black pl-4 mt-20">
             <span className="text-amber-200">Planes </span>
             Web
             <span className="text-amber-200">.</span>

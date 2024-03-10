@@ -308,7 +308,7 @@ p {
 .modal-menu {
   background: var(--dark);
   height: 90vh;
-  width: 120vh;
+  width: 60vh;
   padding: 2rem;
   margin: 2rem;
   border-radius: 12px;
@@ -350,8 +350,8 @@ p {
 
 .modal-menu-overlay-planes {
   margin: auto;
-  /* background-image: url("../../public/fondo/modal-menu.svg"); */
-  background: var(--dark);
+  background-image: url("../../public/fondo/grilla.svg");
+  /* background: var(--dark); */
   position: fixed;
   top: 0;
   left: 0;
@@ -389,7 +389,7 @@ p {
   }
 }
 
-@media (max-width: 676px) {
+@media (max-width: 270px) {
   .modal-menu-overlay-planes {
     background: var(--dark);
     height: 100vh;
@@ -425,13 +425,10 @@ p {
 
 /* 🟡 CUSTOM-RADIO 🟡 */
 
-
 /* 🔴 SELECT-WRAPPER 🔴 */
-
 
 .select-wrapper {
   position: relative;
-  
 }
 
 .select-wrapper::after {
@@ -451,7 +448,6 @@ p {
   appearance: none;
   width: 100%; /* Ajusta el ancho del select al 100% del contenedor */
   overflow: hidden; /* Oculta cualquier desbordamiento */
- 
 }
 
 /* 🔴 SELECT-WRAPPER 🔴 */

@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import Link from "next/link"
+import Link from "next/link";
 
 import ModalWeb from "@/components/modales/ModalWeb.jsx";
 
@@ -76,7 +76,7 @@ const DesarrolloWeb = () => {
 
   return (
     <>
-      <section className="my-20 mb-40" id="desarrollo-web">
+      <section className="lg:my-20 lg:mb-40" id="desarrollo-web">
         <figure className="flex flex-col items-center py-10">
           <h2 className="text-6xl font-serif text-slate-400 py-10">
             Desarrollo <span className="text-amber-100">Web</span>
@@ -108,12 +108,12 @@ const DesarrolloWeb = () => {
         <div className="flex justify-center lg:justify-start my-14">
           <button
             onClick={openModal}
-            className="col-span-5 flex justify-center items-center text-[var(--font-light)] bg-[var(--gradient-end)] px-8 py-4 rounded-full sombra-light border border-[var(--card-light)]"
+            className="col-span-5 flex justify-center items-center text-[var(--font-light)] bg-[var(--gradient-end)] px-4 lg:px-8 py-4 rounded-full sombra-light border border-[var(--card-light)]"
           >
             Saber Más
           </button>
           <Link href="/planes-desarrollo-web">
-            <button className="flex justify-center items-end bg-amber-200/90 hover:bg-amber-200 px-8 py-4 rounded-full sombra-light-amber border border-slate-600/40 text-slate-800 hover:text-[#171c21] ml-10">
+            <button className="flex justify-center items-end bg-amber-200/90 hover:bg-amber-200 px-4 lg:px-8 py-4 rounded-full sombra-light-amber border border-slate-600/40 text-slate-800 hover:text-[#171c21] ml-10">
               Conocer planes
             </button>
           </Link>

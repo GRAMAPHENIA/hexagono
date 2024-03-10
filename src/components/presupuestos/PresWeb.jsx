@@ -228,7 +228,7 @@ const PresWeb = () => {
   return (
     <>
       <form
-        className="justify-center items-center py-10 p-4 lg:p-8 mt-5 mx-auto w-[340px] lg:w-[700px]  grid grid-cols-1 lg:grid-cols-2 gap-4 "
+        className="justify-center items-center py-10 p-4 lg:p-8 mt-5 mx-auto w-auto lg:w-[700px]  grid grid-cols-1 lg:grid-cols-2 gap-4 "
         onSubmit={handleSubmit}
       >
         <div className="col-span-2 text-sm mb-1 text-amber-100 font-extralight select-wrapper">
