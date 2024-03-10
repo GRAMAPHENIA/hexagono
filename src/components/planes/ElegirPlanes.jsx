@@ -14,7 +14,7 @@ const ElegirPlanes = () => {
     setModalOpen(false);
   };
 
-  useEffect(() => {
+  useEffect(() => { 
     if (isModalOpen) {
       document.documentElement.style.overflow = "hidden";
     } else {

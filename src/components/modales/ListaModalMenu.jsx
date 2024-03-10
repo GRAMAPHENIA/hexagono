@@ -40,6 +40,7 @@ const ListaModalMenu = ({ handleCloseModal }) => {
     { titulo: "Dominios", enlace: "/informacion#dominios" },
     { titulo: "Hosting", enlace: "/informacion#hosting" },
     { titulo: "Planes Web", enlace: "/planes-desarrollo-web#planes" },
+    { titulo: "Formas de Pago", enlace: "/informacion#formas-pago" },
   ];
 
   const hexagono = [

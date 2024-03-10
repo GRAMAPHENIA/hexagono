@@ -1,11 +1,24 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect } from "react";
 
 const ModalMenu = ({ isOpen, onClose, children, className }) => {
-  if (!isOpen) return null;
+  useEffect(() => {
+    if (isOpen) {
+      // Al montar el modal, desactivar el scroll
+      document.documentElement.style.overflow = "hidden";
+    } else {
+      // Modal activado
+      document.documentElement.style.overflow = "auto";
+    }
 
-  return (
+    return () => {
+      // Al desmontar el modal, activar el scroll nuevamente
+      document.documentElement.style.overflow = "auto";
+    };
+  }, [isOpen]); // Este efecto se ejecutará cada vez que cambie el estado de isOpen
+
+  return isOpen ? (
     <div className="modal-menu-overlay bg-[#1011129f] backdrop-blur-sm bg-opacity-80">
       <div className="modal-menu mx-auto max-w-screen-xl max-h-[700px]">
         <div className="relative flex justify-end">
@@ -19,7 +32,7 @@ const ModalMenu = ({ isOpen, onClose, children, className }) => {
         {children}
       </div>
     </div>
-  );
+  ) : null;
 };
 
 export default ModalMenu;
