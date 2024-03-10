@@ -3,7 +3,7 @@ import Link from "next/link";
 
 // Constantes de estilos
 const listItemStyle =
-  "hover:text-[var(--font-light)] text-[var(--button-pres)] text-sm font-extralight";
+  "hover:text-[var(--font-light)] text-[var(--button-pres)] text-md font-light";
 
 const FooterList = ({ title, items, handleCloseModal }) => (
   <section className="lg:mt-40 col-span-1 row-span-4 flex flex-col lg:justify-start lg:items-center mb-10">
@@ -108,8 +108,8 @@ const Footer = ({ handleCloseModal }) => {
 
         <section className="col-span-6 flex justify-center items-center my-10 text-[var(--font-light)]">
           <p>
-            Página creada con <span className="text-amber-100">⌨</span> por Juno
-            && Max.
+            Página creada con <span className="text-amber-100">⌨ </span>por{" "}
+            <span className="text-[#78b3cd]"> Juno && Max.</span>
           </p>
         </section>
       </footer>

@@ -97,7 +97,7 @@ const PlanesWeb = () => {
         <span className="text-gray-400">Hexágono</span>
       </p>
 
-      <div className="flex items-center justify-center font-nunito text-gray-600 mt-80 lg:mx-20 my-16 py-10 mb-10">
+      <div className="flex mx-4 items-center justify-center font-nunito text-gray-600 mt-40 lg:mt-80 lg:mx-20 my-16 py-10 mb-10">
         <section className="max-w-[968px] w-full lg:mx-4">
           <div className="grid grid-cols-1 lg:grid-cols-2">
             {planes.map((plan, index) => (
