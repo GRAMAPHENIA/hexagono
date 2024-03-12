@@ -2,39 +2,51 @@ import Image from "next/image";
 
 const clientes = [
   {
-    nombre: "Gramaphenia",
-    descripcion: "Página web especializada en diseño 3D.",
-    src: "fondo/esqueleton.svg",
-    alt: "imagen de sitio para Gramaphenia",
-  },
-  {
     nombre: "Luthier",
     descripcion: "Servicios de lutería para instrumentos musicales.",
-    src: "fondo/esqueleton.svg",
-    alt: "imagen de sitio para Luthier",
+    src: "clientes/luthier.svg",
+    alt: "imagen del sitio Di corato Luthier",
   },
   {
-    nombre: "404",
-    descripcion: "Empresa de desarrollo de software y programación.",
-    src: "fondo/esqueleton.svg",
-    alt: "imagen de sitio para 404",
+    nombre: "Babushka",
+    descripcion: "Muñecas Rusas",
+    src: "clientes/babushka.svg",
+    alt: "imagen del sitio Babushka",
   },
   {
-    nombre: "R.A.D",
-    descripcion:
-      "Plataforma de venta de activos digitales y recursos gráficos.",
-    src: "fondo/esqueleton.svg",
-    alt: "imagen de sitio para R.A.D",
+    nombre: "El Método",
+    descripcion: "Gimnasia para adultos mayores",
+    src: "clientes/elmetodo.svg",
+    alt: "imagen del sitio El Método",
   },
-  {
-    nombre: "Hexágono",
-    descripcion: "Tienda online especializada en la venta de páginas web.",
-    src: "fondo/esqueleton.svg",
-    alt: "imagen de sitio para Hexágono",
-  },
+  // {
+  //   nombre: "Gramaphenia",
+  //   descripcion: "Página web especializada en diseño 3D.",
+  //   src: "fondo/esqueleton.svg",
+  //   alt: "imagen de sitio para Gramaphenia",
+  // },
+  // {
+  //   nombre: "404",
+  //   descripcion: "Empresa de desarrollo de software y programación.",
+  //   src: "fondo/esqueleton.svg",
+  //   alt: "imagen de sitio para 404",
+  // },
+  // {
+  //   nombre: "R.A.D",
+  //   descripcion:
+  //     "Plataforma de venta de activos digitales y recursos gráficos.",
+  //   src: "fondo/esqueleton.svg",
+  //   alt: "imagen de sitio para R.A.D",
+  // },
+  // {
+  //   nombre: "Hexágono",
+  //   descripcion: "Tienda online especializada en la venta de páginas web.",
+  //   src: "fondo/esqueleton.svg",
+  //   alt: "imagen de sitio para Hexágono",
+  // },
 ];
 
-const ChildrenModalPortfolio = () => { 
+const ChildrenModalPortfolio = () => {
   return (
     <>
       <section className="bg-[var(--dark)] px-10 lg:px-32 rounded-t-xl border border-gray-600 border-b-0 py-20 pb-40 sombra-inactiva-portfolio">
@@ -57,7 +69,7 @@ const ChildrenModalPortfolio = () => {
             <li key={index}>
               <figure className="border border-gray-600 p-2 h-full rounded-lg text-[var(--font-light)] text-base lg:text-xl font-extralight text-left bg-[var(--card-dark)] space-y-8">
                 <Image
-                  className="mx-auto border-[3px] border-gray-700 w-full rounded-t-lg "
+                  className="mx-auto border-[3px] border-gray-700 w-full rounded-t-lg opacity-100 hover:opacity-40"
                   src={nombre.src}
                   alt={nombre.alt}
                   width={100}

@@ -109,7 +109,7 @@ const Footer = ({ handleCloseModal }) => {
         <section className="col-span-6 flex justify-center items-center my-10 text-[var(--font-light)]">
           <p>
             Página creada con <span className="text-amber-100">⌨ </span>por{" "}
-            <span className="text-[#78b3cd]"> Juno && Max.</span>
+            <span className="text font-light text-[#78b3cd]"> Juno && Max.</span>
           </p>
         </section>
       </footer>
