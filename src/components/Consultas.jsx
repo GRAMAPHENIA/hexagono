@@ -83,7 +83,7 @@ const Consultas = () => {
             <input
               type="text"
               id="name"
-              name="name"
+              name="Nombre"
               className="w-full border border-[var(--button-dark)] rounded-sm bg-transparent backdrop-blur-lg p-1 text-[var(--font-light)] font-extralight focus:outline-none"
               required
             />
@@ -100,7 +100,7 @@ const Consultas = () => {
               <input
                 type="email"
                 id="email"
-                name="email"
+                name="Correo Electrónico"
                 className="w-full border border-[var(--button-dark)] rounded-sm bg-transparent backdrop-blur-lg p-1 text-[var(--font-light)] font-extralight focus:outline-none"
                 required
               />
@@ -116,7 +116,7 @@ const Consultas = () => {
               <input
                 type="tel"
                 id="phone"
-                name="phone"
+                name="Teléfono"
                 className="w-full border border-[var(--button-dark)] rounded-sm bg-transparent backdrop-blur-lg p-1 text-[var(--font-light)] font-extralight focus:outline-none"
                 required
               />
@@ -132,7 +132,7 @@ const Consultas = () => {
             </label>
             <textarea
               id="message"
-              name="message"
+              name="Mensaje"
               className="w-full border border-[var(--button-dark)] rounded-sm bg-transparent backdrop-blur-lg p-1 text-[var(--font-light)] font-extralight focus:outline-none resize-none"
               rows="10"
               maxLength="300"
@@ -148,7 +148,7 @@ const Consultas = () => {
           </button>
 
           {showMessage && (
-            <p className="absolute font-extralight border border-gray-600 rounded p-4 bottom-2 -right-[25rem] bg-emerald-500/20 backdrop-blur-3xl">
+            <p className="absolute font-extralight border border-gray-600 rounded p-4 bottom-2 -right-[25rem] bg-[#315348]">
               {" "}
               <span className="text-green-300">✓</span> {message}
             </p>

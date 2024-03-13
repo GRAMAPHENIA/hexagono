@@ -47,7 +47,7 @@ const ElegirPlanesWeb = () => {
             <span className="text-amber-200">.</span>
           </h1>
           <p className="text-[var(--font-semi-light)] mx-auto text-md text-center font-extralight p-0 lg:italic antialiased">
-            &quot;Encuentra el adecuado para tu sitio.&quot;
+            &quot;Elige el adecuado para tu sitio.&quot;
           </p>
 
           {/* Aca se renderizan los componentes para presupuestar */}

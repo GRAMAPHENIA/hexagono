@@ -23,7 +23,7 @@ const PresupuestosWeb = () => {
     if (!response.ok) {
       setMessage(result.errors.map((error) => error.message).join(", "));
     } else {
-      setMessage("Se ha enviado tu correo satisfactoriamente.");
+      setMessage("Se ha enviado tu mensaje satisfactoriamente.");
       event.target.reset();
       setShowMessage(true);
       setTimeout(() => {
@@ -56,7 +56,7 @@ const PresupuestosWeb = () => {
     <>
       <section
         id="PresupuestosWeb"
-        className="flex flex-col justify-center items-center border border-[var(--button-dark)] p-8 lg:p-1 rounded-xl bg-[#1011121d] backdrop-blur-sm mx-auto w-[340px] lg:w-[700px] m-20"
+        className="flex flex-col justify-center items-center border border-[var(--button-dark)] p-8 lg:p-1 rounded-xl bg-[#1011121d] backdrop-blur-sm mx-auto w-[340px] lg:w-[700px] m-16"
       >
         <form
           action="https://formspree.io/f/mqkrlgnv"
@@ -68,44 +68,56 @@ const PresupuestosWeb = () => {
             <input
               className="custom-radio"
               type="radio"
-              id="option1"
-              name="gender"
-              value="male"
+              id="inicial"
+              name="Plan"
+              value="Inicial"
             />
-            <label className="text-xl cursor-pointer text-amber-100 ml-2 font-extralight" for="option1">
+            <label
+              className="text-xl cursor-pointer text-amber-100 ml-2 font-extralight"
+              for="inicial"
+            >
               Inicial
             </label>
             <br />
             <input
               className="custom-radio"
               type="radio"
-              id="option2"
-              name="gender"
-              value="female"
+              id="Emprendedores"
+              name="Plan"
+              value="Emprendedores"
             />
-            <label className="text-xl cursor-pointer text-amber-100 ml-2 font-extralight" for="option2">
+            <label
+              className="text-xl cursor-pointer text-amber-100 ml-2 font-extralight"
+              for="Emprendedores"
+            >
               Emprendedores
             </label>
             <br />
             <input
               className="custom-radio"
               type="radio"
-              id="option3"
-              name="gender"
-              value="other"
+              id="Negocios"
+              name="Plan"
+              value="Negocios"
             />
-            <label className="text-xl cursor-pointer text-amber-100 ml-2 font-extralight" for="option3">
+            <label
+              className="text-xl cursor-pointer text-amber-100 ml-2 font-extralight"
+              for="Negocios"
+            >
               Negocios
             </label>
             <br />
             <input
               className="custom-radio"
               type="radio"
-              id="option4"
-              name="gender"
+              id="Empresarial"
+              name="Plan"
               value="other"
             />
-            <label className="text-xl cursor-pointer text-amber-100 ml-2 font-extralight" for="option4">
+            <label
+              className="text-xl cursor-pointer text-amber-100 ml-2 font-extralight"
+              for="Empresarial"
+            >
               Empresarial
             </label>
             <br />
@@ -121,7 +133,7 @@ const PresupuestosWeb = () => {
             <input
               type="text"
               id="name"
-              name="name"
+              name="Nombre:"
               className="w-full border border-[var(--button-dark)] rounded-sm bg-transparent backdrop-blur-lg p-1 text-[var(--font-light)] font-extralight focus:outline-none"
               required
             />
@@ -138,7 +150,7 @@ const PresupuestosWeb = () => {
               <input
                 type="email"
                 id="email"
-                name="email"
+                name="Correo Electrónico"
                 className="w-full border border-[var(--button-dark)] rounded-sm bg-transparent backdrop-blur-lg p-1 text-[var(--font-light)] font-extralight focus:outline-none"
                 required
               />
@@ -154,7 +166,7 @@ const PresupuestosWeb = () => {
               <input
                 type="tel"
                 id="phone"
-                name="phone"
+                name="Teléfono"
                 className="w-full border border-[var(--button-dark)] rounded-sm bg-transparent backdrop-blur-lg p-1 text-[var(--font-light)] font-extralight focus:outline-none"
                 required
               />
@@ -169,7 +181,7 @@ const PresupuestosWeb = () => {
           </button>
 
           {showMessage && (
-            <p className="absolute font-extralight border border-gray-600 rounded p-4 bottom-2 -right-[25rem] bg-emerald-500/20 backdrop-blur-3xl">
+            <p className="absolute font-extralight border border-gray-600 rounded p-4 bottom-0  right-0 lg:bottom-4 lg:right-[1rem] bg-[#315348]">
               {" "}
               <span className="text-green-300">✓</span> {message}
             </p>

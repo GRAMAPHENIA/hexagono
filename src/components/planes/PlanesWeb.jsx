@@ -112,7 +112,7 @@ const PlanesWeb = () => {
                   <section className="">
                     {plan.options.map((option, optIndex) => (
                       <>
-                        <h2 className="mt-20 text-[var(--dark)] lg:col-span-1 flex justify-center items-center bg-[var(--font-semi-light)] p-2 py-2 mb-20 rounded-sm sombra-inactiva border border-[var(--border-card-dark)]">
+                        <h2 className="mt-20 lg:col-span-1 flex justify-center items-center bg-[var(--font-semi-light)] p-2 py-2 mb-20 rounded-sm sombra-inactiva border border-[var(--border-card-dark)] text-2xl font-black text-sky-950/80">
                           {option.titulo}
                         </h2>
                         <ul className="my-4">
