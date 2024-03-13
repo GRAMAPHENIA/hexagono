@@ -308,7 +308,7 @@ p {
 .modal-menu {
   background: var(--dark);
   height: 90vh;
-  width: 60vh;
+  width: 90vh;
   padding: 2rem;
   margin: 2rem;
   border-radius: 12px;
@@ -365,10 +365,10 @@ p {
 
 .modal-menu-planes {
   background: var(--dark);
-  height: 100vh;
-  width: 50vw;
+  height: 90vh;
+  width: 60vw;
   /* padding: 2rem; */
-  margin: 2rem;
+  /* margin: 2rem; */
   border-radius: 12px;
   color: var(--font-light);
   border: 1px solid var(--button-dark);
@@ -410,8 +410,8 @@ p {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
-  height: 24px;
-  width: 24px;
+  height: 18px;
+  width: 18px;
   border-radius: 50%;
   border: 2px solid #fff39b;
   outline: none;

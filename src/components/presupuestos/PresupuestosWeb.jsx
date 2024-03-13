@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 
 import React from "react";
 
-const Consultas = () => {
+const PresupuestosWeb = () => {
   const [message, setMessage] = useState("");
   const [showMessage, setShowMessage] = useState(false);
 
@@ -32,30 +32,30 @@ const Consultas = () => {
     }
   };
 
-  useEffect(() => {
-    const components = document.querySelectorAll(".fade-in");
-    const windowHeight = window.innerHeight;
+  //   useEffect(() => {
+  //     const components = document.querySelectorAll(".fade-in");
+  //     const windowHeight = window.innerHeight;
 
-    function checkScroll() {
-      components.forEach((component) => {
-        const componentTop = component.getBoundingClientRect().top;
-        if (componentTop < windowHeight) {
-          component.classList.add("visible");
-        }
-      });
-    }
+  //     function checkScroll() {
+  //       components.forEach((component) => {
+  //         const componentTop = component.getBoundingClientRect().top;
+  //         if (componentTop < windowHeight) {
+  //           component.classList.add("visible");
+  //         }
+  //       });
+  //     }
 
-    window.addEventListener("scroll", checkScroll);
+  //     window.addEventListener("scroll", checkScroll);
 
-    // Limpia el evento al desmontar el componente
-    return () => {
-      window.removeEventListener("scroll", checkScroll);
-    };
-  }, []);
+  //     // Limpia el evento al desmontar el componente
+  //     return () => {
+  //       window.removeEventListener("scroll", checkScroll);
+  //     };
+  //   }, []);
   return (
     <>
       <section
-        id="consultas"
+        id="PresupuestosWeb"
         className="flex flex-col justify-center items-center border border-[var(--button-dark)] p-8 lg:p-1 rounded-xl bg-[#1011121d] backdrop-blur-sm mx-auto w-[340px] lg:w-[700px] m-20"
       >
         <form
@@ -64,14 +64,52 @@ const Consultas = () => {
           onSubmit={handleSubmit}
           className="max-w-md mx-auto my-6"
         >
-          <figure
-            className="mb-8 flex justify-center items-center m-4"
-            // id="consultas"
-          >
-            <h2 className="text-6xl text-center font-serif text-slate-400">
-              Hace tu <span className="text-amber-100">Consulta</span>
-            </h2>
-          </figure>
+          <div className="mb-4">
+            <input
+              className="custom-radio"
+              type="radio"
+              id="option1"
+              name="gender"
+              value="male"
+            />
+            <label className="text-xl cursor-pointer text-amber-100 ml-2 font-extralight" for="option1">
+              Inicial
+            </label>
+            <br />
+            <input
+              className="custom-radio"
+              type="radio"
+              id="option2"
+              name="gender"
+              value="female"
+            />
+            <label className="text-xl cursor-pointer text-amber-100 ml-2 font-extralight" for="option2">
+              Emprendedores
+            </label>
+            <br />
+            <input
+              className="custom-radio"
+              type="radio"
+              id="option3"
+              name="gender"
+              value="other"
+            />
+            <label className="text-xl cursor-pointer text-amber-100 ml-2 font-extralight" for="option3">
+              Negocios
+            </label>
+            <br />
+            <input
+              className="custom-radio"
+              type="radio"
+              id="option4"
+              name="gender"
+              value="other"
+            />
+            <label className="text-xl cursor-pointer text-amber-100 ml-2 font-extralight" for="option4">
+              Empresarial
+            </label>
+            <br />
+          </div>
 
           <div className="mb-4">
             <label
@@ -123,23 +161,6 @@ const Consultas = () => {
             </div>
           </div>
 
-          <div className="mb-4 lg:mt-2">
-            <label
-              className="text-sm text-amber-100 font-extralight"
-              htmlFor="message"
-            >
-              Mensaje:
-            </label>
-            <textarea
-              id="message"
-              name="message"
-              className="w-full border border-[var(--button-dark)] rounded-sm bg-transparent backdrop-blur-lg p-1 text-[var(--font-light)] font-extralight focus:outline-none resize-none"
-              rows="10"
-              maxLength="300"
-              required
-            ></textarea>
-          </div>
-
           <button
             type="submit"
             className="flex bg-amber-200/90 hover:bg-amber-200 px-8 py-2 rounded-full sombra-light-amber border border-slate-600/40 text-slate-800 hover:text-[#171c21] "
@@ -159,4 +180,4 @@ const Consultas = () => {
   );
 };
 
-export default Consultas;
+export default PresupuestosWeb;

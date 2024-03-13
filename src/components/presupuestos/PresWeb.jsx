@@ -1,5 +1,6 @@
 "use client";
-import { useState } from "react";
+
+import React, { useState } from "react";
 
 const preguntasPorPlan = {
   "Elemental - Plan Inicial": [
@@ -23,7 +24,7 @@ const preguntasPorPlan = {
       ],
     },
     {
-      pregunta: "¿Tenes un diseño en mente?",
+      pregunta: "¿Tienes un diseño en mente?",
       opciones: [
         "Minimalista y limpio",
         "Colorido y llamativo",
@@ -66,7 +67,7 @@ const preguntasPorPlan = {
       ],
     },
     {
-      pregunta: "¿Tenes contenido multimedia?",
+      pregunta: "¿Tienes contenido multimedia?",
       opciones: [
         "Sí, tengo imágenes de alta calidad",
         "Sí, tengo videos",
@@ -76,7 +77,7 @@ const preguntasPorPlan = {
       ],
     },
     {
-      pregunta: "¿Tenes la estructura de navegación?",
+      pregunta: "¿Tienes la estructura de navegación?",
       opciones: [
         "Sí, tengo una idea clara de la estructura",
         "No, necesito ayuda para definirla",
@@ -118,8 +119,7 @@ const preguntasPorPlan = {
       ],
     },
     {
-      pregunta:
-        "¿Qué tan familiarizado estás con el SEO?",
+      pregunta: "¿Qué tan familiarizado estás con el SEO?",
       opciones: [
         "Soy experto, se proporcionar contenido.",
         "Tengo conocimientos básicos",
@@ -150,8 +150,7 @@ const preguntasPorPlan = {
       ],
     },
     {
-      pregunta:
-        "¿Animaciones o efectos que incluirias?",
+      pregunta: "¿Animaciones o efectos que incluirías?",
       opciones: [
         "Transiciones suaves entre secciones",
         "Animaciones de carga",
@@ -212,23 +211,39 @@ const PresWeb = () => {
   const [telefono, setTelefono] = useState("");
   const [mostrarFormulario, setMostrarFormulario] = useState(false);
   const [respuestas, setRespuestas] = useState([]);
+  const [showMessage, setShowMessage] = useState(false);
+  const [message, setMessage] = useState("");
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const mensaje = `Solicitud de presupuesto:
-      Servicio: ${servicio}
-      Nombre: ${nombre}
-      Email: ${email}
-      Teléfono: ${telefono}
-      Respuestas: ${respuestas}`;
-    console.log(mensaje);
-    // Aquí puedes agregar la lógica para enviar los datos a través de WhatsApp
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    const data = new FormData(event.target);
+    const response = await fetch(event.target.action, {
+      method: "POST",
+      body: data,
+      headers: {
+        Accept: "application/json",
+      },
+    });
+
+    const result = await response.json();
+    if (!response.ok) {
+      setMessage(result.errors.map((error) => error.message).join(", "));
+    } else {
+      setMessage("Se ha enviado tu correo satisfactoriamente.");
+      event.target.reset();
+      setShowMessage(true);
+      setTimeout(() => {
+        setShowMessage(false);
+      }, 3000);
+    }
   };
 
   return (
     <>
       <form
-        className="justify-center items-center py-10 p-4 lg:p-8 mt-5 mx-auto w-auto lg:w-[700px]  grid grid-cols-1 lg:grid-cols-2 gap-4 "
+        action="https://formspree.io/f/mqkrlgnv"
+        method="POST"
+        className="justify-center items-center py-10 p-4 lg:p-8  mx-auto w-auto lg:w-[700px]  grid grid-cols-1 lg:grid-cols-2 gap-4 "
         onSubmit={handleSubmit}
       >
         <div className="col-span-2 text-sm mb-1 text-amber-100 font-extralight select-wrapper">
@@ -271,31 +286,34 @@ const PresWeb = () => {
             <div className="col-span-2 flex flex-col text-sm mb-1 text-amber-100 font-extralight">
               <label htmlFor="nombre">Nombre:</label>
               <input
-                className="border border-[var(--button-dark)] rounded-sm bg-transparent p-1 mt-2 text-[var(--font-light)] font-extralight focus:outline-none input-style"
+                className="border border-[var(--button-dark)] rounded-sm bg-transparent p-2 mt-2 text-[var(--font-light)] font-extralight focus:outline-none input-style"
                 type="text"
                 id="nombre"
                 value={nombre}
                 onChange={(e) => setNombre(e.target.value)}
+                required
               />
             </div>
             <div className="col-span-2 lg:col-span-1 flex flex-col text-sm mb-1 text-amber-100 font-extralight">
               <label htmlFor="email">Email:</label>
               <input
-                className="border border-[var(--button-dark)] rounded-sm bg-transparent p-1 mt-2 text-[var(--font-light)] font-extralight focus:outline-none input-style"
+                className="border border-[var(--button-dark)] rounded-sm bg-transparent p-2 mt-2 text-[var(--font-light)] font-extralight focus:outline-none input-style"
                 type="email"
                 id="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
+                required
               />
             </div>
             <div className="col-span-2 lg:col-span-1 flex flex-col text-sm mb-1 text-amber-100 font-extralight">
               <label htmlFor="telefono">Teléfono:</label>
               <input
-                className="border border-[var(--button-dark)] rounded-sm bg-transparent p-1 mt-2 text-[var(--font-light)] font-extralight focus:outline-none input-style"
+                className="border border-[var(--button-dark)] rounded-sm bg-transparent p-2 mt-2 text-[var(--font-light)] font-extralight focus:outline-none input-style"
                 type="tel"
                 id="telefono"
                 value={telefono}
                 onChange={(e) => setTelefono(e.target.value)}
+                required
               />
             </div>
           </>
@@ -309,6 +327,12 @@ const PresWeb = () => {
           >
             Pedir ahora
           </button>
+        )}
+
+        {showMessage && (
+          <p className="absolute font-extralight border border-gray-600 rounded p-4 bottom-2 -right-[25rem] bg-emerald-500/20 backdrop-blur-3xl">
+            <span className="text-green-300">✓</span> {message}
+          </p>
         )}
       </form>
     </>
