@@ -10,7 +10,7 @@ import PlanesWeb from "@/components/planes/PlanesWeb";
 const PlanesDesarrolloWeb = () => {
   return (
     <>
-      <section id="planes-desarrollo-web">
+      <section className="mx-20" id="planes-desarrollo-web">
         <Navbar />
         <PlanesWeb />
         <Consultas />
