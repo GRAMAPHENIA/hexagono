@@ -6,7 +6,6 @@ import Footer from "@/components/Footer.jsx";
 import ElegirPlanesWeb from "@/components/planes/ElegirPlanesWeb";
 import PlanesWeb from "@/components/planes/PlanesWeb";
 
-
 const PlanesDesarrolloWeb = () => {
   return (
     <>
