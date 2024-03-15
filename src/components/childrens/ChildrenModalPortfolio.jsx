@@ -49,7 +49,7 @@ const clientes = [
 const ChildrenModalPortfolio = () => {
   return (
     <>
-      <section className="bg-[var(--dark)] px-10 lg:px-32 rounded-t-xl border border-gray-600 border-b-0 py-20 pb-40 sombra-inactiva-portfolio">
+      <section className="bg-[var(--dark)] px-10 lg:px-32 rounded-t-xl border border-gray-600 border-b-0 py-20 pb-10 sombra-inactiva-portfolio">
         <Image
           className="mx-auto"
           src="fondo/adornos/portfolio.svg"
@@ -69,7 +69,7 @@ const ChildrenModalPortfolio = () => {
             <li key={index}>
               <figure className="border border-gray-600 p-2 h-full rounded-lg text-[var(--font-light)] text-base lg:text-xl font-extralight text-left bg-[var(--card-dark)] space-y-8">
                 <Image
-                  className="mx-auto border-[3px] bg-[var(--dark)] border-gray-700 w-full rounded-t-lg opacity-100 hover:opacity-70"
+                  className="mx-auto border-[3px] bg-[var(--dark)] border-gray-700 w-full rounded-t-lg opacity-100 hover:opacity-50"
                   src={nombre.src}
                   alt={nombre.alt}
                   width={100}
