@@ -79,7 +79,7 @@ const Navbar = () => {
           </li>
         </ul>
       </nav>
-      <ModalMenu isOpen={isModalOpen} onClose={closeModal}>
+      <ModalMenu isOpen={isModalOpen} onClose={closeModal}> 
         <ListaModalMenu handleCloseModal={closeModal} />
       </ModalMenu>
       <ModalPortfolio

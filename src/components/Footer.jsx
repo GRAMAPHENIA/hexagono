@@ -8,7 +8,7 @@ const listItemStyle =
 const FooterList = ({ title, items, handleCloseModal }) => (
   <section className="lg:mt-40 col-span-1 row-span-4 flex flex-col lg:justify-start lg:items-start mb-10">
     <ul className="text-center lg:text-left">
-      <h1 className="text-2xl text-amber-100 mb-5 ">{title}</h1>
+      <h1 className="text-2xl font-bold text-amber-50 mb-5 ">{title}</h1>
       {items.map(({ titulo, enlace }) => (
         <li key={titulo} className={listItemStyle}>
           {/* Verifica si hay un enlace antes de renderizar el componente Link */}
@@ -32,7 +32,7 @@ const Footer = ({ handleCloseModal }) => {
     { titulo: "Diseño Gráfico", enlace: "/#diseno-grafico" },
     { titulo: "Desarrollo Web", enlace: "/#desarrollo-web" },
     { titulo: "Modelado 3D", enlace: "/#modelado-3d" },
-    { titulo: "Tecnologías", enlace: "/#tecnologias" },
+    // { titulo: "Tecnologías", enlace: "/#tecnologias" },
   ];
 
   const informacion = [
@@ -44,9 +44,9 @@ const Footer = ({ handleCloseModal }) => {
 
   const hexagono = [
     { titulo: "Sobre Hexágono", enlace: "/hexagono" },
-    { titulo: "Tecnologías que utilizamos", enlace: "/hexagono/#tecnologias" },
-    { titulo: "Mapa de Ruta", enlace: "/" },
-    { titulo: "Blog", enlace: "/hexagono/#blog" },
+    { titulo: "Tecnologías", enlace: "/#tecnologias" },
+    // { titulo: "Mapa de Ruta", enlace: "/" },
+    // { titulo: "Blog", enlace: "/hexagono/#blog" },
   ];
 
   const redes = [
@@ -59,24 +59,24 @@ const Footer = ({ handleCloseModal }) => {
   return (
     <>
       <footer className="flex flex-col lg:grid lg:grid-cols-6 lg:grid-rows-3 justify-center align-middle gap-4 font-light text-[var(--font-light)] px-4 py-2 rounded-2xl border border-[var(--card-light)] mb-10 mx-2">
-        <figure className="col-span-2 row-span-3 flex flex-col justify-end items-center ">
+        <figure className="col-span-2 row-span-3 flex flex-col justify-end items-center px-10">
           <Image
             src="/logo.svg"
             alt="Picture of the author"
-            width={80}
+            width={100}
             height={100}
           />
-          <h1 className="text-3xl text-center text-amber-100 p-5">
-            Concepto Hexágono
+          <h1 className="text-3xl text-center text-amber-100 font-extrabold p-5">
+            CONCEPTO HEXAGONO
           </h1>
           <p className="text-center font-light w-[250px] text-[var(--button-pres)]">
             <small>
-              Transformamos Ideas en Realidad Digital: Desarrollo Web, Diseño
-              Gráfico y Modelado 3D de Estilo.
+              Desarrollo Web, Diseño
+              Gráfico y Modelado 3D.
             </small>
             <br />
             <br />
-            <span className="flex justify-center text-amber-50">2020-2024</span>
+            <span className="flex justify-center text-[var(--button-pres)]">2020-2024</span>
           </p>
         </figure>
 

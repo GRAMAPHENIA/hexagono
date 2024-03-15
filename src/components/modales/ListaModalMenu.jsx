@@ -3,12 +3,12 @@ import Link from "next/link";
 
 // Constantes de estilos
 const listItemStyle =
-  "hover:text-[var(--font-light)] text-[var(--button-pres)] text-sm font-extralight text-left lg:text-left cursor-pointer";
+  "hover:text-[var(--font-light)] text-[var(--button-pres)] text-lg font-extralight text-left lg:text-left cursor-pointer";
 
 const ModalList = ({ title, items, handleCloseModal }) => (
-  <section className="col-span-1 row-span-4 flex flex-col lg:justify-start lg:items-center">
+  <section className="col-span-1 row-span-4 flex flex-col lg:justify-start lg:items-center px-10">
     <ul className="text-center lg:text-left">
-      <h1 className="text-2xl text-amber-100 mb-5 mt-10 ">{title}</h1>
+      <h1 className="text-2xl text-amber-100 mb-5 mt-5 ">{title}</h1>
       {items.map(({ titulo, enlace }) => (
         <li key={titulo} className={`${listItemStyle} text-center`}>
           {/* Verifica si hay un enlace antes de renderizar el componente Link */}
@@ -40,14 +40,14 @@ const ListaModalMenu = ({ handleCloseModal }) => {
     { titulo: "Dominios", enlace: "/informacion#dominios" },
     { titulo: "Hosting", enlace: "/informacion#hosting" },
     { titulo: "Planes Web", enlace: "/planes-desarrollo-web#planes" },
-    { titulo: "Formas de Pago", enlace: "/informacion#formas-pago" },
+    // { titulo: "Formas de Pago", enlace: "/informacion#formas-pago" },
   ];
 
   const hexagono = [
     { titulo: "Sobre Hexágono", enlace: "/hexagono" },
-    { titulo: "Tecnologías que utilizamos", enlace: "/hexagono/#tecnologias" },
-    { titulo: "Mapa de Ruta", enlace: "/" },
-    { titulo: "Blog", enlace: "/hexagono/#blog" },
+    { titulo: "Tecnologías", enlace: "/hexagono/#tecnologias" },
+    // { titulo: "Mapa de Ruta", enlace: "/" },
+    // { titulo: "Blog", enlace: "/hexagono/#blog" },
   ];
 
   const redes = [
@@ -59,54 +59,57 @@ const ListaModalMenu = ({ handleCloseModal }) => {
 
   return (
     <>
-      <section className=" flex flex-col lg:grid lg:grid-cols-4 lg:grid-rows-3 justify-center align-middle gap-2 mt-10">
-        {/* Sección de navegación */}
-        <ModalList
-          title="Navegación"
-          items={navegacion}
-          handleCloseModal={handleCloseModal}
-        />
+      <figure className="bg-[#101112a5] px-12 pb-12 rounded-md col-span-2 row-span-3 flex flex-col justify-end items-center">
+        {/* <p className="text-center w-[250px] text-[var(--button-pres)] text-6xl mt-2 font-extrabold">
+          MENU
+        </p> */}
 
-        {/* Sección de información */}
-        <ModalList
-          title="Información"
-          items={informacion}
-          handleCloseModal={handleCloseModal}
-        />
+          {/* <Image
+            src="/logo.svg"
+            alt="Picture of the author"
+            width={100}
+            height={100}
+            className="mt-10"
+          /> */}
 
-        {/* Sección de compañía */}
-        <ModalList
-          title="Hexágono"
-          items={hexagono}
-          handleCloseModal={handleCloseModal}
-        />
+       
 
-        {/* Sección de redes */}
-        <ModalList
-          title="Redes"
-          items={redes}
-          handleCloseModal={handleCloseModal}
-        />
-      </section>
-      <figure className="col-span-2 row-span-3 flex flex-col justify-end items-center mt-16">
+        <section className="flex flex-col lg:flex-row lg:justify-center lg:items-start mt-32 gap-12">
+          {/* Sección de navegación */}
+          <ModalList
+            title="Navegación"
+            items={navegacion}
+            handleCloseModal={handleCloseModal}
+          />
+
+          {/* Sección de información */}
+          <ModalList
+            title="Información"
+            items={informacion}
+            handleCloseModal={handleCloseModal}
+          />
+
+          {/* Sección de compañía */}
+          <ModalList
+            title="Hexágono"
+            items={hexagono}
+            handleCloseModal={handleCloseModal}
+          />
+
+          {/* Sección de redes */}
+          <ModalList
+            title="Redes"
+            items={redes}
+            handleCloseModal={handleCloseModal}
+          />
+        </section>
         <Image
-          src="/logo.svg"
+          src="/icons/route.svg"
           alt="Picture of the author"
-          width={80}
-          height={100}
+          width={280}
+          height={280}
+          className="mt-10"
         />
-        <h1 className="text-3xl text-center text-amber-100 p-5">
-          Concepto Hexágono
-        </h1>
-        <p className="text-center font-light w-[250px] text-[var(--button-pres)]">
-          <small>
-            Transformamos Ideas en Realidad Digital: Desarrollo Web, Diseño
-            Gráfico y Modelado 3D de Estilo.
-          </small>
-          <br />
-          <br />
-          <span className="flex justify-center text-amber-50">2020-2024</span>
-        </p>
       </figure>
     </>
   );

@@ -27,7 +27,7 @@ const ModalMenu = ({ isOpen, onClose, children, className }) => {
             onClick={onClose}
           >
             X
-          </button>
+          </button> 
         </div>
         {children}
       </div>
