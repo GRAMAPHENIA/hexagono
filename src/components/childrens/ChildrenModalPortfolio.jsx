@@ -69,7 +69,7 @@ const ChildrenModalPortfolio = () => {
             <li key={index}>
               <figure className="border border-gray-600 p-2 h-full rounded-lg text-[var(--font-light)] text-base lg:text-xl font-extralight text-left bg-[var(--card-dark)] space-y-8">
                 <Image
-                  className="mx-auto border-[3px] border-gray-700 w-full rounded-t-lg opacity-100 hover:opacity-40"
+                  className="mx-auto border-[3px] bg-[var(--dark)] border-gray-700 w-full rounded-t-lg opacity-100 hover:opacity-70"
                   src={nombre.src}
                   alt={nombre.alt}
                   width={100}

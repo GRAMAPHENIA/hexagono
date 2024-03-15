@@ -6,7 +6,7 @@ const listItemStyle =
   "hover:text-[var(--font-light)] text-[var(--button-pres)] text-md font-light";
 
 const FooterList = ({ title, items, handleCloseModal }) => (
-  <section className="lg:mt-40 col-span-1 row-span-4 flex flex-col lg:justify-start lg:items-start mb-10">
+  <section className="lg:mt-24 col-span-1 row-span-4 flex flex-col lg:justify-start lg:items-center mb-10">
     <ul className="text-center lg:text-left">
       <h1 className="text-2xl font-bold text-amber-50 mb-5 ">{title}</h1>
       {items.map(({ titulo, enlace }) => (
@@ -58,8 +58,8 @@ const Footer = ({ handleCloseModal }) => {
 
   return (
     <>
-      <footer className="flex flex-col lg:grid lg:grid-cols-6 lg:grid-rows-3 justify-center align-middle gap-4 font-light text-[var(--font-light)] px-4 py-2 rounded-2xl border border-[var(--card-light)] mb-10 mx-2">
-        <figure className="col-span-2 row-span-3 flex flex-col justify-end items-center px-10">
+      <footer className="flex flex-col lg:grid lg:grid-cols-6 lg:grid-rows-1 justify-center align-middle gap-4 font-light text-[var(--font-light)] px-4 py-2 rounded-2xl border border-[var(--card-light)] mb-10 mx-2">
+        <figure className="col-span-2 row-span-3 flex flex-col justify-end items-center px-10 mt-5">
           <Image
             src="/logo.svg"
             alt="Picture of the author"
@@ -70,13 +70,12 @@ const Footer = ({ handleCloseModal }) => {
             CONCEPTO HEXAGONO
           </h1>
           <p className="text-center font-light w-[250px] text-[var(--button-pres)]">
-            <small>
-              Desarrollo Web, Diseño
-              Gráfico y Modelado 3D.
-            </small>
+            <small>Desarrollo Web, Diseño Gráfico y Modelado 3D.</small>
             <br />
             <br />
-            <span className="flex justify-center text-[var(--button-pres)]">2020-2024</span>
+            <span className="flex justify-center text-[var(--button-pres)]">
+              2020-2024
+            </span>
           </p>
         </figure>
 
@@ -107,17 +106,13 @@ const Footer = ({ handleCloseModal }) => {
           items={redes}
           handleCloseModal={handleCloseModal}
         />
-
-        <section className="col-span-6 flex justify-center items-center my-10 text-[var(--font-light)]">
-          <p>
-            Página creada con <span className="text-amber-100">⌨ </span>por{" "}
-            <span className="text font-light text-[#78b3cd]">
-              {" "}
-              Juno && Max.
-            </span>
-          </p>
-        </section>
-      </footer>
+      </footer>{" "}
+      <section className="col-span-6 flex justify-center items-center my-10 text-[var(--font-light)]">
+        <p>
+          Página creada con <span className="text-amber-100">⌨ </span>por{" "}
+          <span className="text font-light text-[#78b3cd]"> Juno && Max.</span>
+        </p>
+      </section>
     </>
   );
 };
