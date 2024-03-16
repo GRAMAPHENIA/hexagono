@@ -1,52 +1,30 @@
 import Image from "next/image";
+import { useState } from "react";
 
 const clientes = [
   {
     nombre: "Luthier",
-    descripcion: "Servicios de lutería para instrumentos musicales.",
+    descripcion: "Servicios de Luthería.",
     src: "clientes/luthier.svg",
     alt: "imagen del sitio Di corato Luthier",
   },
   {
     nombre: "Babushka",
-    descripcion: "Muñecas Rusas",
+    descripcion: "Bordados y telas.",
     src: "clientes/babushka.svg",
     alt: "imagen del sitio Babushka",
   },
   {
     nombre: "El Método",
-    descripcion: "Gimnasia para adultos mayores",
+    descripcion: "Para adultos mayores.",
     src: "clientes/elmetodo.svg",
     alt: "imagen del sitio El Método",
-  },
-  // {
-  //   nombre: "Gramaphenia",
-  //   descripcion: "Página web especializada en diseño 3D.",
-  //   src: "fondo/esqueleton.svg",
-  //   alt: "imagen de sitio para Gramaphenia",
-  // },
-  // {
-  //   nombre: "404",
-  //   descripcion: "Empresa de desarrollo de software y programación.",
-  //   src: "fondo/esqueleton.svg",
-  //   alt: "imagen de sitio para 404",
-  // },
-  // {
-  //   nombre: "R.A.D",
-  //   descripcion:
-  //     "Plataforma de venta de activos digitales y recursos gráficos.",
-  //   src: "fondo/esqueleton.svg",
-  //   alt: "imagen de sitio para R.A.D",
-  // },
-  // {
-  //   nombre: "Hexágono",
-  //   descripcion: "Tienda online especializada en la venta de páginas web.",
-  //   src: "fondo/esqueleton.svg",
-  //   alt: "imagen de sitio para Hexágono",
-  // },
+  }
 ];
 
 const ChildrenModalPortfolio = () => {
+  const [hoverIndex, setHoverIndex] = useState(null);
+
   return (
     <>
       <section className="bg-[var(--dark)] px-10 lg:px-32 rounded-t-xl border border-gray-600 border-b-0 py-20 pb-10 sombra-inactiva-portfolio">
@@ -65,22 +43,35 @@ const ChildrenModalPortfolio = () => {
           realizados <span className="text-amber-100">.</span>
         </h6>
         <ul className="grid grid-cols-1 lg:grid-cols-3 gap-10 py-20">
-          {clientes.map((nombre, index) => (
-            <li key={index}>
-              <figure className="border border-gray-600 p-2 h-full rounded-lg text-[var(--font-light)] text-base lg:text-xl font-extralight text-left bg-[var(--card-dark)] space-y-8">
-                <Image
-                  className="mx-auto border-[3px] bg-[var(--dark)] border-gray-700 w-full rounded-t-lg opacity-100 hover:opacity-50"
-                  src={nombre.src}
-                  alt={nombre.alt}
-                  width={100}
-                  height={100}
-                />
-                <section>
-                  <h1 className="text-2xl font-bold mx-5 mb-2 text-amber-100">
-                    {nombre.nombre}
-                  </h1>
-                  <p className="mx-5 mb-10">{nombre.descripcion}</p>
-                </section>
+          {clientes.map((cliente, index) => (
+            <li key={index} className="relative">
+              <figure
+                className="border border-gray-600 p-2 h-full rounded-lg text-[var(--font-light)] text-base lg:text-xl font-extralight text-left bg-[var(--card-dark)] space-y-8 sombra-portfolio"
+                onMouseEnter={() => setHoverIndex(index)}
+                onMouseLeave={() => setHoverIndex(null)}
+                style={{ minHeight: "330px" }} // Establecer una altura mínima fija para el contenedor
+              >
+                <div className="relative">
+                  <Image
+                    className={`mx-auto border-[px] bg-[var(--dark)] border-gray-700 w-full rounded-t-lg ${
+                      hoverIndex === index ? 'opacity-100' : 'opacity-99'
+                    }`}
+                    src={cliente.src}
+                    alt={cliente.alt}
+                    width={100}
+                    height={100}
+                  />
+                  <section
+                    className={`absolute top-20 left-top-20 w-full h-full ${
+                      hoverIndex === index ? 'block' : 'hidden'
+                    }`}
+                  >
+                    <div className="text-center text-amber-100">
+                      <h1 className="text-2xl font-bold">{cliente.nombre}</h1>
+                      <p>{cliente.descripcion}</p>
+                    </div>
+                  </section>
+                </div>
               </figure>
             </li>
           ))}

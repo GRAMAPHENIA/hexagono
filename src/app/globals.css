@@ -15,10 +15,10 @@
   --button-light: #dee8f1;
   --hover: #232b3e;
   --border: #324550;
+  --border-card-dark: #32667d;
   --estado: #1b2430;
   --card-dark: #1f252d;
   --card-light: #36393b;
-  --border-card-dark: #32667d;
   --gradient-start: #b9c0ce;
   --gradient-via: #1c222d;
   --gradient-end: #21262f;
@@ -179,6 +179,23 @@ p {
 .sombra-card-dark:hover {
   box-shadow: 0px 0px 0px var(--font-semi-light);
   transform: translate(2px, 5px);
+}
+
+/* .sombra-portfolio {
+  box-shadow: 0px 0px 0px var(--border);
+} */
+
+.sombra-portfolio:hover img {
+  opacity: 30%;
+}
+
+.sombra-portfolio:hover {
+  /* box-shadow: 0px 0px 0px var(--border); */
+  box-shadow: 12px 12px 0px var(--hover);
+  /* opacity: 50%; */
+  transform: translate(-2px, -5px);
+  transition: ease-in-out;
+  transition-duration: .15s;
 }
 
 /* 🔴 SHADOWS 🔴 */
