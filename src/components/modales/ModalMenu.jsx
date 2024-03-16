@@ -19,7 +19,7 @@ const ModalMenu = ({ isOpen, onClose, children, className }) => {
   }, [isOpen]); // Este efecto se ejecutará cada vez que cambie el estado de isOpen
 
   return isOpen ? (
-    <div className="modal-menu-overlay bg-[#1011129f] backdrop-blur-sm bg-opacity-80">
+    <div className="modal-menu-overlay bg-[#1011129f] backdrop-blur-sm bg-opacity-80"> 
       <div className="modal-menu mx-auto max-w-screen-xl max-h-[700px]">
         <div className="relative flex justify-end">
           <button

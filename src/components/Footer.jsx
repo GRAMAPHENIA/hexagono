@@ -58,7 +58,7 @@ const Footer = ({ handleCloseModal }) => {
 
   return (
     <>
-      <footer className="flex flex-col lg:grid lg:grid-cols-6 justify-center align-middle gap-4 font-light text-[var(--font-light)] px-4 py-2 rounded-2xl border border-[var(--card-light)] mb-10 mx-2">
+      <footer className="flex flex-col lg:grid lg:grid-cols-6 justify-center align-middle gap-4 font-light text-[var(--font-light)] px-4 py-2 rounded-2xl border border-[var(--card-light)] mb-10 mx-2 bg-[#1011129f] backdrop-blur-lg">
         <figure className="col-span-2 flex flex-col justify-end items-center px-10 mt-5">
           <Image
             src="/logo.svg"
