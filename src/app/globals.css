@@ -186,7 +186,7 @@ p {
 } */
 
 .sombra-portfolio:hover img {
-  opacity: 30%;
+  opacity: 20%;
 }
 
 .sombra-portfolio:hover {
@@ -195,7 +195,7 @@ p {
   /* opacity: 50%; */
   transform: translate(-2px, -5px);
   transition: ease-in-out;
-  transition-duration: .15s;
+  transition-duration: .05s;
 }
 
 /* 🔴 SHADOWS 🔴 */

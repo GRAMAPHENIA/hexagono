@@ -1,4 +1,6 @@
 import Image from "next/image";
+import Link from "next/link";
+
 import { useState } from "react";
 
 const clientes = [
@@ -7,18 +9,21 @@ const clientes = [
     descripcion: "Servicios de Luthería.",
     src: "clientes/luthier.svg",
     alt: "imagen del sitio Di corato Luthier",
+    enlace: "https://www.dicorato.com.ar/",
   },
   {
     nombre: "Babushka",
     descripcion: "Bordados y telas.",
     src: "clientes/babushka.svg",
     alt: "imagen del sitio Babushka",
+    enlace: "https://babushka.conceptohexagono.com/",
   },
   {
     nombre: "El Método",
     descripcion: "Para adultos mayores.",
     src: "clientes/elmetodo.svg",
     alt: "imagen del sitio El Método",
+    enlace: "https://elmetodoadulma.com/",
   },
 ];
 
@@ -27,7 +32,7 @@ const ChildrenModalPortfolio = () => {
 
   return (
     <>
-      <section className="bg-[var(--dark)] px-10 lg:px-32 rounded-t-xl border border-gray-600 border-b-0 py-20 pb-10 sombra-inactiva-portfolio">
+      <section className="bg-[var(--dark)] px-10 lg:px-32 rounded-t-xl border border-gray-600 border-b-0 py-20 sombra-inactiva-portfolio">
         <Image
           className="mx-auto"
           src="fondo/adornos/portfolio.svg"
@@ -46,7 +51,7 @@ const ChildrenModalPortfolio = () => {
           {clientes.map((cliente, index) => (
             <li key={index} className="relative">
               <figure
-                className="relative border border-gray-600 p-2 h-full rounded-lg text-[var(--font-light)] text-base lg:text-xl font-extralight text-left bg-[var(--card-dark)] space-y-8 sombra-portfolio"
+                className="relative border border-gray-600 p-2 h-full rounded-lg text-[var(--font-light)] text-base lg:text-xl font-extralight text-left bg-[var(--card-dark)] sombra-portfolio"
                 onMouseEnter={() => setHoverIndex(index)}
                 onMouseLeave={() => setHoverIndex(null)}
                 style={{ minHeight: "450px" }} // Establecer una altura mínima fija para el contenedor
@@ -61,16 +66,18 @@ const ChildrenModalPortfolio = () => {
                   height={100}
                 />
                 <section
-                  className={`w-full h-full ${
+                  className={`w-100 h-20 ${
                     hoverIndex === index ? "block" : "hidden"
                   }`}
                 >
-                  <div className="text-center text-amber-100">
+                  <div className="text-center text-amber-100 pt-8">
                     <h1 className="text-5xl font-bold">{cliente.nombre}</h1>
                     <p className="text-center">{cliente.descripcion}</p>
                   </div>{" "}
                   <button className="close-button mx-auto flex justify-center items-center text-[var(--font-light)] bg-[var(--gradient-end)] px-4 py-2 rounded-full sombra-light-amber border border-[var(--card-light)] mt-5 mr-5">
-                    visitar
+                    <Link target="blank" href={cliente.enlace}>
+                      visitar
+                    </Link>
                   </button>
                 </section>
               </figure>
