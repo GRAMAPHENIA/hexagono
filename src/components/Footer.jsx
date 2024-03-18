@@ -59,14 +59,14 @@ const Footer = ({ handleCloseModal }) => {
   return (
     <>
       <footer className="flex flex-col lg:grid lg:grid-cols-6 justify-center align-middle gap-4 font-light text-[var(--font-light)] px-4 py-2 rounded-2xl border border-[var(--card-light)] mb-10 mx-2 bg-[#1011129f] backdrop-blur-lg">
-        <figure className="col-span-2 flex flex-col justify-end items-center px-10 mt-5">
+        <figure className="col-span-2 flex flex-col justify-end items-center px-10 mt-16">
           <Image
-            src="/logo.svg"
+            src="/icons/concepto-hexagono.svg"
             alt="Picture of the author"
             width={100}
             height={100}
           />
-          <h1 className="text-3xl text-center text-amber-100 font-extrabold p-5">
+          {/* <h1 className="text-3xl text-center text-amber-100 font-extrabold p-5">
             CONCEPTO HEXAGONO
           </h1>
           <p className="text-center font-light w-[250px] text-[var(--button-pres)]">
@@ -76,7 +76,7 @@ const Footer = ({ handleCloseModal }) => {
             <span className="flex justify-center text-[var(--button-pres)]">
               2020-2024
             </span>
-          </p>
+          </p> */}
         </figure>
 
         {/* Sección de navegación */}
