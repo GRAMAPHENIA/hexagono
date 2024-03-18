@@ -65,8 +65,23 @@ const ChildrenModalPortfolio = () => {
                   width={100}
                   height={100}
                 />
+
                 <section
-                  className={`w-100 h-20 ${
+                  className={`w-100 h-20 lg:  ${
+                    hoverIndex === index ? "hidden" : "block"
+                  }`}
+                >
+                  <Image
+                    className="mx-auto pt-16 lg:hidden"
+                    src="icons/hand-click.svg"
+                    alt=""
+                    width={40}
+                    height={40}
+                  />
+                </section>
+
+                <section
+                  className={`w-100 h-20  ${
                     hoverIndex === index ? "block" : "hidden"
                   }`}
                 >
