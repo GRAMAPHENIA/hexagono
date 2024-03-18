@@ -56,13 +56,13 @@ const PresupuestosWeb = () => {
     <>
       <section
         id="PresupuestosWeb"
-        className="flex flex-col justify-center items-center border border-[var(--button-dark)] p-8 lg:p-1 rounded-xl bg-[#1011121d] backdrop-blur-sm mx-auto w-[340px] lg:w-[700px] m-16"
+        className="flex flex-col justify-center items-center border border-[var(--button-dark)] p-8 lg:p-1 rounded-xl bg-[#1011121d] backdrop-blur-sm mx-auto w-[340px] lg:w-[700px] mt-4 lg:mt-16"
       >
         <form
           action="https://formspree.io/f/mqkrlgnv"
           method="POST"
           onSubmit={handleSubmit}
-          className="max-w-md mx-auto my-6"
+          className="max-w-md mx-auto lg:my-6"
         >
           <div className="mb-4">
             <input
