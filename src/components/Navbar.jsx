@@ -29,7 +29,7 @@ const Navbar = () => {
   };
 
   useEffect(() => {
-    if (isModalOpen) {
+    if (isModalOpen || isModalPortfolioOpen) {
       document.documentElement.style.overflow = "hidden";
     } else {
       document.documentElement.style.overflow = "auto";
@@ -38,19 +38,7 @@ const Navbar = () => {
     return () => {
       document.documentElement.style.overflow = "auto";
     };
-  }, [isModalPortfolioOpen]);
-
-  useEffect(() => {
-    if (isModalPortfolioOpen) {
-      document.documentElement.style.overflow = "hidden";
-    } else {
-      document.documentElement.style.overflow = "auto";
-    }
-
-    return () => {
-      document.documentElement.style.overflow = "auto";
-    };
-  }, [isModalPortfolioOpen]);
+  }, [isModalOpen, isModalPortfolioOpen]);
 
   return (
     <>
@@ -61,8 +49,7 @@ const Navbar = () => {
               onClick={openModalPortfolio}
               className="text-[var(--button-dark)] bg-[var(--font-semi-light)] px-4 py-2 rounded-full sombra border border-[var(--card-light)]"
             >
-              <Link href=""></Link>
-              portfolio
+              <Link href="#">portfolio</Link>
             </button>{" "}
             <Link href="#consultas">
               <button className="font-light bg-[var(--card-dark)] text-[var(--font-light)] px-4 py-2 rounded-full sombra border border-[var(--card-light)]">
